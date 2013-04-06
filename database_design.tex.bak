@@ -1,0 +1,220 @@
+\Chapter{Google Data Store Design}
+
+Google Data Store is based on the Big Table architecture. It is a Hashmap with keys mapped to multi dimentional arrays. These arrays represent columns or collection of columns. The number of columns in Google Data Store is not fixed. For every web application deployed in Google App Store, it generates a unique application id (ApplicationID). Application (ApplicationID) is associated with a Path which defines the hierachy of entity keys. \cite{BigTable}
+
+\section{Entity and Kind}
+
+Every entity must be of particular kind. For example: To create an entity of kind Department, an object of type Entity is created by passing Department as kind: 
+
+\hspace{1in} Entity department = new Entity("Department");
+
+An entity can be associated with parent by providing entity type in the constructor.
+
+\hspace{1in} Entity location = new Entity("Department", department.getKey());
+
+Each entity may or may not belong to a group. But Google recommends every entity should belong to a group so that in a distributed environment, group of entities can be stored in a particular cluster. Deleting a parent, does not guarantee deletion of the child. This should be done programmatically by traversing each child. \cite{Entities}
+
+Each entity can have multiple properties. For example:
+
+\hspace{1in} location.setProperty("USA", "");
+
+\hspace{1in} location.setProperty("France", "");
+
+
+\section{Indexes}
+Indexes are auto generated in the Google App Store. Each application contains an index table with rows corresponding to entities and columns corresponding to property values. Index entries are added based on the combination of the property name and property values. So care must be taken to avoid index explosion. For example: 
+
+\hspace{1in} Indexes
+
+\hspace{1.2in}kind =Model;
+
+\hspace{1.3in} properrties;
+
+\hspace{1.5in} name = type1
+
+\hspace{1.5in} name = type2
+
+If there are three values of type1 and four values of type2, combination of the these will result 12 index table entries. Google App Store allows 200 entries in the index table for every put operation. To avoid indexing errors, property names can be grouped into multiple entities.
+
+\hspace{1in} Indexes:
+
+\hspace{1.2in}kind =Model1:
+
+\hspace{1.3in} properties:
+
+\hspace{1.5in} name = type1
+
+
+\hspace{1in} Indexes:
+
+\hspace{1.2in}kind =Model2:
+
+\hspace{1.3in} properties:
+
+\hspace{1.5in} name = type2
+
+Custom indexes can be added by updating indexing.yaml file by specifying which properties need to be indexed.\cite{Indexes}
+
+\section{Data Modeling}
+GradeBoard uses Google App Store API for defining models. The attributes of an entity can be updated dynamically since there is no limitation on the number of columns. Table~\ref{table:Entities} defines entities identified in the GradeBoard application. 
+
+\begin{table}[H]
+\caption{Entity Types}\label{table:Entities}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Entity Kind & Key \\ \hline
+Quarter & int \\ \hline
+Course & int \\ \hline
+Component & int \\ \hline
+Grade & int \\ \hline
+Instructor & int \\ \hline
+Student & int \\ \hline
+Auth & int \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Each entity is defined in the Data Store with ApplicationID (unique across entire store) and a Path. Path defines hieararchy begining with the root entity until the current node is found. The relationship is identified by ancestor path. Path defines the ancestor relationships among entities.Table~\ref{table:EntPath} defines paths identified in the GradeBoard application. 
+\begin{table}[H]
+\caption{Entity Path}\label{table:EntPath}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Value \\ \hline
+ApplicationID & {Auto generated value}\\ \hline
+Quarter & "" \\ \hline
+Course & Course:Quarter \\ \hline
+Component & Course:Component \\ \hline
+Grade & Course:Component:Grade \\ \hline
+Instructor & "" \\ \hline
+Student & Course:Student \\ \hline
+Auth & Auth:Instructor \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Table~\ref{table:Quarter} defines Quarter Entity in the GradeBoard application.  
+
+\begin{table}[H]
+\caption{Quarter Entity}\label{table:Quarter}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+Name & str* \\ \hline
+Startdate & date \\ \hline
+Enddate & date \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Course entity contains details about the course. Table~\ref{table:EntCourse} defines Course Entity in the GradeBoard application.  
+
+\begin{table}[H]
+\caption{Course Entity}\label{table:EntCourse}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+Coursename & str* \\ \hline
+Description & str* \\ \hline
+Number & int \\ \hline
+Units & int \\ \hline
+Totalseats & int \\ \hline
+Seatstaken & int \\ \hline
+Classtime & date \\ \hline
+Location & str* \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Component is a PolyModel Entity. A PolyModel entity can be thought of as an abstract class which can be inherited by multiple entities. The query on a parent results in the data stored in the inherited child entity. This concept is similar to polymorphism om object oriented programming.
+Table~\ref{table:EntComponent} defines EntComponent Entity in the GradeBoard application.  
+
+\begin{table}[H]
+\caption{Component Entity}\label{table:EntComponent}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+Name & str*\\ \hline
+Deadline & date \\ \hline
+Points & int \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Grade entity inherits from Component entity. Table~\ref{table:EntGrade} defines Grade entity in the GradeBoard application.  
+
+\begin{table}[H]
+\caption{Grade Entity}\label{table:EntGrade}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+Score & int\\ \hline
+StudentId &  ReferenceProperty \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Table~\ref{table:EntStudent} defines Student entity in the GradeBoard application. Student entity contains a property named SecretId for masking the Id when a grade sheet for other students is constructed. Student who is viewing the grade sheet will see  SecretId of the other students not the actual name.
+
+\begin{table}[H]
+\caption{Student Entity}\label{table:EntStudent}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+Firstname & str*\\ \hline
+Lastname &  str* \\ \hline
+Email &  str* \\ \hline
+SecretId & int \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Table~\ref{table:EntInstructor} defines Instructor entity in the GradeBoard application. Instructor information is populated from Google account that instructor uses to log in. Administrator authorizes and adds the instructor account for GradeBoard application.
+
+\begin{table}[H]
+\caption{Instructor Entity}\label{table:EntInstructor}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+GoogleUser & User\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Table~\ref{table:EntAdmin} defines Admin entity in the GradeBoard application. Admin entity is pre-populated or manually updated by the administrator.
+
+\begin{table}[H]
+\caption{Admin Entity}\label{table:EntAdmin}
+\textbf{ }
+\begin{center}
+\begin{tabular}{ | l | l | }
+\hline
+Key & Type \\ \hline
+Id & int\\ \hline
+GoogleUser & User\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+

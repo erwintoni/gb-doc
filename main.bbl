@@ -1,0 +1,144 @@
+\begin{thebibliography}{10}
+
+\bibitem{mongodb}
+Agile and scalable.
+\newblock \url{http://www.mongodb.org/}.
+
+\bibitem{Ajax}
+Ajax (programming).
+\newblock \url{http://en.wikipedia.org/wiki/Ajax_(programming)}.
+
+\bibitem{AWS}
+Amazon {Web Services}.
+\newblock \url{http://aws.amazon.com/}.
+
+\bibitem{Android}
+Android {Mobile Computing Platform}.
+\newblock \url{http://developer.android.com/about/index.html}.
+
+\bibitem{bootstrap}
+Bootstrap.
+\newblock \url{http://twitter.github.com/bootstrap/}.
+
+\bibitem{cloudcomputing}
+Cloud {Computing Document}.
+\newblock \url{http://www.en.wikipedia.org/wiki/Cloud\_computing}.
+
+\bibitem{Eclipse}
+Eclipse {Founcation}.
+\newblock \url{http://www.eclipse.org/}.
+
+\bibitem{Entities}
+Entities, {Properties, and Keys}.
+\newblock
+  \url{https://developers.google.com/appengine/docs/java/datastore/entities}.
+
+\bibitem{API}
+Glossary.
+\newblock \url{http://technet.microsoft.com/en-us/library/bb742416.aspx}.
+
+\bibitem{GoogleAppEngine}
+Google {Developers Academy}.
+\newblock
+  \url{https://developers.google.com/appengine/training/intro/whatisgae/}.
+
+\bibitem{Heroku}
+Heroku {How It Works}.
+\newblock \url{http://www.heroku.com/how}.
+
+\bibitem{BigTable}
+How {Entities and Indexes are Stored}.
+\newblock
+  \url{https://developers.google.com/appengine/articles/storage_breakdown}.
+
+\bibitem{https}
+Http secure.
+\newblock \url{http://en.wikipedia.org/wiki/HTTPS}.
+
+\bibitem{Indexes}
+Index {Definition and Structure}.
+\newblock
+  \url{https://developers.google.com/appengine/docs/python/datastore/indexes}.
+
+\bibitem{IOS}
+{IOS Mobile Computing Platform}.
+\newblock \url{http://en.wikipedia.org/wiki/IOS}.
+
+\bibitem{Jdbc}
+Java {Database Connectivity}.
+\newblock \url{http://docs.oracle.com/javase/6/docs/technotes/guides/jdbc}.
+
+\bibitem{JettyWebServer}
+Jetty (web server).
+\newblock \url{http://en.wikipedia.org/wiki/Jetty_(web_server)}.
+
+\bibitem{JqueryMobile}
+Jquery {Mobile 1.2 Reference Document}.
+\newblock
+  \url{http://www.jquerymobile.com/demos/1.2.0/docs/about/features.html}.
+
+\bibitem{JQuery}
+Jquery {Official Document}.
+\newblock \url{http://www.jquery.com/}.
+
+\bibitem{json}
+Json.
+\newblock \url{http://en.wikipedia.org/wiki/Json}.
+
+\bibitem{mvc}
+Model view controller.
+\newblock \url{http://en.wikipedia.org/wiki/Model-view-controller}.
+
+\bibitem{NoSql}
+Nosql.
+\newblock \url{http://en.wikipedia.org/wiki/NoSQL/}.
+
+\bibitem{GoogleAppEngineDataStore}
+Official {Documentation of Google App Engine Java Datastore}.
+\newblock \url{https://developers.google.com/appengine/docs/java/datastore/}.
+
+\bibitem{JavaServlets}
+Official {Documentation of Java Servlet Technology}.
+\newblock \url{http://www.oracle.com/technetwork/java/whitepaper-135196.html}.
+
+\bibitem{Java}
+Official {Java Technology Document}.
+\newblock \url{http://www.java.com/en/download/faq/whatis_java.xml}.
+
+\bibitem{PhoneGap}
+Phone{Gap}.
+\newblock \url{http://phonegap.com/}.
+
+\bibitem{PolyModel}
+Poly{Model}.
+\newblock
+  \url{https://developers.google.com/appengine/docs/python/ndb/polymodelclass}.
+
+\bibitem{uml}
+Unified {Modeling Language}.
+\newblock \url{http://www-01.ibm.com/software/rational/uml/}.
+
+\bibitem{w3}
+{W3C} community.
+\newblock \url{http://www.w3.org/TR/REC-html40/}.
+
+\bibitem{webopedia}
+Webopedia {Definitions And Terms}.
+\newblock \url{http://www.webopedia.com/TERM/J/J2EE.html/}.
+
+\bibitem{OOP}
+What is an {Object}?
+\newblock
+  \url{http://docs.oracle.com/javase/tutorial/java/concepts/object.html}.
+
+\bibitem{MicrosoftAzure}
+Windows {Azure}.
+\newblock \url{http://www.windowsazure.com/en-us/develop/overview/}.
+
+\bibitem{Manoj}
+Manoj Kulkarni.
+\newblock {\em GradeBoard: A Cloud-Based Solution for a Student Grading
+  System}.
+\newblock CSUSB - Masters Project, 2013.
+
+\end{thebibliography}

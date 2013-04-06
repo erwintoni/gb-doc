@@ -1,0 +1,76 @@
+\documentclass{sbthesis} % source: Dr. Keith Schubert
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{setspace}
+\usepackage{float}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% NOTE: I didn't have to do this.  Maybe it's because I'm using Miktex.  -- David Turner
+%
+% Note: bibtex omits page number from first page of bibliography, 
+% which is not acceptable under CSUSB rules.  The following
+% command can be used to fix the problem.  For this to work,
+% you need to insert \FixBib after the first line in the bbl file 
+% that bibtex generates.  Do this each time the bibliography
+% changes.
+%
+% Source: http://www.cs.ubc.ca/~murphyk/Teaching/latex_tips.txt
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\FixBib}{%    PUT \FixBib in file.bbl after first line
+    \setlength{\parsep}{\parskip}%
+    \setlength{\itemsep}{0cm}%
+    \setlength{\topsep}{\parskip}%
+    \setlength{\parskip}{0cm}%
+    \setlength{\partopsep}{0cm}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\labelwidth}{10pt}%
+    \setlength{\labelsep}{0pt}%
+    \setlength{\leftskip}{0pt}%
+    \setlength{\leftmargin}{0pt}%
+}
+
+
+\title{GradeBoard}
+\TitleLineTwo{A Cloud Based Solution For A Student Grading System}
+\author{Manoj Kulkarni}
+\Department
+\EmailAddress{kulkarnm@coyote.csusb.edu}
+\Advisor{David Turner}
+\Committee{Ernesto Gomez}{Richard J. Botting}
+\CSUSBDate{February 2013}
+
+
+\AbstractText{
+Cloud-based systems have become increasingly popular these days because of their scalability and resource management. It is now possible to build a huge online system in a short time without investing too much on computer hardware. Cloud systems provide a subscription-based model and resource management where nodes are automatically shutdown when there is less or no traffic and automatically scale up as traffic increases. Some of the very popular cloud platforms include Amazon Web Services, Microsoft Azure and Google App Engine. The student grading system implemented in this project (GradeBoard) uses Google App Engine for cloud storage and application hosting. The application allows students and instructors to interact using desktop or mobile platforms.
+
+GradeBoard uses the JQuery Mobile library. Applications built using JQuery Mobile library work on multiple mobile platforms, such as Android and IOS operating systems, and on desktop systems seamlessly without having to build separate applications for each of these platforms. This reduces the cost of development and maintenance when supporting multiple platforms.
+
+Overall, using cloud platforms such as Google App Engine provides advantages by reducing the cost of setting up and maintaining hardware, facilities, electricity and human resources. In coming years, there will be a lot of applications migrated to, or built on top of, cloud platforms. With the increasing number of mobile and tablet users, providing mobile-based solutions for cloud-based applications is becoming essential.
+
+}
+
+\AcknowledgementText{
+I would like to thank my advisor Dr. David Turner for his invaluable guidance, advice, support, help, and patience during this project's long gestation. I would also like to thank my committee advisors Dr. Richard J. Botting and Dr. Ernesto Gomez for their valuable reviews and advice. I would like to thank all the people with whom I have worked while pursuing my master's degree at California State University, San Bernardino (CSUSB). I wish I could list all their names but the list would be too long and I would still probably leave some people out. Studying in the School of Computer Science and Engineering at CSUSB has been a tremendous learning experience, both personally and professionally.
+
+I would also like to thank my wife for her undying support for my studies over the years. Finally, thanks to my parents who encouraged me all along. 
+}
+
+\begin{document}
+\Project  % defined in sbthesis.cls 
+
+\input{introduction}
+\input{architecture}
+\input{database_design}
+\input{userinterface_design}
+\input{conclusion}
+
+\appendix
+
+\nocite{*}
+\Bibliography{main}
+
+\end{document}

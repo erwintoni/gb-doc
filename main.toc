@@ -1,0 +1,69 @@
+\thispagestyle {fancy}
+\contentsline {chapter}{Abstract}{iii}
+\contentsline {chapter}{Acknowledgements}{iv}
+\contentsline {chapter}{List of Tables}{viii}
+\contentsline {chapter}{List of Figures}{ix}
+\contentsline {chapter}{\numberline {1.}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Background}{1}
+\contentsline {section}{\numberline {1.2}Facebook}{1}
+\contentsline {section}{\numberline {1.3}Heroku}{1}
+\contentsline {section}{\numberline {1.4}MongoDB}{2}
+\contentsline {section}{\numberline {1.5}MongoLab}{2}
+\contentsline {section}{\numberline {1.6}Git}{2}
+\contentsline {section}{\numberline {1.7}Bootstrap}{3}
+\contentsline {section}{\numberline {1.8}Jquery}{3}
+\contentsline {section}{\numberline {1.9}Node.js}{3}
+\contentsline {section}{\numberline {1.10}Purpose}{3}
+\contentsline {section}{\numberline {1.11}Project Scope}{3}
+\contentsline {section}{\numberline {1.12}Related Work}{4}
+\contentsline {section}{\numberline {1.13}Project Limitations}{4}
+\contentsline {section}{\numberline {1.14}Definitions, Acronyms, and Abbreviations}{4}
+\contentsline {chapter}{\numberline {2.}System Architecture}{7}
+\contentsline {section}{\numberline {2.1}Overview}{7}
+\contentsline {section}{\numberline {2.2}Deployment Workflow}{7}
+\contentsline {section}{\numberline {2.3}Heroku}{8}
+\contentsline {section}{\numberline {2.4}MongoLab}{8}
+\contentsline {section}{\numberline {2.5}Facebook}{8}
+\contentsline {section}{\numberline {2.6}Client Browser}{8}
+\contentsline {chapter}{\numberline {3.}System Design}{9}
+\contentsline {section}{\numberline {3.1}Design Overview}{9}
+\contentsline {section}{\numberline {3.2}Model View Controller Architecture}{9}
+\contentsline {section}{\numberline {3.3}Server-side Architecture Design}{9}
+\contentsline {section}{\numberline {3.4}Mapping of Model Classes to MongoDB}{11}
+\contentsline {section}{\numberline {3.5}Request Handler Operation}{12}
+\contentsline {section}{\numberline {3.6}Client-side Architecutre Design}{12}
+\contentsline {section}{\numberline {3.7}System Interfaces}{12}
+\contentsline {section}{\numberline {3.8}Product Functions}{12}
+\contentsline {chapter}{\numberline {4.}Database Design}{13}
+\contentsline {section}{\numberline {4.1}MongoDB}{13}
+\contentsline {section}{\numberline {4.2}MongoLab}{13}
+\contentsline {section}{\numberline {4.3}Documents}{13}
+\contentsline {section}{\numberline {4.4}Collections}{13}
+\contentsline {chapter}{\numberline {5.}Project Implementation}{14}
+\contentsline {section}{\numberline {5.1}Welcome Screen}{15}
+\contentsline {section}{\numberline {5.2}Login Screen}{16}
+\contentsline {section}{\numberline {5.3}Quarter Screen}{17}
+\contentsline {section}{\numberline {5.4}Courses Screen}{18}
+\contentsline {section}{\numberline {5.5}Add Course Screen}{19}
+\contentsline {section}{\numberline {5.6}Course Details Screen}{20}
+\contentsline {section}{\numberline {5.7}Edit Course Screen}{21}
+\contentsline {section}{\numberline {5.8}Edit Course Name Screen}{22}
+\contentsline {section}{\numberline {5.9}Instructors Screen}{23}
+\contentsline {section}{\numberline {5.10}Add Insructor}{24}
+\contentsline {section}{\numberline {5.11}Delete Insructor}{25}
+\contentsline {section}{\numberline {5.12}Students}{26}
+\contentsline {section}{\numberline {5.13}Add Student}{27}
+\contentsline {section}{\numberline {5.14}Add Multiple Students}{28}
+\contentsline {section}{\numberline {5.15}Edit Student}{29}
+\contentsline {section}{\numberline {5.16}Grades}{30}
+\contentsline {section}{\numberline {5.17}Edit Grades}{31}
+\contentsline {section}{\numberline {5.18}Edit Student Grade}{32}
+\contentsline {section}{\numberline {5.19}Gradable Components}{33}
+\contentsline {section}{\numberline {5.20}Add Gradable Component}{34}
+\contentsline {section}{\numberline {5.21}Edit Gradable Component}{35}
+\contentsline {chapter}{\numberline {6.}Conclusion and Future Direction}{36}
+\contentsline {section}{\numberline {6.1}Conclusion}{36}
+\contentsline {section}{\numberline {6.2}Future Direction}{36}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SERVER SOURCE CODE}}{37}
+\contentsline {chapter}{APPENDIX\nobreakspace {}B: {CLIENT SOURCE CODE}}{39}
+\contentsline {chapter}{References}{41}

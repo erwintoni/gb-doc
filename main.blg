@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: main.bib
+Repeated entry---line 97 of file main.bib
+ : @misc{Heroku
+ :             ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 147 of file main.bib
+ : 
+ : @MISC{PolyModel,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 152 of file main.bib
+ : 
+ : @MISC{OOP,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Heroku
+Warning--to sort, need author or key in API
+Warning--to sort, need author or key in cloudcomputing
+Warning--to sort, need author or key in JQuery
+Warning--to sort, need author or key in w3
+Warning--to sort, need author or key in https
+Warning--to sort, need author or key in mvc
+Warning--to sort, need author or key in uml
+Warning--to sort, need author or key in MicrosoftAzure
+Warning--to sort, need author or key in AWS
+Warning--to sort, need author or key in Android
+Warning--to sort, need author or key in IOS
+Warning--to sort, need author or key in PhoneGap
+Warning--to sort, need author or key in NoSql
+Warning--to sort, need author or key in json
+Warning--to sort, need author or key in Ajax
+Warning--to sort, need author or key in OOP
+Warning--to sort, need author or key in bootstrap
+Warning--to sort, need author or key in mongodb
+Warning--to sort, need author or key in GoogleAppEngine
+Warning--to sort, need author or key in GoogleAppEngineDataStore
+Warning--to sort, need author or key in JqueryMobile
+Warning--to sort, need author or key in Java
+Warning--to sort, need author or key in JavaServlets
+Warning--to sort, need author or key in Jdbc
+Warning--to sort, need author or key in webopedia
+Warning--to sort, need author or key in Eclipse
+Warning--to sort, need author or key in JettyWebServer
+Warning--to sort, need author or key in BigTable
+Warning--to sort, need author or key in Entities
+Warning--to sort, need author or key in Indexes
+Warning--to sort, need author or key in PolyModel
+(There were 3 error messages)

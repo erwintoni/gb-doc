@@ -1,0 +1,175 @@
+\Chapter{Architecture And Design}
+
+\section{Design Overview}
+GradeBoard uses a client-server architecture model. On the server side, it uses Google App Engine Store for storing data and Java Servlets running inside Jetty Web Server for serving requests and responses sent over HTTP(S). On the client side, it uses JQuery Mobile API for building UI components and for communicating with the Web server. The requests and responses on the client side are handled through asynchronous Javascript and XML (Ajax).
+
+\section{Model View Controller Architecture}
+Model View Controller (MVC) architecture is a software design pattern for separating different components of a software application \cite{mvc}. There are three main categories in the MVC architecture:
+
+\begin{itemize}
+\item Model represents data in the application. All the business rules are handled in the model.
+\item View represents UI components in the application. The UI components are responsible for presenting the model and for collecting user inputs.
+\item Controller is responsible for updating the data in the model and notifying the view about changes in the model.
+\end{itemize}
+
+There are several advantages of using an MVC architecture:
+
+\begin{enumerate}
+\item Easy to maintain large applications. 
+\item Easy to identify bugs in the system.
+\item Developers can work on different components based on their expertise.
+\item Reduces clutter in the application logic as the application grows in size.
+\end{enumerate}
+
+In this project, an MVC architecture is used in both server side and in client side components. 
+
+On the server side, all the business rules are implemented using plain Java classes which represent the model. These Java classes are responsible for communicating and updating the Google App Engine datastore. The Java Servlets act as a Controller for dispatching requests and updating the Model. There are no view components on the server side.
+
+On the client side, all business rules are implemented using Javascript objects which represent the model. All the Ajax requests are handled through a controller class. The rendering of HTML markup is handled through a view class. 
+
+In this design, there is a one-to-one mapping between the model represented on the client side with the model represented on the server side. Also, there is a one-to-one mapping between the model represented on the server side with the data stored in the Google App Engine datastore.
+
+A typical workflow of processing user request is as follows:
+
+\begin{itemize}
+\item When a page is requested, the controller is initialized and sends an Ajax request to the server. 
+\item The request arrives on the server side; the Servlet controller parses the input parameters and sends the request to the model.
+\item The model processes input parameters, connects to the Google App Engine datastore and queries the data.
+\item The model sends the response back to the Servlet controller.
+\item The Servlet controller dispatches the response back to the client.
+\item The controller on the client side receives the response and updates the model with new data.
+\item The controller calls on the view to render the data.
+\item The view gets the data from the model and renders the data.
+\item The user views, modifies or inputs new data and submits the request. The controller sends the request to the server and the cycle continues.
+\end{itemize}
+
+The MVC architecture used in GradeBoard for processing user requests is shown in Figure~\ref{fig:mvc_diagram}.
+
+\vspace{3em}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=5.3in,width=5.0in]{images/mvc_diagram.png}
+\caption{MVC architecture in GradeBoard application}
+\label{fig:mvc_diagram}
+\end{center}
+\end{figure}
+
+\section{Detailed Design}
+Besides using an MVC model, the GradeBoard application design completely separates server and client side components. There are no JSP pages for rendering HTML markup from the server side. This gives the flexibility of rendering UI components using the Javascript libraries such as JQuery Mobile. The data communicated between client and server is constructed using JavaScript Object Notation (JSON). JSON provides light weight data communication medium between server and client usually through Ajax. \cite{json}.
+
+\section{Application Components}
+The server side components include the controller and model classes. Controller classes extend from the Java HTTP Servlet class. There are two main controller classes, StudentController and InstructorController, for handling HTTP and HTTPS requests. These controller classes can be thought of as dispatchers for parsing inputs from the HTTP Servlet request object and appropriately calling model objects.
+
+\section{Controller Classes}
+
+The InstructorController class processes the following requests:
+
+\begin{itemize}
+\item Adding, Deleting and Modifying instructors.
+\item Creating, Modifying and Deleting a course.
+\item Creating, Modifying, Deleting Gradable Components for the course.
+\item Modifying Grades.
+\item Generating Grade Sheet.
+\end{itemize}
+
+The StudentController class processes the following requests:
+
+\begin{itemize}
+\item Delete, Modify and Update students.
+\item Allow admin to enter multiple students for a course.
+\item Email student grades
+\end{itemize}
+
+\section{Mapping of Model Classes to Google App Store objects}
+The GradeBoard application uses a one-to-one mapping between Google App Engine datastore object representations to model classes. Besides these mapping, objects in Google App Store can be represented in a hierarchical model by having an ancestor class. This hierarchical architecture can be easily represented in model classes by using inheritance. The Model classes used in this project include:
+
+\begin{itemize}
+\item Course class for Creating, Modifying and Deleting a course.
+\item Component class with Course as an ancestor.
+\item Grade class with Component as ancestor for creating Gradable Components.
+\item Instructor class for storing instructor information.
+\item Auth class for storing authorized Instructor for a course with instructor as an ancestor.
+\item Student class for adding, modifying and deleting students with Course as ancestor.
+\end{itemize}
+
+Internally, the model classes communicate with Google App Engine datastore objects by constructing queries from request objects.
+
+\section{System Interfaces}
+GradeBoard application users interact with the system using web browser on a desktop computer or a mobile device. The requests are sent over network using HTTP or HTTPS protocols. On the server side, GradeBoard application is deployed on a Jetty web server. When a web server receives the request, it calls appropriate application class to process the request. If the request is for data from Google App Store, then a connection is established with Google Data Store to retrieve the  data. After retrieving the data, a response object is created and the data is transfered back to the web browser through HTTP or HTTPS. The deployment diagram for GradeBoard application is shown in Figure~\ref{fig:deployment_diagram}.
+
+\vspace{3em}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=4.5in,width=4.5in]{images/deployment_diagram.png}
+\caption{Deployment Diagram}
+\label{fig:deployment_diagram}
+\end{center}
+\end{figure}
+
+\section{Product Functions}
+
+In the GradeBoard application there are three main users, namely instructor, student and admin. 
+
+Admin characteristics:
+
+\begin{itemize}
+\item Must be logged-in through Google Account as an admin user.
+\item Authorizes instructor to create courses.
+\item Admin adds students to specific course.
+\end{itemize}
+
+'The use case diagram for admin user is shown in Figure~\ref{fig:adminusecase_diagram}.
+
+\vspace{3em}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=1.5in,width=5.0in]{images/adminusecase.jpeg}
+\caption{Admin Use Case Diagram}
+\label{fig:adminusecase_diagram}
+\end{center}
+\end{figure}
+
+Instructor characteristics:
+
+\begin{itemize}
+\item Must be logged-in through Google Account and authorized to modify or create courses.
+\item Creates courses.
+\item Authorizes another instructor to modify the coures.
+\item Creates gradable components.
+\item Assign Scores to Gradable Component for Specific Students.
+\item Emails grade sheet URL to students.
+\end{itemize}
+
+The use case diagram for instructor is shown in Figure~\ref{fig:instructorusecase_diagram}.
+
+\vspace{3em}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=5.0in,width=4.0in]{images/instructorusecase.jpeg}
+\caption{Instructor Use Case Diagram}
+\label{fig:instructorusecase_diagram}
+\end{center}
+\end{figure}
+
+Student characteristics:
+
+\begin{itemize}
+\item Receives grade sheet URL through email.
+\item Views Grades for Specific Course.
+\end{itemize}
+
+The use case diagram for student is shown in Figure~\ref{fig:studentusecase_diagram}.
+
+\vspace{3em}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=2.0in,width=5.0in]{images/studentusecase.jpeg}
+\caption{Student Use Case Diagram}
+\label{fig:studentusecase_diagram}
+\end{center}
+\end{figure}

@@ -1,0 +1,90 @@
+\documentclass{sbthesis} % source: Dr. Keith Schubert
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{url}
+\usepackage{regexpatch}% http://ctan.org/pkg/regexpatch
+\usepackage[titletoc]{APPENDIX}
+\usepackage{listings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% NOTE: I didn't have to do this.  Maybe it's because I'm using Miktex.  -- David Turner
+%
+% Note: bibtex omits page number from first page of bibliography, 
+% which is not acceptable under CSUSB rules.  The following
+% command can be used to fix the problem.  For this to work,
+% you need to insert \FixBib after the first line in the bbl file 
+% that bibtex generates.  Do this each time the bibliography
+% changes.
+%
+% Source: http://www.cs.ubc.ca/~murphyk/Teaching/latex_tips.txt
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\FixBib}{%    PUT \FixBib in file.bbl after first line
+    \setlength{\parsep}{\parskip}%
+    \setlength{\itemsep}{0cm}%
+    \setlength{\topsep}{\parskip}%
+    \setlength{\parskip}{0cm}%
+    \setlength{\partopsep}{0cm}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\labelwidth}{10pt}%
+    \setlength{\labelsep}{0pt}%
+    \setlength{\leftskip}{0pt}%
+    \setlength{\leftmargin}{0pt}%
+}
+
+\title{GRADEBADGE}
+\TitleLineTwo{Development of a Cloud-Based Reward Application}
+\author{Erwin Toni Soekianto}
+\Department
+\EmailAddress{soekiane@coyote.csusb.edu}
+\Advisor{David Turner}
+\Committee{Richard J. Botting}{Arturo I. Concepcion}
+\CSUSBDate{April 2010}
+
+
+\AbstractText{
+The purpose of this project is to investigate the use of cloud-based service to deliver cutting-edge application. For this purpose, the prototype of reward application using badges will be developed to illustrate the emerging paradigms, including the Node.js, NoSQL database using MongoDB, cloud computing using Heroku, and mobile devices.  
+
+In additional to Node.js, web technologies might be used such as HTML (5), Javascript, and CSS, and jQuery Mobile to serve as clients to this application. We would also be using cloud-based source control and repositories, GitHub, which would allow automation in deploying the application. 
+
+The goal of this application is to help any organizations or groups to interact with their members in the fun way. It would keep the members engaged by giving badges as rewards for effort or achievement they have done. In order to gets this application going viral quickly; it would be integrated to social networking sites like Facebook.
+
+}
+
+\AcknowledgementText{
+I would like to thank all the people with whom I have worked while pursuing my master's degree at California State University, San Bernardino (CSUSB). I wish I could list all their names but the list would be too long and I would still probably leave some people out. Studying in the School of Computer Science and Engineering at CSUSB has been a tremendous learning experience, both personally and professionally.
+
+Thank you to the following faculty of the Computer Science and Engineering department for their invaluable guidance, advice, support, help, and patience during this project's long gestation: Dr. David Turner, Dr. Arturo Concepcion and Dr. Richard Botting.
+}
+
+\begin{document}
+\Project  % defined in sbthesis.cls 
+
+\input{introduction}
+\input{architecture}
+\input{system_design}
+\input{database_design}
+\input{userinterface_design}
+\input{conclusion}
+%\input{appendixA}
+%\input{appendixB}
+
+%\appendix  not used, from Dr. Schubert's template
+\appendix
+\input{appendixA}
+\input{appendixB}
+
+\nocite{*}
+\urlstyle{same}
+\raggedright
+\sloppy
+%\renewcommand{\normalsize}{\fontsize{12pt}{12pt}\selectfont} 
+\normalsize
+\Bibliography{main}
+
+\end{document}
