@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  6 APR 2013 16:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  9 APR 2013 16:04
 entering extended mode
 **C:/Users/erwin/Desktop/project/gb-doc/main.tex
 (C:/Users/erwin/Desktop/project/gb-doc/main.tex
@@ -744,189 +744,48 @@ Chapter 4.
 Chapter 5.
 [14
 
-] <images/welcome_screen.jpg, id=88, 316.18124pt x 415.5525pt>
-File: images/welcome_screen.jpg Graphic file (type jpg)
+] <images/loading-screen.jpg, id=88, 570.63188pt x 149.8097pt>
+File: images/loading-screen.jpg Graphic file (type jpg)
 
-<use images/welcome_screen.jpg>
-Package pdftex.def Info: images/welcome_screen.jpg used on input line 12.
-(pdftex.def)             Requested size: 180.67868pt x 274.63326pt.
- [15 <C:/Users/erwin/Desktop/project/gb-doc/images/welcome_screen.jpg>]
-<images/login_screen.jpg, id=94, 298.86656pt x 414.79968pt>
-File: images/login_screen.jpg Graphic file (type jpg)
+<use images/loading-screen.jpg>
+Package pdftex.def Info: images/loading-screen.jpg used on input line 12.
+(pdftex.def)             Requested size: 469.75838pt x 274.67706pt.
 
-<use images/login_screen.jpg>
-Package pdftex.def Info: images/login_screen.jpg used on input line 25.
-(pdftex.def)             Requested size: 180.67572pt x 274.63576pt.
- [16 <C:/Users/erwin/Desktop/project/gb-doc/images/login_screen.jpg>]
-<images/quarter_screen.jpg, id=98, 283.0575pt x 402.00188pt>
-File: images/quarter_screen.jpg Graphic file (type jpg)
+Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
+ [] 
+ []
 
-<use images/quarter_screen.jpg>
-Package pdftex.def Info: images/quarter_screen.jpg used on input line 38.
-(pdftex.def)             Requested size: 180.68106pt x 274.62126pt.
- [17 <C:/Users/erwin/Desktop/project/gb-doc/images/quarter_screen.jpg>]
-<images/courses_screen.jpg, id=102, 283.81032pt x 395.97937pt>
-File: images/courses_screen.jpg Graphic file (type jpg)
+[15 <C:/Users/erwin/Desktop/project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=96, 430.60875pt x 400.49625pt>
+File: images/facebook-login.jpg Graphic file (type jpg)
 
-<use images/courses_screen.jpg>
-Package pdftex.def Info: images/courses_screen.jpg used on input line 51.
-(pdftex.def)             Requested size: 180.68091pt x 274.62784pt.
- [18 <C:/Users/erwin/Desktop/project/gb-doc/images/courses_screen.jpg>]
-<images/addcourse_screen.jpg, id=106, 295.85532pt x 415.5525pt>
-File: images/addcourse_screen.jpg Graphic file (type jpg)
-
-<use images/addcourse_screen.jpg>
-Package pdftex.def Info: images/addcourse_screen.jpg used on input line 64.
-(pdftex.def)             Requested size: 180.67914pt x 274.63326pt.
- [19 <C:/Users/erwin/Desktop/project/gb-doc/images/addcourse_screen.jpg>]
-<images/coursedetails_screen.jpg, id=110, 291.33844pt x 415.5525pt>
-File: images/coursedetails_screen.jpg Graphic file (type jpg)
-
-<use images/coursedetails_screen.jpg>
-Package pdftex.def Info: images/coursedetails_screen.jpg used on input line 77.
-
-(pdftex.def)             Requested size: 180.67686pt x 274.63326pt.
- [20 <C:/Users/erwin/Desktop/project/gb-doc/images/coursedetails_screen.jpg>]
-<images/editcourse_screen.jpg, id=115, 291.33844pt x 416.30531pt>
-File: images/editcourse_screen.jpg Graphic file (type jpg)
-
-<use images/editcourse_screen.jpg>
-Package pdftex.def Info: images/editcourse_screen.jpg used on input line 90.
-(pdftex.def)             Requested size: 180.67686pt x 274.6353pt.
- [21 <C:/Users/erwin/Desktop/project/gb-doc/images/editcourse_screen.jpg>]
-<images/editcoursename_screen.jpg, id=119, 285.31593pt x 402.75468pt>
-File: images/editcoursename_screen.jpg Graphic file (type jpg)
-
-<use images/editcoursename_screen.jpg>
-Package pdftex.def Info: images/editcoursename_screen.jpg used on input line 10
-3.
-(pdftex.def)             Requested size: 180.67294pt x 274.62546pt.
- [22 <C:/Users/erwin/Desktop/project/gb-doc/images/editcoursename_screen.jpg>]
-<images/instructors_screen.jpg, id=123, 283.0575pt x 402.00188pt>
-File: images/instructors_screen.jpg Graphic file (type jpg)
-
-<use images/instructors_screen.jpg>
-Package pdftex.def Info: images/instructors_screen.jpg used on input line 116.
-(pdftex.def)             Requested size: 180.68106pt x 274.62126pt.
- [23 <C:/Users/erwin/Desktop/project/gb-doc/images/instructors_screen.jpg>]
-<images/addinstructor_screen.jpg, id=127, 283.81032pt x 402.75468pt>
-File: images/addinstructor_screen.jpg Graphic file (type jpg)
-
-<use images/addinstructor_screen.jpg>
-Package pdftex.def Info: images/addinstructor_screen.jpg used on input line 129
-.
-(pdftex.def)             Requested size: 180.68091pt x 274.62546pt.
- [24 <C:/Users/erwin/Desktop/project/gb-doc/images/addinstructor_screen.jpg>]
-<images/deleteinstructor_screen.jpg, id=131, 283.81032pt x 402.00188pt>
-File: images/deleteinstructor_screen.jpg Graphic file (type jpg)
-
-<use images/deleteinstructor_screen.jpg>
-Package pdftex.def Info: images/deleteinstructor_screen.jpg used on input line 
-142.
-(pdftex.def)             Requested size: 180.68091pt x 274.62126pt.
- [25 <C:/Users/erwin/Desktop/project/gb-doc/images/deleteinstructor_screen.jpg>
-]
-<images/students_screen.jpg, id=135, 283.0575pt x 402.00188pt>
-File: images/students_screen.jpg Graphic file (type jpg)
-
-<use images/students_screen.jpg>
-Package pdftex.def Info: images/students_screen.jpg used on input line 155.
-(pdftex.def)             Requested size: 180.68106pt x 274.62126pt.
- [26 <C:/Users/erwin/Desktop/project/gb-doc/images/students_screen.jpg>]
-<images/addstudent_screen.jpg, id=140, 283.81032pt x 402.00188pt>
-File: images/addstudent_screen.jpg Graphic file (type jpg)
-
-<use images/addstudent_screen.jpg>
-Package pdftex.def Info: images/addstudent_screen.jpg used on input line 167.
-(pdftex.def)             Requested size: 180.68091pt x 274.62126pt.
- [27 <C:/Users/erwin/Desktop/project/gb-doc/images/addstudent_screen.jpg>]
-<images/addstudentbulk_screen.jpg, id=144, 283.0575pt x 402.00188pt>
-File: images/addstudentbulk_screen.jpg Graphic file (type jpg)
-
-<use images/addstudentbulk_screen.jpg>
-Package pdftex.def Info: images/addstudentbulk_screen.jpg used on input line 18
-0.
-(pdftex.def)             Requested size: 180.68106pt x 274.62126pt.
- [28 <C:/Users/erwin/Desktop/project/gb-doc/images/addstudentbulk_screen.jpg>]
-<images/editstudent_screen.jpg, id=148, 286.82156pt x 402.00188pt>
-File: images/editstudent_screen.jpg Graphic file (type jpg)
-
-<use images/editstudent_screen.jpg>
-Package pdftex.def Info: images/editstudent_screen.jpg used on input line 194.
-(pdftex.def)             Requested size: 180.67665pt x 274.62126pt.
- [29 <C:/Users/erwin/Desktop/project/gb-doc/images/editstudent_screen.jpg>]
-<images/grades_screen.jpg, id=152, 291.33844pt x 408.77719pt>
-File: images/grades_screen.jpg Graphic file (type jpg)
-
-<use images/grades_screen.jpg>
-Package pdftex.def Info: images/grades_screen.jpg used on input line 207.
-(pdftex.def)             Requested size: 180.67686pt x 274.64026pt.
- [30 <C:/Users/erwin/Desktop/project/gb-doc/images/grades_screen.jpg>]
-<images/editgrades_screen.jpg, id=156, 294.34969pt x 411.78844pt>
-File: images/editgrades_screen.jpg Graphic file (type jpg)
-
-<use images/editgrades_screen.jpg>
-Package pdftex.def Info: images/editgrades_screen.jpg used on input line 220.
-(pdftex.def)             Requested size: 180.67589pt x 274.62756pt.
- [31 <C:/Users/erwin/Desktop/project/gb-doc/images/editgrades_screen.jpg>]
-<images/editstudentgrade_screen.jpg, id=160, 283.81032pt x 404.26031pt>
-File: images/editstudentgrade_screen.jpg Graphic file (type jpg)
-
-<use images/editstudentgrade_screen.jpg>
-Package pdftex.def Info: images/editstudentgrade_screen.jpg used on input line 
-233.
-(pdftex.def)             Requested size: 180.68091pt x 274.62813pt.
- [32 <C:/Users/erwin/Desktop/project/gb-doc/images/editstudentgrade_screen.jpg>
-]
-<images/gradablecomponents_screen.jpg, id=165, 280.04625pt x 394.47375pt>
-File: images/gradablecomponents_screen.jpg Graphic file (type jpg)
-
-<use images/gradablecomponents_screen.jpg>
-Package pdftex.def Info: images/gradablecomponents_screen.jpg used on input lin
-e 247.
-(pdftex.def)             Requested size: 180.68184pt x 274.62494pt.
- [33 <C:/Users/erwin/Desktop/project/gb-doc/images/gradablecomponents_screen.jp
-g>]
-<images/addgradablecomponent_screen.jpg, id=169, 282.30469pt x 402.00188pt>
-File: images/addgradablecomponent_screen.jpg Graphic file (type jpg)
-
-<use images/addgradablecomponent_screen.jpg>
-Package pdftex.def Info: images/addgradablecomponent_screen.jpg used on input l
-ine 260.
-(pdftex.def)             Requested size: 180.67868pt x 274.62126pt.
- [34 <C:/Users/erwin/Desktop/project/gb-doc/images/addgradablecomponent_screen.
-jpg>]
-<images/editgradablecomponent_screen.jpg, id=173, 283.0575pt x 402.00188pt>
-File: images/editgradablecomponent_screen.jpg Graphic file (type jpg)
-
-<use images/editgradablecomponent_screen.jpg>
-Package pdftex.def Info: images/editgradablecomponent_screen.jpg used on input 
-line 272.
-(pdftex.def)             Requested size: 180.68106pt x 274.62126pt.
+<use images/facebook-login.jpg>
+Package pdftex.def Info: images/facebook-login.jpg used on input line 25.
+(pdftex.def)             Requested size: 180.67703pt x 274.64383pt.
 )
-(C:\Users\erwin\Desktop\project\gb-doc\conclusion.tex [35 <C:/Users/erwin/Deskt
-op/project/gb-doc/images/editgradablecomponent_screen.jpg>]
+(C:\Users\erwin\Desktop\project\gb-doc\conclusion.tex [16 <C:/Users/erwin/Deskt
+op/project/gb-doc/images/facebook-login.jpg>]
 Chapter 6.
-) (C:\Users\erwin\Desktop\project\gb-doc\appendixA.tex [36
+) (C:\Users\erwin\Desktop\project\gb-doc\appendixA.tex [17
 
-] [37
-
-])
-(C:\Users\erwin\Desktop\project\gb-doc\appendixB.tex [38] [39
+] [18
 
 ])
-(C:\Users\erwin\Desktop\project\gb-doc\main.bbl [40] [41
+(C:\Users\erwin\Desktop\project\gb-doc\appendixB.tex [19] [20
 
-] [42]) [43]
+])
+(C:\Users\erwin\Desktop\project\gb-doc\main.bbl [21] [22
+
+] [23]) [24]
 (C:\Users\erwin\Desktop\project\gb-doc\main.aux) ) 
 Here is how much of TeX's memory you used:
- 10597 strings out of 493921
- 188379 string characters out of 3144877
- 236420 words of memory out of 3000000
- 13689 multiletter control sequences out of 15000+200000
+ 10483 strings out of 493921
+ 184800 string characters out of 3144877
+ 234199 words of memory out of 3000000
+ 13594 multiletter control sequences out of 15000+200000
  9693 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,11n,45p,621b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,45p,605b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\erwin\AppData\Loca
 l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1728.pk>{C:/Program Files (
 x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 
@@ -939,9 +798,9 @@ pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/c
 ourier/ucrr8a.pfb>
-Output written on main.pdf (54 pages, 839124 bytes).
+Output written on main.pdf (35 pages, 198395 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
