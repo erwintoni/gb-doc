@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  9 APR 2013 16:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  9 APR 2013 17:47
 entering extended mode
-**C:/Users/erwin/Desktop/project/gb-doc/main.tex
-(C:/Users/erwin/Desktop/project/gb-doc/main.tex
+**C:/Users/erwin/Desktop/Project/gb-doc/main.tex
+(C:/Users/erwin/Desktop/Project/gb-doc/main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\erwin\Desktop\project\gb-doc\sbthesis.cls
+(C:\Users\erwin\Desktop\Project\gb-doc\sbthesis.cls
 Document Class: sbthesis 2010/01/27 CSUSB Thesis Class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -594,7 +594,7 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(C:\Users\erwin\Desktop\project\gb-doc\main.aux)
+(C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
@@ -694,57 +694,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--66
 
 ] [4
 
-] (C:\Users\erwin\Desktop\project\gb-doc\main.toc [5
+] (C:\Users\erwin\Desktop\Project\gb-doc\main.toc [5
 
 ] [6])
 \tf@toc=\write3
 
-[7] (C:\Users\erwin\Desktop\project\gb-doc\main.lot)
+[7] (C:\Users\erwin\Desktop\Project\gb-doc\main.lot)
 \tf@lot=\write4
  [8
 
 
 ]
-(C:\Users\erwin\Desktop\project\gb-doc\main.lof)
+(C:\Users\erwin\Desktop\Project\gb-doc\main.lof)
 \tf@lof=\write5
  [9
 
 
 ]
-(C:\Users\erwin\Desktop\project\gb-doc\introduction.tex
+(C:\Users\erwin\Desktop\Project\gb-doc\introduction.tex
 Chapter 1.
 [1
 
 
-] [2] [3] [4]
-Overfull \hbox (11.2604pt too wide) in paragraph at lines 80--81
+] [2] [3] [4] [5] [6]
+Overfull \hbox (11.2604pt too wide) in paragraph at lines 95--96
 []\OT1/cmr/m/n/12 NoSQL: Uses key-value pairs for stor-ing data un-like tra-di-
 tional Re-la-tional Database
  []
 
-[5]) (C:\Users\erwin\Desktop\project\gb-doc\architecture.tex [6]
+) (C:\Users\erwin\Desktop\Project\gb-doc\architecture.tex [7]
 Chapter 2.
-[7
+[8
 
-]) (C:\Users\erwin\Desktop\project\gb-doc\system_design.tex [8]
+]) (C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [9]
 Chapter 3.
-[9
+[10
 
-] [10]
+] [11]
 Overfull \hbox (21.21776pt too wide) in paragraph at lines 50--51
 \OT1/cmr/m/n/12 There will be one node js mod-ule to han-dle ajax re-quest from
  client, named op[](request).js.
  []
 
-[11]) (C:\Users\erwin\Desktop\project\gb-doc\database_design.tex [12]
+[12]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [13]
 Chapter 4.
-) (C:\Users\erwin\Desktop\project\gb-doc\userinterface_design.tex [13
+) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [14
 
 ]
 Chapter 5.
-[14
+[15
 
-] <images/loading-screen.jpg, id=88, 570.63188pt x 149.8097pt>
+] <images/loading-screen.jpg, id=91, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -755,29 +755,29 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[15 <C:/Users/erwin/Desktop/project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=96, 430.60875pt x 400.49625pt>
+[16 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=99, 430.60875pt x 400.49625pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
 Package pdftex.def Info: images/facebook-login.jpg used on input line 25.
 (pdftex.def)             Requested size: 180.67703pt x 274.64383pt.
 )
-(C:\Users\erwin\Desktop\project\gb-doc\conclusion.tex [16 <C:/Users/erwin/Deskt
-op/project/gb-doc/images/facebook-login.jpg>]
+(C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [17 <C:/Users/erwin/Deskt
+op/Project/gb-doc/images/facebook-login.jpg>]
 Chapter 6.
-) (C:\Users\erwin\Desktop\project\gb-doc\appendixA.tex [17
+) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [18
 
-] [18
-
-])
-(C:\Users\erwin\Desktop\project\gb-doc\appendixB.tex [19] [20
+] [19
 
 ])
-(C:\Users\erwin\Desktop\project\gb-doc\main.bbl [21] [22
+(C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [20] [21
 
-] [23]) [24]
-(C:\Users\erwin\Desktop\project\gb-doc\main.aux) ) 
+])
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [22] [23
+
+] [24]) [25]
+(C:\Users\erwin\Desktop\Project\gb-doc\main.aux) ) 
 Here is how much of TeX's memory you used:
  10483 strings out of 493921
  184800 string characters out of 3144877
@@ -798,9 +798,9 @@ pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/c
 ourier/ucrr8a.pfb>
-Output written on main.pdf (35 pages, 198395 bytes).
+Output written on main.pdf (36 pages, 200777 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
+ 164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
