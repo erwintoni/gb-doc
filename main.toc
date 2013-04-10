@@ -39,11 +39,12 @@
 \contentsline {section}{\numberline {4.2}MongoLab}{14}
 \contentsline {section}{\numberline {4.3}Documents}{14}
 \contentsline {section}{\numberline {4.4}Collections}{14}
-\contentsline {chapter}{\numberline {5.}Project Implementation}{15}
-\contentsline {section}{\numberline {5.1}Loading Screen}{16}
-\contentsline {section}{\numberline {5.2}Login Screen}{17}
-\contentsline {chapter}{\numberline {6.}Conclusion and Future Direction}{18}
-\contentsline {section}{\numberline {6.1}Conclusion}{18}
-\contentsline {section}{\numberline {6.2}Future Direction}{18}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SOURCE CODE}}{19}
-\contentsline {chapter}{References}{21}
+\contentsline {section}{\numberline {4.5}Data Model}{15}
+\contentsline {chapter}{\numberline {5.}Project Implementation}{16}
+\contentsline {section}{\numberline {5.1}Loading Screen}{17}
+\contentsline {section}{\numberline {5.2}Login Screen}{18}
+\contentsline {chapter}{\numberline {6.}Conclusion and Future Direction}{19}
+\contentsline {section}{\numberline {6.1}Conclusion}{19}
+\contentsline {section}{\numberline {6.2}Future Direction}{19}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SOURCE CODE}}{20}
+\contentsline {chapter}{References}{22}

@@ -9,7 +9,26 @@ Explain Document-oriented design
 MongoLab is the cloud computing provider for MongoDB database, easily integrated with Heroku.
 
 \section{Documents}
+Data in MongoDB is stored in documents.
 
 \section{Collections}
+Documents in MongoDB are organized in colletion
+
+\section{Data Model}
+In this project, there are three main collections, User, Group and Badge Colletion. And there are four linkings colletions to represent the many-to-many relationship between the main collections.
+
+Collections diagram
+
+\begin{itemize}
+\item user : this collection contains the user information
+\item group : this collection contains the group information  
+\item badge : this collection contains the badge information
+\item group{\_}admin{\_}links : this linking collection contains group{\_}id and user{\_}id, which represent the admin of a group
+\item group{\_}member{\_}links : this linking collection contains group{\_}id and user{\_}id, which represent the member of a group
+\item badge{\_}user{\_}links : this linking colletion contains badge{\_}id and user{\_}id, which reperesnt badges that user earned
+\item group{\_}badge{\_}links : think linking collection contains group{\_}id and badge{\_}id, which represent badges that belong to a group
+\end{itemize}
+
+
 
 
