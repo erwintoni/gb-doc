@@ -45,6 +45,5 @@
 \contentsline {chapter}{\numberline {6.}Conclusion and Future Direction}{18}
 \contentsline {section}{\numberline {6.1}Conclusion}{18}
 \contentsline {section}{\numberline {6.2}Future Direction}{18}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SERVER SOURCE CODE}}{19}
-\contentsline {chapter}{APPENDIX\nobreakspace {}B: {CLIENT SOURCE CODE}}{21}
-\contentsline {chapter}{References}{23}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SOURCE CODE}}{19}
+\contentsline {chapter}{References}{21}
