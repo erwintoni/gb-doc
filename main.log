@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  9 APR 2013 17:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  9 APR 2013 18:22
 entering extended mode
 **C:/Users/erwin/Desktop/Project/gb-doc/main.tex
 (C:/Users/erwin/Desktop/Project/gb-doc/main.tex
@@ -717,7 +717,7 @@ Chapter 1.
 
 
 ] [2] [3] [4] [5] [6]
-Overfull \hbox (11.2604pt too wide) in paragraph at lines 95--96
+Overfull \hbox (11.2604pt too wide) in paragraph at lines 98--99
 []\OT1/cmr/m/n/12 NoSQL: Uses key-value pairs for stor-ing data un-like tra-di-
 tional Re-la-tional Database
  []
@@ -798,7 +798,7 @@ pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/c
 ourier/ucrr8a.pfb>
-Output written on main.pdf (36 pages, 200777 bytes).
+Output written on main.pdf (36 pages, 201382 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
