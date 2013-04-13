@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  13 APR 2013 14:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  13 APR 2013 15:32
 entering extended mode
 **C:/Users/erwin/Desktop/Project/gb-doc/main.tex
 (C:/Users/erwin/Desktop/Project/gb-doc/main.tex
@@ -716,15 +716,19 @@ Chapter 1.
 [1
 
 
-] [2] [3] [4] [5] [6]
-Overfull \hbox (11.2604pt too wide) in paragraph at lines 94--95
+] [2] [3] [4] [5]
+
+LaTeX Warning: Citation `cloudcomputing' on page 6 undefined on input line 78.
+
+[6]
+Overfull \hbox (11.2604pt too wide) in paragraph at lines 92--93
 []\OT1/cmr/m/n/12 NoSQL: Uses key-value pairs for stor-ing data un-like tra-di-
 tional Re-la-tional Database
  []
 
 ) (C:\Users\erwin\Desktop\Project\gb-doc\requirements.tex [7]
 Chapter 2.
-<images/UseCase.png, id=65, 396.7623pt x 247.8861pt>
+<images/UseCase.png, id=66, 396.7623pt x 247.8861pt>
 File: images/UseCase.png Graphic file (type png)
  <use images/UseCase.png>
 Package pdftex.def Info: images/UseCase.png used on input line 24.
@@ -739,27 +743,51 @@ Overfull \hbox (36.14766pt too wide) in paragraph at lines 24--25
 ] [9 <C:/Users/erwin/Desktop/Project/gb-doc/images/UseCase.png>])
 (C:\Users\erwin\Desktop\Project\gb-doc\architecture.tex [10]
 Chapter 3.
+<images/deployment.png, id=81, 733.23938pt x 660.96938pt>
+File: images/deployment.png Graphic file (type png)
+
+<use images/deployment.png>
+Package pdftex.def Info: images/deployment.png used on input line 9.
+(pdftex.def)             Requested size: 469.76389pt x 274.63pt.
+
+Overfull \hbox (36.14388pt too wide) in paragraph at lines 9--10
+ [] 
+ []
+
+<images/systemIntegration.png, id=82, 432.11438pt x 411.78844pt>
+File: images/systemIntegration.png Graphic file (type png)
+
+<use images/systemIntegration.png>
+Package pdftex.def Info: images/systemIntegration.png used on input line 21.
+(pdftex.def)             Requested size: 469.77553pt x 274.62756pt.
+
+Overfull \hbox (36.15552pt too wide) in paragraph at lines 21--22
+ [] 
+ []
+
 [11
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [12]
+ <C:/Users/erwin/Desktop/Project/gb-doc/images/deployment.png>] [12 <C:/Users/e
+rwin/Desktop/Project/gb-doc/images/systemIntegration.png>] [13])
+(C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [14]
 Chapter 4.
-[13
+[15
 
-] [14]
-Overfull \hbox (21.21776pt too wide) in paragraph at lines 50--51
+] [16] [17]
+Overfull \hbox (21.21776pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/12 There will be one node js mod-ule to han-dle ajax re-quest from
  client, named op[](request).js.
  []
 
-[15]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [16]
+[18]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [19]
 Chapter 5.
-[17
+[20
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [18]
+]) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [21]
 Chapter 6.
-[19
+[22
 
-] <images/loading-screen.jpg, id=108, 570.63188pt x 149.8097pt>
+] <images/loading-screen.jpg, id=122, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -770,49 +798,53 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[20 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=114, 430.60875pt x 400.49625pt>
+[23 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=127, 430.60875pt x 400.49625pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
 Package pdftex.def Info: images/facebook-login.jpg used on input line 25.
 (pdftex.def)             Requested size: 180.67703pt x 274.64383pt.
 )
-(C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [21 <C:/Users/erwin/Deskt
+(C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [24 <C:/Users/erwin/Deskt
 op/Project/gb-doc/images/facebook-login.jpg>]
 Chapter 7.
-) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [22
+) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [25
 
-] [23
+] [26
 
 ])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [24] [25
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [27] [28
 
-] [26]) [27]
-(C:\Users\erwin\Desktop\Project\gb-doc\main.aux) ) 
+]) [29]
+(C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10490 strings out of 493921
- 184929 string characters out of 3144877
- 234209 words of memory out of 3000000
- 13599 multiletter control sequences out of 15000+200000
- 9693 words of font info for 34 fonts, out of 3000000 for 9000
+ 10504 strings out of 493921
+ 185254 string characters out of 3144877
+ 233227 words of memory out of 3000000
+ 13610 multiletter control sequences out of 15000+200000
+ 10000 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,11n,45p,605b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\erwin\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1728.pk>{C:/Program Files (
-x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsl9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/c
-ourier/ucrr8a.pfb>
-Output written on main.pdf (38 pages, 224509 bytes).
+ <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+tcrm1728.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on main.pdf (40 pages, 285495 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 188 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

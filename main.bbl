@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{mongodb}
-Agile and scalable.
-\newblock \url{http://www.mongodb.org/}.
-
 \bibitem{Ajax}
 Ajax (programming).
 \newblock \url{http://en.wikipedia.org/wiki/Ajax_(programming)}.
@@ -20,10 +16,6 @@ Android {Mobile Computing Platform}.
 Bootstrap.
 \newblock \url{http://twitter.github.com/bootstrap/}.
 
-\bibitem{cloudcomputing}
-Cloud {Computing Document}.
-\newblock \url{http://www.en.wikipedia.org/wiki/Cloud\_computing}.
-
 \bibitem{Eclipse}
 Eclipse {Founcation}.
 \newblock \url{http://www.eclipse.org/}.
@@ -32,6 +24,14 @@ Eclipse {Founcation}.
 Entities, {Properties, and Keys}.
 \newblock
   \url{https://developers.google.com/appengine/docs/java/datastore/entities}.
+
+\bibitem{Facebook}
+Facebook {Developers}.
+\newblock \url{https://developers.facebook.com}.
+
+\bibitem{github}
+Github.
+\newblock \url{https://github.com/}.
 
 \bibitem{API}
 Glossary.
@@ -64,10 +64,6 @@ Index {Definition and Structure}.
 {IOS Mobile Computing Platform}.
 \newblock \url{http://en.wikipedia.org/wiki/IOS}.
 
-\bibitem{Jdbc}
-Java {Database Connectivity}.
-\newblock \url{http://docs.oracle.com/javase/6/docs/technotes/guides/jdbc}.
-
 \bibitem{JettyWebServer}
 Jetty (web server).
 \newblock \url{http://en.wikipedia.org/wiki/Jetty_(web_server)}.
@@ -85,9 +81,17 @@ Jquery {Official Document}.
 Json.
 \newblock \url{http://en.wikipedia.org/wiki/Json}.
 
-\bibitem{mvc}
-Model view controller.
-\newblock \url{http://en.wikipedia.org/wiki/Model-view-controller}.
+\bibitem{mongodb}
+Mongodb {Agile and Scalable}.
+\newblock \url{http://www.mongodb.org/}.
+
+\bibitem{mongolab}
+Mongolab.
+\newblock \url{http://www.mongodb.org/}.
+
+\bibitem{nodejs}
+Node.js {Manual and Documentation}.
+\newblock \url{http://nodejs.org/api/}.
 
 \bibitem{NoSql}
 Nosql.
@@ -97,17 +101,9 @@ Nosql.
 Official {Documentation of Google App Engine Java Datastore}.
 \newblock \url{https://developers.google.com/appengine/docs/java/datastore/}.
 
-\bibitem{JavaServlets}
-Official {Documentation of Java Servlet Technology}.
-\newblock \url{http://www.oracle.com/technetwork/java/whitepaper-135196.html}.
-
 \bibitem{Java}
 Official {Java Technology Document}.
 \newblock \url{http://www.java.com/en/download/faq/whatis_java.xml}.
-
-\bibitem{PhoneGap}
-Phone{Gap}.
-\newblock \url{http://phonegap.com/}.
 
 \bibitem{PolyModel}
 Poly{Model}.
@@ -121,10 +117,6 @@ Unified {Modeling Language}.
 \bibitem{w3}
 {W3C} community.
 \newblock \url{http://www.w3.org/TR/REC-html40/}.
-
-\bibitem{webopedia}
-Webopedia {Definitions And Terms}.
-\newblock \url{http://www.webopedia.com/TERM/J/J2EE.html/}.
 
 \bibitem{OOP}
 What is an {Object}?
@@ -140,5 +132,10 @@ Manoj Kulkarni.
 \newblock {\em GradeBoard: A Cloud-Based Solution for a Student Grading
   System}.
 \newblock CSUSB - Masters Project, 2013.
+
+\bibitem{MVC}
+Ph.D Steve~Burbeck.
+\newblock Mvc {How to use Model-View-Controller}.
+\newblock \url{http://st-www.cs.illinois.edu/users/smarch/st-docs/mvc.html}.
 
 \end{thebibliography}
