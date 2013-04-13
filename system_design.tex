@@ -4,10 +4,17 @@
 All incoming AJAX requests are submitted using HTTP POST and contain data encoded using JSON..... 
 
 \section{Model View Controller Architecture}
-This application is based on Model View Controller Architecture..... There are two sections of this project, Server-side and Client-side... 
+This application is based on Model View Controller (MVC) Architecture. Model View Controller (MVC) architecture is a software design pattern for separating different components of a software application.  \cite{MVC} There are three main categories
+in the MVC architecture:
+
+\begin{itemize}
+\item Model : it represents data in the application. All the business rules are handled in the model.
+\item View: it represents UI components in the application. The UI components are responsible for presenting the model and for collecting user inputs.
+\item Controller: it is responsible for updating the data in the model and notifying the view about changes in the model.
+
+There are two sections of this project, Server-side and Client-side as described in the following
 
 \section{Server-side Architecture Design}
-
 
 All node js modules that start with req{\_}*.js are request handler that get requested from router.js. All ajax requests will go through req{\_}op.js, that verifies the user logged-in to Facebook and app{\_}version is current. Every req{\_}op.js request must contains Facebook access{\_}token and app{\_}version. If the user is not logged-in to Facebook, req{\_}op.js returns the following JSON document, {login:true}, if the version is not current, then req{\_}op.js return the following JSON document, {ver:true}. 
 
@@ -71,7 +78,4 @@ There will be one node js module to handle ajax request from client, named op{\_
 \end{itemize}
 
 
-\section{System Interfaces}
-
-\section{Product Functions}
 

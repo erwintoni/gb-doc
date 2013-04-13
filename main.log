@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  9 APR 2013 19:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  13 APR 2013 14:29
 entering extended mode
 **C:/Users/erwin/Desktop/Project/gb-doc/main.tex
 (C:/Users/erwin/Desktop/Project/gb-doc/main.tex
@@ -722,29 +722,44 @@ Overfull \hbox (11.2604pt too wide) in paragraph at lines 94--95
 tional Re-la-tional Database
  []
 
-) (C:\Users\erwin\Desktop\Project\gb-doc\architecture.tex [7]
+) (C:\Users\erwin\Desktop\Project\gb-doc\requirements.tex [7]
 Chapter 2.
+<images/UseCase.png, id=65, 396.7623pt x 247.8861pt>
+File: images/UseCase.png Graphic file (type png)
+ <use images/UseCase.png>
+Package pdftex.def Info: images/UseCase.png used on input line 24.
+(pdftex.def)             Requested size: 469.76767pt x 274.63483pt.
+
+Overfull \hbox (36.14766pt too wide) in paragraph at lines 24--25
+ [] 
+ []
+
 [8
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [9]
+] [9 <C:/Users/erwin/Desktop/Project/gb-doc/images/UseCase.png>])
+(C:\Users\erwin\Desktop\Project\gb-doc\architecture.tex [10]
 Chapter 3.
-[10
+[11
 
-] [11]
+]) (C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [12]
+Chapter 4.
+[13
+
+] [14]
 Overfull \hbox (21.21776pt too wide) in paragraph at lines 50--51
 \OT1/cmr/m/n/12 There will be one node js mod-ule to han-dle ajax re-quest from
  client, named op[](request).js.
  []
 
-[12]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [13]
-Chapter 4.
-[14
-
-]) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [15]
+[15]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [16]
 Chapter 5.
-[16
+[17
 
-] <images/loading-screen.jpg, id=94, 570.63188pt x 149.8097pt>
+]) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [18]
+Chapter 6.
+[19
+
+] <images/loading-screen.jpg, id=108, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -755,31 +770,31 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[17 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=102, 430.60875pt x 400.49625pt>
+[20 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=114, 430.60875pt x 400.49625pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
 Package pdftex.def Info: images/facebook-login.jpg used on input line 25.
 (pdftex.def)             Requested size: 180.67703pt x 274.64383pt.
 )
-(C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [18 <C:/Users/erwin/Deskt
+(C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [21 <C:/Users/erwin/Deskt
 op/Project/gb-doc/images/facebook-login.jpg>]
-Chapter 6.
-) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [19
+Chapter 7.
+) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [22
 
-] [20
+] [23
 
 ])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [21] [22
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [24] [25
 
-] [23]) [24]
+] [26]) [27]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux) ) 
 Here is how much of TeX's memory you used:
- 10480 strings out of 493921
- 184689 string characters out of 3144877
- 234199 words of memory out of 3000000
- 13594 multiletter control sequences out of 15000+200000
+ 10490 strings out of 493921
+ 184929 string characters out of 3144877
+ 234209 words of memory out of 3000000
+ 13599 multiletter control sequences out of 15000+200000
  9693 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,11n,45p,605b,871s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -795,9 +810,9 @@ pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/c
 ourier/ucrr8a.pfb>
-Output written on main.pdf (35 pages, 201839 bytes).
+Output written on main.pdf (38 pages, 224509 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,9 +1,11 @@
 \thispagestyle {fancy}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Use Case Diagram}}{9}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces GradeBadge Loading Screen}}{17}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces GradeBadge Login Screen}}{18}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces GradeBadge Loading Screen}}{20}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces GradeBadge Login Screen}}{21}
 \addvspace {10pt}

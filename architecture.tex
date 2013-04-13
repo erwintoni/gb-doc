@@ -1,10 +1,28 @@
 \Chapter{System Architecture}
 
 \section{Overview}
-This application uses HTTPS exclusively for security reason, except in local developer environment we use HTTP. 
+This application uses HTTPS exclusively for security reason, except in local developer environment we use HTTP, as shown in Figure ~\ref{fig:deployment}.
+
+\vspace{3em}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=3.8in,width=6.5in]{images/deployment.png}
+\caption{Deployment Diagram}
+\label{fig:deployment}
+\end{center}
+\end{figure}
 
 \section{Deployment Workflow}
-There are three type of environments used in the deployment workflow: Development, Staging and Production. And this is how the workflow will look like:
+There are three type of environments used in the deployment workflow: Development, Staging and Production. And this is how the workflow will look like in Figure  ~\ref{fig:system-integration}.
+
+\vspace{3em}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=3.8in,width=6.5in]{images/systemIntergration.png}
+\caption{System Integration}
+\label{fig:system-integration}
+\end{center}
+\end{figure}
 
 \begin{itemize}
 \item Developers work on new features or bugs fixing in development branch. Only minor updates are committed directly to stable development branch.

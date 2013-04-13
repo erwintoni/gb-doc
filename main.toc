@@ -18,33 +18,48 @@
 \contentsline {section}{\numberline {1.12}Related Work}{5}
 \contentsline {section}{\numberline {1.13}Project Limitations}{5}
 \contentsline {section}{\numberline {1.14}Definitions, Acronyms, and Abbreviations}{5}
-\contentsline {chapter}{\numberline {2.}System Architecture}{8}
-\contentsline {section}{\numberline {2.1}Overview}{8}
-\contentsline {section}{\numberline {2.2}Deployment Workflow}{8}
-\contentsline {section}{\numberline {2.3}Heroku}{9}
-\contentsline {section}{\numberline {2.4}MongoLab}{9}
-\contentsline {section}{\numberline {2.5}Facebook}{9}
-\contentsline {section}{\numberline {2.6}Client Browser}{9}
-\contentsline {chapter}{\numberline {3.}System Design}{10}
-\contentsline {section}{\numberline {3.1}Design Overview}{10}
-\contentsline {section}{\numberline {3.2}Model View Controller Architecture}{10}
-\contentsline {section}{\numberline {3.3}Server-side Architecture Design}{10}
-\contentsline {section}{\numberline {3.4}Mapping of Model Classes to MongoDB}{12}
-\contentsline {section}{\numberline {3.5}Request Handler Operation}{13}
-\contentsline {section}{\numberline {3.6}Client-side Architecutre Design}{13}
-\contentsline {section}{\numberline {3.7}System Interfaces}{13}
-\contentsline {section}{\numberline {3.8}Product Functions}{13}
-\contentsline {chapter}{\numberline {4.}Database Design}{14}
-\contentsline {section}{\numberline {4.1}MongoDB}{14}
-\contentsline {section}{\numberline {4.2}MongoLab}{14}
-\contentsline {section}{\numberline {4.3}Documents}{14}
-\contentsline {section}{\numberline {4.4}Collections}{14}
-\contentsline {section}{\numberline {4.5}Data Model}{15}
-\contentsline {chapter}{\numberline {5.}Project Implementation}{16}
-\contentsline {section}{\numberline {5.1}Loading Screen}{17}
-\contentsline {section}{\numberline {5.2}Login Screen}{18}
-\contentsline {chapter}{\numberline {6.}Conclusion and Future Direction}{19}
-\contentsline {section}{\numberline {6.1}Conclusion}{19}
-\contentsline {section}{\numberline {6.2}Future Direction}{19}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SOURCE CODE}}{20}
-\contentsline {chapter}{References}{22}
+\contentsline {chapter}{\numberline {2.}Specific Requirement}{8}
+\contentsline {section}{\numberline {2.1}External Interfaces Requirement}{8}
+\contentsline {subsection}{\numberline {2.1.1}Hardware Interfaces}{8}
+\contentsline {subsection}{\numberline {2.1.2}Software Interfaces}{8}
+\contentsline {subsection}{\numberline {2.1.3}Communication Interfaces}{8}
+\contentsline {section}{\numberline {2.2}Functional Requirement}{8}
+\contentsline {subsection}{\numberline {2.2.1}Create group}{9}
+\contentsline {subsection}{\numberline {2.2.2}Create Badge}{9}
+\contentsline {subsection}{\numberline {2.2.3}Add Member}{9}
+\contentsline {subsection}{\numberline {2.2.4}Issue Badges to Members}{10}
+\contentsline {subsection}{\numberline {2.2.5}View Badge Earned}{10}
+\contentsline {subsection}{\numberline {2.2.6}Share Badge to Social Networking}{10}
+\contentsline {section}{\numberline {2.3}Performance Requirement}{10}
+\contentsline {section}{\numberline {2.4}Design Constraint}{10}
+\contentsline {section}{\numberline {2.5}Software System Attributes}{10}
+\contentsline {chapter}{\numberline {3.}System Architecture}{11}
+\contentsline {section}{\numberline {3.1}Overview}{11}
+\contentsline {section}{\numberline {3.2}Deployment Workflow}{11}
+\contentsline {section}{\numberline {3.3}Heroku}{12}
+\contentsline {section}{\numberline {3.4}MongoLab}{12}
+\contentsline {section}{\numberline {3.5}Facebook}{12}
+\contentsline {section}{\numberline {3.6}Client Browser}{12}
+\contentsline {chapter}{\numberline {4.}System Design}{13}
+\contentsline {section}{\numberline {4.1}Design Overview}{13}
+\contentsline {section}{\numberline {4.2}Model View Controller Architecture}{13}
+\contentsline {section}{\numberline {4.3}Server-side Architecture Design}{13}
+\contentsline {section}{\numberline {4.4}Mapping of Model Classes to MongoDB}{15}
+\contentsline {section}{\numberline {4.5}Request Handler Operation}{16}
+\contentsline {section}{\numberline {4.6}Client-side Architecutre Design}{16}
+\contentsline {section}{\numberline {4.7}System Interfaces}{16}
+\contentsline {section}{\numberline {4.8}Product Functions}{16}
+\contentsline {chapter}{\numberline {5.}Database Design}{17}
+\contentsline {section}{\numberline {5.1}MongoDB}{17}
+\contentsline {section}{\numberline {5.2}MongoLab}{17}
+\contentsline {section}{\numberline {5.3}Documents}{17}
+\contentsline {section}{\numberline {5.4}Collections}{18}
+\contentsline {section}{\numberline {5.5}Data Model}{18}
+\contentsline {chapter}{\numberline {6.}Project Implementation}{19}
+\contentsline {section}{\numberline {6.1}Loading Screen}{20}
+\contentsline {section}{\numberline {6.2}Login Screen}{21}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{22}
+\contentsline {section}{\numberline {7.1}Conclusion}{22}
+\contentsline {section}{\numberline {7.2}Future Direction}{22}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {SOURCE CODE}}{23}
+\contentsline {chapter}{References}{25}
