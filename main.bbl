@@ -16,6 +16,10 @@ Android {Mobile Computing Platform}.
 Bootstrap.
 \newblock \url{http://twitter.github.com/bootstrap/}.
 
+\bibitem{DOM}
+Dom {Document Object Model}.
+\newblock \url{http://www.w3.org/DOM}.
+
 \bibitem{Eclipse}
 Eclipse {Founcation}.
 \newblock \url{http://www.eclipse.org/}.

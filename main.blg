@@ -1,16 +1,16 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: main.bib
-Repeated entry---line 79 of file main.bib
+Repeated entry---line 84 of file main.bib
  : @misc{Heroku
  :             ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 129 of file main.bib
+I was expecting a `,' or a `}'---line 134 of file main.bib
  : 
  : @MISC{PolyModel,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 134 of file main.bib
+I was expecting a `,' or a `}'---line 139 of file main.bib
  : 
  : @MISC{OOP,
 (Error may have been on previous line)
@@ -25,6 +25,7 @@ Warning--to sort, need author or key in bootstrap
 Warning--to sort, need author or key in JQuery
 Warning--to sort, need author or key in nodejs
 Warning--to sort, need author or key in API
+Warning--to sort, need author or key in DOM
 Warning--to sort, need author or key in w3
 Warning--to sort, need author or key in https
 Warning--to sort, need author or key in uml

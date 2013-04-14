@@ -8,7 +8,7 @@ And today, just like the utilities, instead of buying servers to run websites an
 
 Today there are many cloud computing providers that provide different types of services. Some provide application hosting, databases, code repositories, authentication services, social network integration, etc.  Some famous providers are Amazon, Google, Microsoft, Facebook, GitHub and Heroku. 
 
-Google App Engine provides infrastructure to build web applications on the same scalable systems that power Google applications.  Google App Engine supports Python, Java and the Go programming languages. Google App Engine also provides several options for storing data, including App Engine Datastore, Google Cloud SQL, and Google Cloud Storage. Windows Azure provides similar services as Google App Engine but supports a different set of programming languages, including C#, ASP.NET, VB.NET, Java, Nodejs and Python.
+Google App Engine provides infrastructure to build web applications on the same scalable systems that power Google applications.  Google App Engine supports Python, Java and the Go programming languages. Google App Engine also provides several options for storing data, including App Engine Datastore, Google Cloud SQL, and Google Cloud Storage. Windows Azure provides similar services as Google App Engine but supports a different set of programming languages, including ASP.NET, VB.NET, Java, Nodejs and Python.
 
 Amazon also provides scalable cloud computing services, which includes the popular EC2 virtual machine instances, where users choose the type of operating system and configuration they need. The virtual machine service provided by Amazon is more flexible than language-specific executation environments such as Google App Engine and Heroku, but require more time and expertise to set up and manage. 
 
@@ -19,16 +19,16 @@ Among all the programming language execution environments supported by Heroku, t
 Node.js and MongoDB are often used together to build scalable web applications. The following describe the cloud computing service providers used in this project.
 
 \section{Facebook}
-Facebook is a popular social networking website more than one billion users. It has proven to be a good platform to use for web applications that take advantage of its social networking features, such as friend lists, wall posting, etc. Facebook also allows other applications to access user data with their authorization using its API. \cite{Facebook}
+Facebook is a popular social networking website more than one billion users. It has proven to be a good platform to use for web applications that take advantage of its social networking features, such as friend lists, wall posting, etc \cite{Facebook}. Facebook also allows other applications to access user data with their authorization using its API. 
 
 \section{Heroku}
-Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku work is a partner of Facebook and so is designed to work easily with it. \cite{Heroku}
+Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git \cite{Heroku}.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku work is a partner of Facebook and so is designed to work easily with it. 
 
 \section{MongoDB}
-There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Node.js and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying. \cite{mongodb}
+There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Node.js and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying \cite{mongodb}. 
 
 \section{MongoLab}
-MongoLab is the cloud computing provider for MongoDB database that was used in this project.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. \cite{mongolab}
+MongoLab is the cloud computing provider for MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. 
 
 \section{Git}
 Git is a distributed version control system \cite{github}.  This project uses GitHub to store and manage a remote git repository of application source code.  Git was convenient for the project because Heroku uses git as a means to deploy web applications to its servers. Heroku's git-based deployment system allows easy creation of testing, staging, and production versions of the application.
@@ -70,6 +70,8 @@ The definitions, acronyms, and abbreviations used in the document are described 
 \item API: Application Programming Interface, which is a set of routines that an application uses to request and carry out low-level services performed by a computer's operating system; also, a set of calling conventions in programming that defines how a service is invoked through the application \cite{API}.
 \item Cloud computing: the use of computing resources (hardware and software) that are delivered as a service over a network (typically the Internet) \cite{cloudcomputing}.
 \item JQuery: A javascript library for building web based applications \cite{JQuery}.
+\item DOM: Document Object Model, which is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents \cite{DOM}.
+item I/O: Input/Output.
 \item UI: User Interface.
 \item CSUSB: California State University, San Bernardino.
 \item HTML: HyperText Markup Language, which is the authoring language used to create documents on the Web \cite{w3}.

@@ -1,7 +1,7 @@
 \Chapter{System Design}
 
 \section{Design Overview}
-All incoming AJAX requests are submitted using HTTP POST and contain data encoded using JSON..... 
+GradeBadge uses a client-server architecture model, and it uses MVC (Model View Controller) architecute in the client and server side. And all incoming AJAX requests are submitted using HTTP POST and contain data encoded using JSON.    
 
 \section{Model View Controller Architecture}
 This application is based on Model View Controller (MVC) Architecture. Model View Controller (MVC) architecture is a software design pattern for separating different components of a software application.  \cite{MVC} There are three main categories in the MVC architecture:
@@ -11,8 +11,6 @@ This application is based on Model View Controller (MVC) Architecture. Model Vie
 \item View: it represents UI components in the application. The UI components are responsible for presenting the model and for collecting user inputs.
 \item Controller: it is responsible for updating the data in the model and notifying the view about changes in the model.
 \end{itemize}
-
-There are two sections of this project, Server-side and Client-side as described in the following
 
 \section{Server-side Architecture Design}
 
@@ -57,11 +55,10 @@ There will be one node js module to represent the mongoDB collection, named mode
 There will be one node js module to handle ajax request from client, named op{\_}(request).js. Every request may read, write or update to and from more than one collection
 
 \begin{itemize}
-\item op{\_}read{\_}badges{\_}by{\_}group.js
-\item op{\_}read{\_}groups{\_}by{\_}admin.js
-\item op{\_}save{\_}badge.js
-\item op{\_}save{\_}group.js
-\item still more........
+\item op{\_}read{\_}badges{\_}by{\_}group.js: this operation is for request for all badges in the given group
+\item op{\_}read{\_}groups{\_}by{\_}admin.js: this operation is for request for all groups in the given admin
+\item op{\_}save{\_}badge.js: this operation is for request for saving given badge details
+\item op{\_}save{\_}group.js: this operation is for request for saving given group details
 \end{itemize}
 
 \section{Client-side Architecutre Design}
@@ -74,7 +71,6 @@ There will be one node js module to handle ajax request from client, named op{\_
 \item public{\_}root/favicon.ico : This is the statuc content for icon use in the browser
 \item public{\_}ver/app.js : This is the client java-script  
 \item public{\_}ver/style.css: This is the css file use
-\item still more........
 \end{itemize}
 
 
