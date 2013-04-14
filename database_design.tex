@@ -1,17 +1,18 @@
 \Chapter{Database Design}
 
-\section{MongoDB}
+\section{Overview}
+\subsection{MongoDB}
  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying.  \cite{mongodb}
 
-\section{MongoLab}
-MongoLab is the cloud computing provider for MongoDB database, easily integrated with Heroku. \cite{mongolab}
+\subsection{MongoLab}
+MongoLab is the cloud computing provider for MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. 
 
-\section{Documents}
+\subsection{Documents}
 Data in MongoDB is stored in documents, and every document must have a primary key named {\_id}. Like reqular SQL-based database, documents are like row in a table, where in MongoDB, documents have flexible schema, but every document must have {\_id} field, even if you don't speficy the {\_id} field, mongoDB will add that automatically.  \cite{mongodb}
 
 Although document structure is not enforced in MongoDB, different data model and structure may have significant impacts on MongoDB and application performace. So it is good to keep some kind of structure or pattern in data model.  
 
-\section{Collections}
+\subsection{Collections}
 Documents in MongoDB are organized in collection, and basic database operations are performed based on collection. Indexes can be assigned in any field or subfield contained in documents within a MongoDB collection, and they are defined on per-collection level.  \cite{mongodb}   
 
 \section{Data Model}

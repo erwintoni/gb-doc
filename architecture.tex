@@ -33,9 +33,44 @@ There are three type of environments used in the deployment workflow: developmen
 
 On this project, git is used as code repositories, to manage developments, staging and production branch. And Heroku toolbelt is also used to set the enviroment config variable for each deployment. Heroku allows users to use git to deploy automatically from local repositories. 
  
+\section{Developer/Release}
+
+\begin{lstlisting}
+$ foreman start
+18:43:16 web.1  : started with pid 5540
+18:43:16 web.1  : listening on 5000
+\end{lstlisting}
+
+
+\begin{lstlisting}
+$ git status
+\end{lstlisting}
+
+\begin{lstlisting}
+$ git add .
+\end{lstlisting}
+
+\begin{lstlisting}
+git commit -m "message here"
+\end{lstlisting}
+
+\begin{lstlisting}
+$ git push staging remote
+\end{lstlisting}
+
+
+
 \section{Heroku}
 In this project there are two sets of heroku instances used: staging and production. 
 The application running in Heroku connects to a database server running inside MongoLab using the MongoDB protocol to read and/or write data to database.  Heroku also talks to Facebook servers via Facebook's Open Graph API.
+
+\begin{lstlisting}
+$ heroku create --remote staging
+\end{lstlisting}
+
+\begin{lstlisting}
+$ git config heroku.remote staging
+\end{lstlisting}
 
 \section{MongoLab}
 In this project there are three sets of mongo databases used: development, staging and production. It is important to keep the versions of databases since new versions of changes may include changes in database structure, so rolling back or forward the application version would not cause any error. 

@@ -1,10 +1,10 @@
 \Chapter{System Design}
 
 \section{Design Overview}
-GradeBadge uses a client-server architecture model, and it uses MVC (Model View Controller) architecute in the client and server side. And all incoming AJAX requests are submitted using HTTP POST and contain data encoded using JSON.    
+GradeBadge application uses a client-server architecture model, and it uses MVC (Model View Controller) architecute in the client and server side. And all incoming AJAX requests are submitted using HTTP POST and contain data encoded using JSON.    
 
 \section{Model View Controller Architecture}
-This application is based on Model View Controller (MVC) Architecture. Model View Controller (MVC) architecture is a software design pattern for separating different components of a software application.  \cite{MVC} There are three main categories in the MVC architecture:
+This application is based on Model View Controller (MVC) Architecture. Model View Controller (MVC) architecture is a software design pattern for separating different components of a software application \cite{MVC}. There are three main categories in the MVC architecture:
 
 \begin{itemize}
 \item Model : it represents data in the application. All the business rules are handled in the model.
@@ -14,7 +14,7 @@ This application is based on Model View Controller (MVC) Architecture. Model Vie
 
 \section{Server-side Architecture Design}
 
-All node js modules that start with req{\_}*.js are request handler that get requested from router.js. All ajax requests will go through req{\_}op.js, that verifies the user logged-in to Facebook and app{\_}version is current. Every req{\_}op.js request must contains Facebook access{\_}token and app{\_}version. If the user is not logged-in to Facebook, req{\_}op.js returns the following JSON document, {login:true}, if the version is not current, then req{\_}op.js return the following JSON document, {ver:true}. 
+All Nodejs modules that start with req{\_}*.js are request handler that get requested from router.js. All ajax requests will go through req{\_}op.js, that verifies the user logged-in to Facebook and app{\_}version is current. Every req{\_}op.js request must contains Facebook access{\_}token and app{\_}version. If the user is not logged-in to Facebook, req{\_}op.js returns the following JSON document, {login:true}, if the version is not current, then req{\_}op.js return the following JSON document, {ver:true}. 
 
 \begin{itemize}
 \item .env : This is the setup file that contains environment variables. This file only exist in developer local environment, and these values in this file would be set in each Heroku environment config for staging and production.  
