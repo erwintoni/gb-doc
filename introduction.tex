@@ -2,97 +2,90 @@
 
 \section{Background}
 
-A long time ago, businesses used to produce their own electric power. And due to engineering breakthrough in electric generator and transmission method, it became easier to produce and transmit electricity, to supply businesses that once produced their own electricity. As more businesses started buying electric power, making utility expanded and electricity cheaper. 
+A long time ago, businesses used to produce their own electric power.  Due to an engineering breakthrough in electric generator and transmission methods, it became easier to produce and transmit electricity to businesses that once produced their own electricity. As more businesses started buying electric power, the production of electricity become less expensive, encouraging more compnies to purchase rather than make their own electricity.
 
-And today, just like the utilities, instead of buying servers to run your websites or applications, you rent servers or server spaces from cloud computing providers. Just like renting an apartment, even you are in the same building with other people, you still have your own space. As more people rent and buy computing power, making clould computing expanded and very popular. 
+And today, just like the utilities, instead of buying servers to run websites and applications, businesses rent servers and various services from cloud computing providers. These cloud resources are provided to companies in a way that resembles people renting apartments in a single building; even though you are in the same building with other people, you still have your own space. As more people rent and buy computing service from large-scale providers, the cost of these services are decreasing. 
 
-Today there are many cloud computing providers and they are providing different type of services. Some may provide hosting, database, code repositories or storage or combinations. Few famous providers are Google App Engine, Windows Azure, Amazon Web Services and Heroku. 
+Today there are many cloud computing providers that provide different types of services. Some provide application hosting, databases, code repositories, authentication services, social network integration, etc.  Some famous providers are Amazon, Google, Microsoft, Facebook, GitHub and Heroku. 
 
-Google App Engine provides infrastructure to build the web application on the same scalable systems that power Google applications which support Phyton, Java, PHP and Go programming language. Google App Engine also provides several options for storing data, using App Engine Datastore, Google Cloud SQL, and Google Could Storage. Windows Azure provides similar service as Google App Engine but supports different set of programming language, such as .Net, Java, Node.js and Phyton.
+Google App Engine provides infrastructure to build web applications on the same scalable systems that power Google applications.  Google App Engine supports Python, Java and the Go programming languages. Google App Engine also provides several options for storing data, including App Engine Datastore, Google Cloud SQL, and Google Cloud Storage. Windows Azure provides similar services as Google App Engine but supports a different set of programming languages, including C#, ASP.NET, VB.NET, Java, Nodejs and Python.
 
-Amazon provides scalable cloud computing, which allow users to choose what type of operating system and configuration of the servers they need, but it can scale as needed. It is more flexible to use any technologies, but require a lot of time and expertise to set it up. 
+Amazon also provides scalable cloud computing services, which includes the popular EC2 virtual machine instances, where users choose the type of operating system and configuration they need. The virtual machine service provided by Amazon is more flexible than language-specific executation environments such as Google App Engine and Heroku, but require more time and expertise to set up and manage. 
 
-In this project, Heroku is used to as cloup application platform which support Node.js, Ruby, Clojure, Java, Phyton and Scala. Heroku lets you use and publish an application that people can use right away with no cost and obligation, and you can take advantage of the same scalable technologies that Facebook applications are built on, and the reliability, performance and security.
+In this project, Heroku is used as a cloud application platform for running Javascript in the Nodejs executation environment. Heroku also provide alternative execution environments that support Scala, Ruby, PHP and others.  One of the benefits of using Heroku (and other similar application hosting services) is that the bandwidth and CPU capacity can be scaled up or down almost instantly to accomodate rapidly changing demand.  Also, by relying on Heroku fto manage the hardware and system and network administration, developers gain the reliability, performance and security that is provided by a larger company with staff dedicated to these purposes.
 
-Among all the programming language supported in Heroku, in this project, Node.js is used as main programming language in the server side. HTML5, Javascript, Jquery and Bootstap framework will be used in the client side. As data store provider, MongoLab is used which support MongoDB database. 
+Among all the programming language execution environments supported by Heroku, this project uses Nodejs, which supports server-side programming in Javascript. On the client side, the application uses HTML5, Javascript, Jquery library and the Bootstap framework. The applciation also relies on the MongoDB database as provided by the MongoLab service provider.
 
-Node.js and MongoDB in Heroku are often used together for scalable web technology. The following describe the clould computing service providers used in this project.
+Node.js and MongoDB are often used together to build scalable web applications. The following describe the cloud computing service providers used in this project.
 
 \section{Facebook}
-Facebook is a very popular socila networking website and has billions of users. It has proven to be good platrom to use for web application and take advantage of its social networking, to connect to other Facebook users. Facebook also allows other application to access the user's data with their authorization using its API. \cite{Facebook}
+Facebook is a popular social networking website more than one billion users. It has proven to be a good platform to use for web applications that take advantage of its social networking features, such as friend lists, wall posting, etc. Facebook also allows other applications to access user data with their authorization using its API. \cite{Facebook}
 
 \section{Heroku}
-Cloud computing is a model which makes use of computer hardware and software that are accessed through the Internet as services. There are several choices of cloud computing services available, but for this project we choose the one provided by Heroku, the cloud computing partner of Facebook. \cite{Heroku}.
-
-The reasons are that Heroku lets you use and publish an application that people can use right away with no cost and obligation, and you can take advantage of the same scalable technologies that Facebook applications are built on, and attain a similar level of reliability, performance and security. 
+Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku work is a partner of Facebook and so is designed to work easily with it. \cite{Heroku}
 
 \section{MongoDB}
-There are many different types of cloud-based datastore services to choose from. For this project we will use MongoDB, as it works well Node.js and Heroku. MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying. \cite{mongodb}
+There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Node.js and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying. \cite{mongodb}
 
 \section{MongoLab}
-MongoLab is the cloud computing provider for MongoDB database, easily integrated with Heroku. \cite{mongolab}
+MongoLab is the cloud computing provider for MongoDB database that was used in this project.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. \cite{mongolab}
 
 \section{Git}
-Git is a distributed version control system.  This project uses git with GitHub, a cloud-based provider of remote git repository storage.  Heroku uses git as a means to deploy web applications to its servers. Git allows easy creation of testing, staging, and production versions of the application. \cite{github}
+Git is a distributed version control system \cite{github}.  This project uses GitHub to store and manage a remote git repository of application source code.  Git was convenient for the project because Heroku uses git as a means to deploy web applications to its servers. Heroku's git-based deployment system allows easy creation of testing, staging, and production versions of the application.
 
 \section{Bootstrap}
-Bootstrap by Twitter provides responsive design framework that work well for application to be used in desktop, tablet and mobile phone. The UI of this project use Bootstrap. \cite{bootstrap}  
+Bootstrap is a freely avaialble CSS and Javascript library created by Twitter.  It provides a responsive design framework that works well for applications that run inside browsers in desktop computers, tablets and smart phones \cite{bootstrap}. The application's user interface was contructed using Bootstrap. 
 
 \section{Jquery}
-Jquery is used for AJAX and DOM manipulation. \cite{JQuery}
+The GradeBadge application uses Jquery for AJAX transactions and DOM manipulation \cite{JQuery}.  Bootstrap also depends on Jquery.
 
 \section{Node.js}
-Cloud-based services support apps written in several different programming languages, such as Java, Python, PHP, Javascript, Ruby and many more. For this project we would use Javascript running in a Node.js context. Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices. \cite{nodejs}
+Cloud-based services support apps written in several different programming languages, such as Java, Python, PHP, Javascript, Ruby and more. For this project we used Javascript running in a Node.js context. Node.js is a platform built on Chrome's JavaScript runtime.  It's purpose is to allow construction of fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient when used for I/O intensive applications such as Web applications \cite{nodejs}.
 
 \section{Purpose}
-To explore the new technologies, to create cross-platform reward application that individual can use.
+The purpose of this project is to explore the current technologies that enable rapid development and deployment of desktop and mobile Web applications that can scale to accomodate any number of users.
 
 \section{Project Scope}
-Project does not include database sharding features to allow greater degree of scalability. 
+Project does not include database sharding features of MongoDB, which would allow a greater degree of scalability.
 
 The GradeBadge application provides the following functionalities:
 \begin{itemize}
-\item Create group
+\item Create Group
 \item Create Badge 
 \item Add Member
 \item Issue Badges to Members
-\item View Badge Earned
-\item Share Badge to Social Networking 
+\item View Badges Earned
+\item Share Badges with Social Networking Contacts
 \end{itemize}
 
 \section{Related Work}
-There is another similar project in cloud computing, it used Google App Engine instead of Heroku as cloud computing providers, the main programming language used is Java with Google data store instead of Node.js and MongoDB. It uses Jquery Mobile as UI framework instead of BootStrap.   \cite{Manoj}
-So there has been some increasing interest in cloud computing technology, and there are dozens other famous application that use similar technologies.  
-
-
-\section{Project Limitations}
-Users must have Facebook account,  logged in to facebook and authorized access to basic information (name, profile picture and friend list) .For best experience must use modern browser in either PC or tablet or smart phone.    
+There are other similar mobile Web application and cloud computing demonstration projects that were built as master's degree projects at CSUSB.  One of these projects was completed by Manoj Kulkarni \cite{Manoj}.  This project used Google App Engine for an application hosting provider and Google App Engine datastore and Java programming language. It also used Jquery Mobile as UI framework. The GradeBadge project uses different set of technologies, and is the first project at CSUSB that utilizes Nodejs and MongoDB.  Most other similar projects at CSUSB have relied on either Java, .NET or PHP.
 
 \section{Definitions, Acronyms, and Abbreviations}
 
 The definitions, acronyms, and abbreviations used in the document are described in this section.
 
 \begin{itemize}
-\item GradeBadge: The name of this project
-\item API: Application Programming Interface is a set of routines that an application uses to request and carry out low-level services performed by a computer's operating system; also, a set of calling conventions in programming that defines how a service is invoked through the application \cite{API}.
-\item Cloud computing: Cloud computing is the use of computing resources (hardware and software) that are delivered as a service over a network (typically the Internet) \cite{cloudcomputing}.
-\item JQuery: A javascript library provided by JQuery for building web based applications \cite{JQuery}.
-\item UI: User Interface
+\item GradeBadge: The name of this project.
+\item API: Application Programming Interface, which is a set of routines that an application uses to request and carry out low-level services performed by a computer's operating system; also, a set of calling conventions in programming that defines how a service is invoked through the application \cite{API}.
+\item Cloud computing: the use of computing resources (hardware and software) that are delivered as a service over a network (typically the Internet) \cite{cloudcomputing}.
+\item JQuery: A javascript library for building web based applications \cite{JQuery}.
+\item UI: User Interface.
 \item CSUSB: California State University, San Bernardino.
-\item HTML: HyperText Markup Language is the authoring language used to create documents on the World Wide Web \cite{w3}.
-\item HTTPS: Hyper Text Transfer Protocol Secure is a secure network protocol used to encrypt data transferred  between server and client \cite{https}.
+\item HTML: HyperText Markup Language, which is the authoring language used to create documents on the Web \cite{w3}.
+\item HTTPS: Hyper-text Transfer Protocol Secure, which is a secure network protocol used to encrypt data transferred  between server and client \cite{https}.
 \item MVC\label{def:mvc}: Model-View-Controller is an architectural pattern used in software engineering to isolate business logic from user interface considerations \cite{MVC}.
-\item UML: The Unified Modeling Language is the industry-standard language for specifying, visualizing, constructing, and documenting the artifacts of software systems \cite{uml}.
-\item Microsoft Azure: Cloud Computing platform provided by Microsoft \cite{MicrosoftAzure}.
-\item Google App Engine: Cloud Computing platform provided by Google 
-\item Amazon Web Services: Cloud Computing platform provided by Amazon \cite{AWS}.
-\item Heroku:Cloud Application platform provided by Heroku \cite{Heroku}.
-\item Android : Mobile Operating System provided by Google \cite{Android}.
-\item IOS : Mobile Operating System provided by Apple \cite{IOS}.
-\item NoSQL: Uses key-value pairs for storing data unlike traditional Relational Database Management \cite{NoSql}.
-\item JSON : Javascript Object Notation built using key and value pairs \cite{json}.
-\item Ajax:  Asynchronous JavaScript and XML/JSON format for communicating from client to the server \cite{Ajax}.
-\item OOP : Object Oriented Programming concept with objects representing real world entities. Methods expose state of the object \cite{OOP}.
+\item UML: The Unified Modeling Language, which is the industry-standard language for specifying, visualizing, constructing, and documenting the artifacts of software systems \cite{uml}.
+\item Microsoft Azure: Cloud computing platform provided by Microsoft \cite{MicrosoftAzure}.
+\item Google App Engine: Cloud computing platform provided by Google.
+\item Amazon Web Services: Cloud computing platform provided by Amazon \cite{AWS}.
+\item Heroku: Cloud application platform provided by Heroku \cite{Heroku}.
+\item Android: Mobile operating system provided by Google \cite{Android}.
+\item IOS: Mobile operating system provided by Apple \cite{IOS}.
+\item NoSQL: Types of databases that use key-value pairs for storing data unlike traditional relational databases. \cite{NoSql}.
+\item JSON: Javascript Object Notation, which is a data representation format using key-value pairs \cite{json}.
+\item Ajax:  Asynchronous JavaScript and XML, which is a method for Web applications to communicate between client browsers and servers \cite{Ajax}.
+\item OOP: Object Oriented Programming, which is a computer programming paradigm where application logic is organized into objects that provide an interface to encapsulated state. \cite{OOP}.
 \end{itemize}
 
 
