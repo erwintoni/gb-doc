@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  13 APR 2013 19:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  16 APR 2013 16:15
 entering extended mode
 **C:/Users/erwin/Desktop/Project/gb-doc/main.tex
 (C:/Users/erwin/Desktop/Project/gb-doc/main.tex
@@ -696,18 +696,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 
 ] (C:\Users\erwin\Desktop\Project\gb-doc\main.toc [5
 
-] [6])
+] [6]
+[7])
 \tf@toc=\write3
-
-[7] (C:\Users\erwin\Desktop\Project\gb-doc\main.lot)
+ [8] (C:\Users\erwin\Desktop\Project\gb-doc\main.lot)
 \tf@lot=\write4
- [8
+ [9
 
 
 ]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.lof)
 \tf@lof=\write5
- [9
+ [10
 
 
 ]
@@ -742,17 +742,17 @@ ments sup-ported by Heroku,
 
 [2] [3] [4] [5]
 
-LaTeX Warning: Citation `cloudcomputing' on page 6 undefined on input line 71.
+LaTeX Warning: Citation `cloudcomputing' on page 6 undefined on input line 73.
 
 [6]
-Overfull \hbox (6.21184pt too wide) in paragraph at lines 90--91
+Overfull \hbox (6.21184pt too wide) in paragraph at lines 92--93
 []\OT1/cmr/m/n/12 OOP: Ob-ject Ori-ented Pro-gram-ming, which is a com-puter pr
 o-gram-ming paradigm
  []
 
 ) (C:\Users\erwin\Desktop\Project\gb-doc\requirements.tex [7]
 Chapter 2.
-<images/UseCase.png, id=66, 396.7623pt x 247.8861pt>
+<images/UseCase.png, id=70, 396.7623pt x 247.8861pt>
 File: images/UseCase.png Graphic file (type png)
  <use images/UseCase.png>
 Package pdftex.def Info: images/UseCase.png used on input line 24.
@@ -767,7 +767,7 @@ Overfull \hbox (36.14766pt too wide) in paragraph at lines 24--25
 ] [9 <C:/Users/erwin/Desktop/Project/gb-doc/images/UseCase.png>])
 (C:\Users\erwin\Desktop\Project\gb-doc\architecture.tex [10] [11]
 Chapter 3.
-<images/deployment.png, id=84, 733.23938pt x 747.54282pt>
+<images/deployment.png, id=87, 733.23938pt x 747.54282pt>
 File: images/deployment.png Graphic file (type png)
 
 <use images/deployment.png>
@@ -778,7 +778,7 @@ Overfull \hbox (36.14388pt too wide) in paragraph at lines 9--10
  [] 
  []
 
-<images/systemIntegration.png, id=85, 432.11438pt x 411.78844pt>
+<images/systemIntegration.png, id=88, 432.11438pt x 411.78844pt>
 File: images/systemIntegration.png Graphic file (type png)
 
 <use images/systemIntegration.png>
@@ -792,26 +792,54 @@ Overfull \hbox (36.15552pt too wide) in paragraph at lines 21--22
 [12
 
  <C:/Users/erwin/Desktop/Project/gb-doc/images/deployment.png>] [13 <C:/Users/e
-rwin/Desktop/Project/gb-doc/images/systemIntegration.png>] [14])
-(C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [15]
-Chapter 4.
-[16
+rwin/Desktop/Project/gb-doc/images/systemIntegration.png>] [14]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 84.
 
-] [17] [18]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 84.
+ [15])
+(C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [16]
+Chapter 4.
+[17
+
+] [18] [19]
 Overfull \hbox (21.21776pt too wide) in paragraph at lines 55--56
 \OT1/cmr/m/n/12 There will be one node js mod-ule to han-dle ajax re-quest from
  client, named op[](request).js.
  []
 
-[19]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [20]
+[20]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [21]
 Chapter 5.
-[21
+[22
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [22]
+] [23] [24]
+Overfull \hbox (8.87445pt too wide) in paragraph at lines 92--99
+ [] 
+ []
+
+
+Overfull \hbox (8.87445pt too wide) in paragraph at lines 109--116
+ [] 
+ []
+
+[25]
+Overfull \hbox (8.87445pt too wide) in paragraph at lines 127--134
+ [] 
+ []
+
+
+Overfull \hbox (8.87445pt too wide) in paragraph at lines 145--152
+ [] 
+ []
+
+[26]) (C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [27]
 Chapter 6.
-[23
+[28
 
-] <images/loading-screen.jpg, id=126, 570.63188pt x 149.8097pt>
+] <images/loading-screen.jpg, id=145, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -822,38 +850,78 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[24 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=131, 430.60875pt x 400.49625pt>
+[29 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=150, 755.07094pt x 459.21562pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
 Package pdftex.def Info: images/facebook-login.jpg used on input line 25.
-(pdftex.def)             Requested size: 180.67703pt x 274.64383pt.
-)
-(C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [25 <C:/Users/erwin/Deskt
-op/Project/gb-doc/images/facebook-login.jpg>]
-Chapter 7.
-[26
+(pdftex.def)             Requested size: 469.75215pt x 491.46097pt.
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [27] [28
+Overfull \hbox (36.13214pt too wide) in paragraph at lines 25--26
+ [] 
+ []
+
+[30] [31 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>]
+<images/group-page1.png, id=159, 602.25pt x 204.01219pt>
+File: images/group-page1.png Graphic file (type png)
+
+<use images/group-page1.png>
+Package pdftex.def Info: images/group-page1.png used on input line 38.
+(pdftex.def)             Requested size: 469.77148pt x 274.64189pt.
+
+Overfull \hbox (36.15147pt too wide) in paragraph at lines 38--39
+ [] 
+ []
+
+[32 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
+<images/add-new-group.png, id=164, 761.84625pt x 269.50688pt>
+File: images/add-new-group.png Graphic file (type png)
+
+<use images/add-new-group.png>
+Package pdftex.def Info: images/add-new-group.png used on input line 51.
+(pdftex.def)             Requested size: 469.74745pt x 274.63017pt.
+
+Overfull \hbox (36.12744pt too wide) in paragraph at lines 51--52
+ [] 
+ []
+
+[33 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
+<images/group-page2.png, id=169, 694.84593pt x 197.23688pt>
+File: images/group-page2.png Graphic file (type png)
+
+<use images/group-page2.png>
+Package pdftex.def Info: images/group-page2.png used on input line 64.
+(pdftex.def)             Requested size: 469.75354pt x 274.649pt.
+
+Overfull \hbox (36.13353pt too wide) in paragraph at lines 64--65
+ [] 
+ []
+
+) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [34 <C:/Users/erwin/Des
+ktop/Project/gb-doc/images/group-page2.png>]
+Chapter 7.
+[35
+
+]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [36] [37
 
 ])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [29] [30
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [38] [39
 
-]) [31]
+]) [40]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10507 strings out of 493921
- 185281 string characters out of 3144877
- 233355 words of memory out of 3000000
- 13612 multiletter control sequences out of 15000+200000
+ 10551 strings out of 493921
+ 186230 string characters out of 3144877
+ 235464 words of memory out of 3000000
+ 13650 multiletter control sequences out of 15000+200000
  10337 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,11n,45p,725b,880s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,45p,725b,1087s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 tcrm1200.pk> <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\tcrm1728.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontna
@@ -867,9 +935,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (42 pages, 291402 bytes).
+Output written on main.pdf (52 pages, 360664 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
+ 237 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

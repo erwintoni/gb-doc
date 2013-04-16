@@ -18,31 +18,33 @@ Among all the programming language execution environments supported by Heroku, t
 
 Node.js and MongoDB are often used together to build scalable web applications. The following describe the cloud computing service providers used in this project.
 
-\section{Facebook}
+\section{Technology Overview}
+
+\subsection{Facebook}
 Facebook is a popular social networking website more than one billion users. It has proven to be a good platform to use for web applications that take advantage of its social networking features, such as friend lists, wall posting, etc \cite{Facebook}. Facebook also allows other applications to access user data with their authorization using its API. 
 
-\section{Heroku}
+\subsection{Heroku}
 Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git \cite{Heroku}.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku work is a partner of Facebook and so is designed to work easily with it. 
 
-\section{MongoDB}
+\subsection{MongoDB}
 There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Node.js and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying \cite{mongodb}. 
 
-\section{MongoLab}
+\subsection{MongoLab}
 MongoLab is the cloud computing provider for MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. 
 
-\section{Git}
+\subsection{Git}
 Git is a distributed version control system \cite{github}.  This project uses GitHub to store and manage a remote git repository of application source code.  Git was convenient for the project because Heroku uses git as a means to deploy web applications to its servers. Heroku's git-based deployment system allows easy creation of testing, staging, and production versions of the application.
 
-\section{Bootstrap}
+\subsection{Bootstrap}
 Bootstrap is a freely avaialble CSS and Javascript library created by Twitter.  It provides a responsive design framework that works well for applications that run inside browsers in desktop computers, tablets and smart phones \cite{bootstrap}. The application's user interface was contructed using Bootstrap. 
 
-\section{Jquery}
+\subsection{Jquery}
 The GradeBadge application uses Jquery for AJAX transactions and DOM manipulation \cite{JQuery}.  Bootstrap also depends on Jquery.
 
-\section{Node.js}
+\subsection{Node.js}
 Cloud-based services support apps written in several different programming languages, such as Java, Python, PHP, Javascript, Ruby and more. For this project we used Javascript running in a Node.js context. Node.js is a platform built on Chrome's JavaScript runtime.  It's purpose is to allow construction of fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient when used for I/O intensive applications such as Web applications \cite{nodejs}.
 
-\section{Purpose}
+\section{Project Purpose}
 The purpose of this project is to explore the current technologies that enable rapid development and deployment of desktop and mobile Web applications that can scale to accomodate any number of users.
 
 \section{Project Scope}

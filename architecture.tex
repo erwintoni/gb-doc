@@ -34,13 +34,14 @@ There are three type of environments used in the deployment workflow: developmen
 On this project, git is used as code repositories, to manage developments, staging and production branch. And Heroku toolbelt is also used to set the enviroment config variable for each deployment. Heroku allows users to use git to deploy automatically from local repositories. 
  
 \section{Developer/Release}
+In this project, developers first do unit testing in local machine, then after it reached certain point, developer himself or assign release manager use git to push the changes to staging or production repositories that connected to respective Heroku servers. 
 
+Below are the command the developer/release manager uses to start the application, then commit and push the changes to remote repository.
 \begin{lstlisting}
 $ foreman start
 18:43:16 web.1  : started with pid 5540
 18:43:16 web.1  : listening on 5000
 \end{lstlisting}
-
 
 \begin{lstlisting}
 $ git status
@@ -55,15 +56,17 @@ git commit -m "message here"
 \end{lstlisting}
 
 \begin{lstlisting}
+$ git push master remote
 $ git push staging remote
+$ git push production remote
 \end{lstlisting}
-
 
 
 \section{Heroku}
 In this project there are two sets of heroku instances used: staging and production. 
 The application running in Heroku connects to a database server running inside MongoLab using the MongoDB protocol to read and/or write data to database.  Heroku also talks to Facebook servers via Facebook's Open Graph API.
 
+Below are the sample of Heroku command to create staging environment and edit configuration variables
 \begin{lstlisting}
 $ heroku create --remote staging
 \end{lstlisting}
@@ -74,6 +77,13 @@ $ git config heroku.remote staging
 
 \section{MongoLab}
 In this project there are three sets of mongo databases used: development, staging and production. It is important to keep the versions of databases since new versions of changes may include changes in database structure, so rolling back or forward the application version would not cause any error. 
+
+Below are the command how to connect to remote Mongo Database that hosted in MongoLab
+
+\begin{lstlisting}
+$ mongo <servername>.mongolab.com:<portno>/<dbname> 
+-u <dbuser> -p <dbpassword>
+\end{lstlisting}
 
 \section{Facebook}
 Facebook is playing an important role in this project. Facebook provides user authentication and social media integration. Facebook allows connection using the Facebook API and Open Graph API.
