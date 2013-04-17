@@ -12,6 +12,112 @@ This application is based on Model View Controller (MVC) Architecture. Model Vie
 \item Controller: it is responsible for updating the data in the model and notifying the view about changes in the model.
 \end{itemize}
 
+\section{Bandwidth Reduction Strategy}
+Following sections are the three strategies that are implemented to reduce and effectively use the bandwidth.  
+
+\subsection{File Compression}
+In this application, in order to reduce the bandwidth from the server, files that are transferred from the application  will be compressed in gzip format if the client browser supported it which will result to smaller file size. Also the server will also check if the files are not modified by comparing the etag value that will be part of caching strategy.
+
+\begin{lstlisting}
+FileRequestHandler.prototype.handle = function(req, res) {
+  var filename = url.parse(req.url).pathname;
+  filename = filename.substr(this.len);
+  var file = find(this.files, filename);
+  if (file === null) {
+    return app_http.replyNotFound(res);
+  }
+  if (req.headers['if-none-match'] === file.etag) {
+    return app_http.replyNotModified(res);
+  }
+  if (file.gzip !== undefined && 
+      req.headers['accept-encoding'] !== undefined && 
+      req.headers['accept-encoding'].indexOf('gzip') !== -1) {
+    return app_http.replyCached(res, file.gzip, file.type, file.etag, 'gzip');
+  } else {
+    return app_http.replyCached(res, file.data, file.type, file.etag);
+  }
+};
+\end{lstlisting}
+
+\subsection{Content Distribution Network Resource}
+In this application, we are using Content Distributed Network (CDN) resources instead of storing those files in the server. So client browser will get it from the CDN rather than request them from the application server.  
+
+\begin{lstlisting}
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+\end{lstlisting}
+
+\subsection{Caching}
+In this application, we implemented the cache strategy where every request will be checked whether the file has been modified or is cached in the client browser. Etag value of the file is compared to decide whether the file has been modified or not. This strategy is implemented to reduce unneccesary bandwidth from the server
+
+The following are the four possibilities of the respond from the server as HTTP header:
+
+\begin{itemize}
+\item Reply Not Found: This is when the requested file is not found, and the server is going to return 404 Not Found to client.  
+
+\begin{lstlisting}
+res.writeHead(404, {});
+\end{lstlisting}
+
+\item Reply Not Modified: This is when the requested file is not modified, where the etag value is still the same. 
+
+\begin{lstlisting}
+res.writeHead(304, {
+    'Connection'       : 'keep-alive',
+    'Proxy-Connection' : 'keep-alive',
+    'Cache-Control'    : 'max-age=31536000',
+    'Expires'          : new Date(Date.now() + 31536000000)
+  });
+\end{lstlisting}
+
+\item Reply Not Cached: This is when the requested file is not cached in the client browser. 
+
+\begin{lstlisting}
+res.writeHead(200, {
+    'Content-Type'     : 'text/html',
+    'Content-Length'   : buffer.length,
+    'Connection'       : 'keep-alive',
+    'Proxy-Connection' : 'keep-alive',
+    'Pragma'           : 'no-cache',
+    'Cache-Control'    : 'no-cache, no-store'
+  });
+\end{lstlisting}
+
+\item Reply Cached: This is when the requested file is cached in the client browser, then the server will update the expiration date of the file.
+
+\begin{lstlisting}
+if(contentEncoding) {
+    res.writeHead(200, {
+      'Content-Type'     : contentType,
+      'Content-Length'   : buffer.length,
+      'Connection'       : 'keep-alive',
+      'Proxy-Connection' : 'keep-alive',
+      'Pragma'           : 'public',
+      'Cache-Control'    : 'max-age=31536000',
+      'Vary'             : 'Accept-Encoding',
+      'Expires'          : new Date(Date.now() + 31536000000),
+      'ETag'             : etag,
+      'Content-Encoding' : contentEncoding
+    });
+  } else {
+    res.writeHead(200, {
+      'Content-Type'     : contentType,
+      'Content-Length'   : buffer.length,
+      'Connection'       : 'keep-alive',
+      'Proxy-Connection' : 'keep-alive',
+      'Pragma'           : 'public',
+      'Cache-Control'    : 'max-age=31536000',
+      'Vary'             : 'Accept-Encoding',
+      'Expires'          : new Date(Date.now() + 31536000000),
+      'ETag'             : etag
+    });
+  }\end{lstlisting}
+
+\end{itemize}
+
+
 \section{Server-side Architecture Design}
 
 All Nodejs modules that start with req{\_}*.js are request handler that get requested from router.js. All ajax requests will go through req{\_}op.js, that verifies the user logged-in to Facebook and app{\_}version is current. Every req{\_}op.js request must contains Facebook access{\_}token and app{\_}version. If the user is not logged-in to Facebook, req{\_}op.js returns the following JSON document, {login:true}, if the version is not current, then req{\_}op.js return the following JSON document, {ver:true}. 
@@ -39,6 +145,7 @@ The following list below are the list of files that are used in server execution
 \item req{\_}root.js: This module handles request for static content under the root URL
 \item req{\_}op.js : This module handles all AJAX request from client and routes to appropriate modules.  
 \end{itemize}
+
 
 \section{Mapping of Model Classes to MongoDB}
 There will be one node js module to represent the mongoDB collection, named model{\_}(collection{\_}name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
@@ -78,6 +185,8 @@ The following list below are the list of files that are used in client-side exec
 \item public{\_}ver/app.js : This is the client java-script  
 \item public{\_}ver/style.css: This is the css file use
 \end{itemize}
+
+
 
 
 

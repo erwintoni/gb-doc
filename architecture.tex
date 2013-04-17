@@ -60,7 +60,7 @@ $ git push staging master
 \end{lstlisting}
 
 
-\section{Heroku}
+\subsection{Heroku}
 In this project there are two sets of heroku instances used: staging and production. 
 The application running in Heroku connects to a database server running inside MongoLab using the MongoDB protocol to read and/or write data to database.  Heroku also talks to Facebook servers via Facebook's Open Graph API.
 
@@ -75,7 +75,7 @@ $ heroku config:set S3_KEY=XXX --remote staging
 $ heroku config:set S3_SECRET=YYY --remote staging
 \end{lstlisting}
 
-\section{MongoLab}
+\subsection{MongoLab}
 In this project there are three sets of mongo databases used: development, staging and production. It is important to keep the versions of databases since new versions of changes may include changes in database structure, so rolling back or forward the application version would not cause any error. 
 
 Below is the command on how to connect to remote Mongo Database that is hosted in MongoLab
@@ -85,9 +85,9 @@ $ mongo <servername>.mongolab.com:<portno>/<dbname>
    -u <dbuser> -p <dbpassword>
 \end{lstlisting}
 
-\section{Facebook}
+\subsection{Facebook}
 Facebook is playing an important role in this project. Facebook provides user authentication and social media integration. Facebook allows connection using the Facebook API and Open Graph API.
 
-\section{Client Browser}
+\subsection{Client Browser}
 Client browser uses HTTPS GET for static content, and HTTPS POST for AJAX request to Heroku. And client browser also connects to Facebook server directly using Facebook API and Open Graph API in HTTPS.
  
