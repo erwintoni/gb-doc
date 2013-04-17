@@ -36,18 +36,18 @@
 \contentsline {chapter}{\numberline {3.}System Architecture}{12}
 \contentsline {section}{\numberline {3.1}Overview}{12}
 \contentsline {section}{\numberline {3.2}Deployment Workflow}{13}
-\contentsline {section}{\numberline {3.3}Developer/Release}{14}
-\contentsline {section}{\numberline {3.4}Heroku}{15}
-\contentsline {section}{\numberline {3.5}MongoLab}{15}
-\contentsline {section}{\numberline {3.6}Facebook}{15}
-\contentsline {section}{\numberline {3.7}Client Browser}{16}
+\contentsline {subsection}{\numberline {3.2.1}Developers/Release Manager}{14}
+\contentsline {section}{\numberline {3.3}Heroku}{15}
+\contentsline {section}{\numberline {3.4}MongoLab}{16}
+\contentsline {section}{\numberline {3.5}Facebook}{16}
+\contentsline {section}{\numberline {3.6}Client Browser}{16}
 \contentsline {chapter}{\numberline {4.}System Design}{17}
 \contentsline {section}{\numberline {4.1}Design Overview}{17}
 \contentsline {section}{\numberline {4.2}Model View Controller Architecture}{17}
 \contentsline {section}{\numberline {4.3}Server-side Architecture Design}{18}
 \contentsline {section}{\numberline {4.4}Mapping of Model Classes to MongoDB}{19}
 \contentsline {section}{\numberline {4.5}Request Handler Operation}{20}
-\contentsline {section}{\numberline {4.6}Client-side Architecutre Design}{20}
+\contentsline {section}{\numberline {4.6}Client-side Architecutre Design}{21}
 \contentsline {chapter}{\numberline {5.}Database Design}{22}
 \contentsline {section}{\numberline {5.1}Overview}{22}
 \contentsline {subsection}{\numberline {5.1.1}MongoDB}{22}
@@ -72,4 +72,8 @@
 \contentsline {section}{\numberline {7.1}Conclusion}{35}
 \contentsline {section}{\numberline {7.2}Future Direction}{35}
 \contentsline {chapter}{APPENDIX\nobreakspace {}A: {SOURCE CODE}}{37}
-\contentsline {chapter}{References}{39}
+\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Appendix B}}{39}
+\contentsline {chapter}{APPENDIX\nobreakspace {}C: {APPENDIX C}}{41}
+\contentsline {chapter}{APPENDIX\nobreakspace {}D: {APPENDIX D}}{42}
+\contentsline {chapter}{APPENDIX\nobreakspace {}E: {Client Side Source Code}}{43}
+\contentsline {chapter}{References}{44}

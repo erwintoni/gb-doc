@@ -1,7 +1,11 @@
 \Chapter{System Architecture}
 
 \section{Overview}
-This application uses HTTPS exclusively for security reasons, except in the local developer environment, where we use unencrypted HTTP, as shown in Figure ~\ref{fig:deployment}.
+There are three main server entities in this applicatio, which are Heroku, Facebook, and MongoLab. When the client browser, either from desktop computer or tablet or smart phone, runs the application, it will hit the Heroku server, then the Heroku server will connect to Facebook server to check user authentication. And if the user is not logged-in, the user will be prompted with the Facebook login screen and submit the login data to Facebook server. 
+
+After the user is authenticated to use the application, the application server will connect to MongoLab server to read and write the data. The application server may occasionally go to Facebook server to check the users' friend list or  post to user's wall or check whether the user is still logged-in. 
+
+This application uses HTTPS exclusively for security reasons, except in the local developer environment, where we use unencrypted HTTP,  as shown in Figure ~\ref{fig:deployment}.
 
 \vspace{3em}
 \begin{figure}[H]
@@ -12,8 +16,13 @@ This application uses HTTPS exclusively for security reasons, except in the loca
 \end{center}
 \end{figure}
 
+
 \section{Deployment Workflow}
-There are three type of environments used in the deployment workflow: development, staging and production. Figure ~\ref{fig:system-integration} illustrates the deployment workflow.
+There are three type of environments used in the deployment workflow: development, staging and production.
+
+Developers work on new features or bug fixes in development branches then only minor updates are committed directly to the stable development branch. Once the features are implemented and/or set of bugs are fixed, they are merged in to staging branch and deployed to staging environment for testing and quality assurance. After testing is completed, the snapshop of staging branch is kept for production deployment, otherwise the process will repeat until the testing is completed. On the release date, the working staging branch is deployed to production environment. 
+
+Figure ~\ref{fig:system-integration} illustrates the deployment workflow.
 
 \vspace{3em}
 \begin{figure}[H]
@@ -24,41 +33,30 @@ There are three type of environments used in the deployment workflow: developmen
 \end{center}
 \end{figure}
 
-\begin{itemize}
-\item Developers work on new features or bug fixes in development branches. Only minor updates are committed directly to the stable development branch.
-\item Once features are implemented and/or set of bugs are fixed, they are merged in to staging branch and deployed to staging environment for testing and quality assurance
-\item After testing is completed, the snapshop of staging branch is kept for production deployment, otherwise the process will repeat until the testing is completed.
-\item On the release date, the working staging branch is deployed to production environment.
-\end{itemize}
 
 On this project, git is used as code repositories, to manage developments, staging and production branch. And Heroku toolbelt is also used to set the enviroment config variable for each deployment. Heroku allows users to use git to deploy automatically from local repositories. 
  
-\section{Developer/Release}
-In this project, developers first do unit testing in local machine, then after it reached certain point, developer himself or assign release manager use git to push the changes to staging or production repositories that connected to respective Heroku servers. 
+\subsection{Developers/Release Manager}
+In this project, developers first do unit testing in their local machines, then after the system reaches a certain point, the developer himself or assigned release manager will use git to push the changes to staging or production repositories that are connected to respective Heroku servers. 
 
-Below are the command the developer/release manager uses to start the application, then commit and push the changes to remote repository.
+Below are the commands the developer/release manager uses to start the application in the staging enviroment.
 \begin{lstlisting}
 $ foreman start
 18:43:16 web.1  : started with pid 5540
 18:43:16 web.1  : listening on 5000
 \end{lstlisting}
 
+Below are the commands for developer/release manager commits changes to master branch of the local repository, then followed by a push to master branch of the remote repository.
 \begin{lstlisting}
 $ git status
-\end{lstlisting}
-
-\begin{lstlisting}
 $ git add .
+$ git commit -m "message here"
+$ git push origin master
 \end{lstlisting}
 
+Below are the commands for developer/release manager uses to push to staging environment.
 \begin{lstlisting}
-git commit -m "message here"
-\end{lstlisting}
-
-\begin{lstlisting}
-$ git push master remote
-$ git push staging remote
-$ git push production remote
+$ git push staging master
 \end{lstlisting}
 
 
@@ -66,23 +64,25 @@ $ git push production remote
 In this project there are two sets of heroku instances used: staging and production. 
 The application running in Heroku connects to a database server running inside MongoLab using the MongoDB protocol to read and/or write data to database.  Heroku also talks to Facebook servers via Facebook's Open Graph API.
 
-Below are the sample of Heroku command to create staging environment and edit configuration variables
+Below is the sample command in Heroku to create staging environment
 \begin{lstlisting}
 $ heroku create --remote staging
 \end{lstlisting}
 
+Below are the sample commands in Heroku to add environmetal variables in remote environment
 \begin{lstlisting}
-$ git config heroku.remote staging
+$ heroku config:set S3_KEY=XXX --remote staging
+$ heroku config:set S3_SECRET=YYY --remote staging
 \end{lstlisting}
 
 \section{MongoLab}
 In this project there are three sets of mongo databases used: development, staging and production. It is important to keep the versions of databases since new versions of changes may include changes in database structure, so rolling back or forward the application version would not cause any error. 
 
-Below are the command how to connect to remote Mongo Database that hosted in MongoLab
+Below is the command on how to connect to remote Mongo Database that is hosted in MongoLab
 
 \begin{lstlisting}
 $ mongo <servername>.mongolab.com:<portno>/<dbname> 
--u <dbuser> -p <dbpassword>
+   -u <dbuser> -p <dbpassword>
 \end{lstlisting}
 
 \section{Facebook}

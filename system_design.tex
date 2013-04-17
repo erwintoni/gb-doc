@@ -16,6 +16,8 @@ This application is based on Model View Controller (MVC) Architecture. Model Vie
 
 All Nodejs modules that start with req{\_}*.js are request handler that get requested from router.js. All ajax requests will go through req{\_}op.js, that verifies the user logged-in to Facebook and app{\_}version is current. Every req{\_}op.js request must contains Facebook access{\_}token and app{\_}version. If the user is not logged-in to Facebook, req{\_}op.js returns the following JSON document, {login:true}, if the version is not current, then req{\_}op.js return the following JSON document, {ver:true}. 
 
+The following list below are the list of files that are used in server executions, and the source-code of these files can be found in the Appendix A
+
 \begin{itemize}
 \item .env : This is the setup file that contains environment variables. This file only exist in developer local environment, and these values in this file would be set in each Heroku environment config for staging and production.  
 \item .gitignore: This is the setup file that contains list of files or folders that will be ignored when committing or pushing to git repositories. 
@@ -41,6 +43,8 @@ All Nodejs modules that start with req{\_}*.js are request handler that get requ
 \section{Mapping of Model Classes to MongoDB}
 There will be one node js module to represent the mongoDB collection, named model{\_}(collection{\_}name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
 
+The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B
+
 \begin{itemize}
 \item model{\_}group.js: this node.js module represents Groups collection
 \item model{\_}badge.js: this node.js module represents Badges colletion
@@ -54,6 +58,8 @@ There will be one node js module to represent the mongoDB collection, named mode
 \section{Request Handler Operation}
 There will be one node js module to handle ajax request from client, named op{\_}(request).js. Every request may read, write or update to and from more than one collection
 
+The following list below are the list of files that are used in request handler operation, and the source-code of these files can be found in the Appendix C
+
 \begin{itemize}
 \item op{\_}read{\_}badges{\_}by{\_}group.js: this operation is for request for all badges in the given group
 \item op{\_}read{\_}groups{\_}by{\_}admin.js: this operation is for request for all groups in the given admin
@@ -62,7 +68,7 @@ There will be one node js module to handle ajax request from client, named op{\_
 \end{itemize}
 
 \section{Client-side Architecutre Design}
-
+The following list below are the list of files that are used in client-side execution, and the source-code of these files can be found in the Appendix D
 
 \begin{itemize}
 \item app.html : This is the html template for badge earner page
