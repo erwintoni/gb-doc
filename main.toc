@@ -36,7 +36,7 @@
 \contentsline {chapter}{\numberline {3.}System Architecture}{12}
 \contentsline {section}{\numberline {3.1}Overview}{12}
 \contentsline {section}{\numberline {3.2}Deployment Workflow}{13}
-\contentsline {subsection}{\numberline {3.2.1}Developers/Release Manager}{14}
+\contentsline {subsection}{\numberline {3.2.1}Developers/Release Manager}{15}
 \contentsline {subsection}{\numberline {3.2.2}Heroku}{15}
 \contentsline {subsection}{\numberline {3.2.3}MongoLab}{16}
 \contentsline {subsection}{\numberline {3.2.4}Facebook}{16}
