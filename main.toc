@@ -48,10 +48,10 @@
 \contentsline {subsection}{\numberline {4.3.1}File Compression}{18}
 \contentsline {subsection}{\numberline {4.3.2}Content Distribution Network Resource}{19}
 \contentsline {subsection}{\numberline {4.3.3}Caching}{19}
-\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{21}
+\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{22}
 \contentsline {section}{\numberline {4.5}Mapping of Model Classes to MongoDB}{23}
 \contentsline {section}{\numberline {4.6}Request Handler Operation}{24}
-\contentsline {section}{\numberline {4.7}Client-side Architecutre Design}{24}
+\contentsline {section}{\numberline {4.7}Client-side Architecutre Design}{25}
 \contentsline {chapter}{\numberline {5.}Database Design}{26}
 \contentsline {section}{\numberline {5.1}Overview}{26}
 \contentsline {subsection}{\numberline {5.1.1}MongoDB}{26}

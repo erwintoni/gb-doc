@@ -32,9 +32,11 @@ FileRequestHandler.prototype.handle = function(req, res) {
   if (file.gzip !== undefined && 
       req.headers['accept-encoding'] !== undefined && 
       req.headers['accept-encoding'].indexOf('gzip') !== -1) {
-    return app_http.replyCached(res, file.gzip, file.type, file.etag, 'gzip');
+    return app_http.replyCached(res, file.gzip, file.type, 
+                                file.etag, 'gzip');
   } else {
-    return app_http.replyCached(res, file.data, file.type, file.etag);
+    return app_http.replyCached(res, file.data, 
+                     file.type, file.etag);
   }
 };
 \end{lstlisting}
@@ -43,10 +45,14 @@ FileRequestHandler.prototype.handle = function(req, res) {
 In this application, we are using Content Distributed Network (CDN) resources instead of storing those files in the server. So client browser will get it from the CDN rather than request them from the application server.  
 
 \begin{lstlisting}
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-responsive.css" rel="stylesheet">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/
+    2.2.2/css/bootstrap.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/
+    2.2.2/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/
+    1.8.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/
+     2.2.2/js/bootstrap.min.js"></script>
 \end{lstlisting}
 
 \subsection{Caching}
