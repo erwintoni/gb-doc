@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  16 APR 2013 19:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  18 APR 2013 15:02
 entering extended mode
-**C:/Users/erwin/Desktop/Project/gb-doc/main.tex
-(C:/Users/erwin/Desktop/Project/gb-doc/main.tex
+**main
+(C:\Users\erwin\Desktop\Project\gb-doc\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -832,22 +832,62 @@ Overfull \hbox (28.47926pt too wide) in paragraph at lines 110--111
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21] [22] [23]
-Overfull \hbox (21.21776pt too wide) in paragraph at lines 171--172
+[21]
+Overfull \hbox (84.87917pt too wide) in paragraph at lines 134--135
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[22] [23]
+Overfull \hbox (35.52925pt too wide) in paragraph at lines 185--186
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.67921pt too wide) in paragraph at lines 187--188
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (42.57924pt too wide) in paragraph at lines 199--200
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[24]
+Overfull \hbox (197.67897pt too wide) in paragraph at lines 226--227
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.27931pt too wide) in paragraph at lines 227--228
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.3293pt too wide) in paragraph at lines 232--233
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (35.52925pt too wide) in paragraph at lines 233--234
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[25] [26]
+Overfull \hbox (21.21776pt too wide) in paragraph at lines 286--287
 \OT1/cmr/m/n/12 There will be one node js mod-ule to han-dle ajax re-quest from
  client, named op[](request).js.
  []
 
-[24]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [25]
+[27]) (C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [28]
 Chapter 5.
-[26
+[29
 
-] [27] [28] [29] [30])
-(C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [31]
+] [30] [31] [32] [33])
+(C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [34]
 Chapter 6.
-[32
+[35
 
-] <images/loading-screen.jpg, id=159, 570.63188pt x 149.8097pt>
+] <images/loading-screen.jpg, id=168, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -858,8 +898,8 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[33 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=164, 755.07094pt x 181.42781pt>
+[36 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=173, 755.07094pt x 181.42781pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
@@ -870,15 +910,15 @@ Overfull \hbox (36.13214pt too wide) in paragraph at lines 25--26
  [] 
  []
 
-<images/facebook-login1.jpg, id=165, 347.79938pt x 252.945pt>
+<images/facebook-login1.jpg, id=174, 347.79938pt x 252.945pt>
 File: images/facebook-login1.jpg Graphic file (type jpg)
 
 <use images/facebook-login1.jpg>
 Package pdftex.def Info: images/facebook-login1.jpg used on input line 34.
 (pdftex.def)             Requested size: 252.94148pt x 274.6316pt.
- [34 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>] [35 <C:
+ [37 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>] [38 <C:
 /Users/erwin/Desktop/Project/gb-doc/images/facebook-login1.jpg>] <images/group-
-page1.png, id=173, 602.25pt x 204.01219pt>
+page1.png, id=183, 602.25pt x 204.01219pt>
 File: images/group-page1.png Graphic file (type png)
 
 <use images/group-page1.png>
@@ -889,8 +929,8 @@ Overfull \hbox (36.15147pt too wide) in paragraph at lines 47--48
  [] 
  []
 
-[36 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
-<images/add-new-group.png, id=178, 761.84625pt x 269.50688pt>
+[39 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
+<images/add-new-group.png, id=188, 761.84625pt x 269.50688pt>
 File: images/add-new-group.png Graphic file (type png)
 
 <use images/add-new-group.png>
@@ -901,8 +941,8 @@ Overfull \hbox (36.12744pt too wide) in paragraph at lines 60--61
  [] 
  []
 
-[37 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
-<images/group-page2.png, id=184, 694.84593pt x 197.23688pt>
+[40 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
+<images/group-page2.png, id=193, 694.84593pt x 197.23688pt>
 File: images/group-page2.png Graphic file (type png)
 
 <use images/group-page2.png>
@@ -913,15 +953,15 @@ Overfull \hbox (36.13353pt too wide) in paragraph at lines 73--74
  [] 
  []
 
-) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [38 <C:/Users/erwin/Des
+) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [41 <C:/Users/erwin/Des
 ktop/Project/gb-doc/images/group-page2.png>]
 Chapter 7.
-[39
+[42
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [40] [41
+]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [43] [44
 
 ])
-(C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [42] [43
+(C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [45] [46
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
@@ -930,28 +970,28 @@ LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\courier-scaled\ts1pcrs.fd"
 File: ts1pcrs.fd 2004/07/09 font definitions for TS1/pcrs.
 )
-[44]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [45] [46
+[47]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [48] [49
 
 ])
-(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [47] [48
+(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [50] [51
 
 ])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [49] [50
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [52] [53
 
-]) [51]
+]) [54]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10604 strings out of 493921
- 187389 string characters out of 3144877
+ 10605 strings out of 493921
+ 187406 string characters out of 3144877
  300475 words of memory out of 3000000
- 13686 multiletter control sequences out of 15000+200000
+ 13687 multiletter control sequences out of 15000+200000
  10630 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,11n,45p,725b,1516s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,45p,683b,1524s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 tcrm1200.pk> <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\tcrm1728.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontna
@@ -965,9 +1005,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (63 pages, 367559 bytes).
+Output written on main.pdf (66 pages, 375852 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
+ 283 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -49,7 +49,7 @@ The following HTML element is used in the application to load the bootstrap CSS 
 \subsection{Caching}
 In this application, we implemented the cache strategy where every request will be checked whether the file has been modified or is cached in the client browser. Etag value of the file is compared to decide whether the file has been modified or not. This strategy is implemented to reduce unneccesary bandwidth from the server
 
-The following are the four possibilities of the respond from the server as HTTP header:
+The following are the four possibilities of the respond from the server as HTTP header, the sample codes are taken from app{\_}http.js file. 
 
 \begin{itemize}
 \item Reply Not Found: This is the respond when the requested file is not found, and the server is going to return 404 Not Found to client.  
@@ -119,28 +119,141 @@ if(contentEncoding) {
 
 In Nodejs, components are organized in modules, in the form of namespace. All Nodejs modules that start with req{\_}*.js are request handler that get requested from router.js. All ajax requests will go through req{\_}op.js, that verifies the user logged-in to Facebook and app{\_}version is current. Every req{\_}op.js request must contains Facebook access{\_}token and app{\_}version. If the user is not logged-in to Facebook, req{\_}op.js returns the following JSON document, {login:true}, if the version is not current, then req{\_}op.js return the following JSON document, {ver:true}. 
 
-
+\subsection{Configuration}
 Following are the list of configuration files required in the server side, and the source-code of these files can be found in the Appendix A.
 
 \begin{itemize}
-\item .env : This is the setup file that contains environment variables. This file only exist in developer local environment, and these values in this file would be set in each Heroku environment config for staging and production.  
+\item .env : This is the setup file that contains environment variables. This file only exist in developer local environment, and these values in this file would be set in each Heroku environment config for staging and production.
+
+Following is the environment variable values in development environment.
+\begin{lstlisting}
+FB_APP_ID=466760923387961
+FB_SECRET=75e7a042473a989a3b876d3ec8749920
+PORT=5000
+APP_VER=2
+MONGO_URI=mongodb://app:gradebadge123@ds045757.mongolab.com:45757/gb-d
+\end{lstlisting} 
+
 \item .gitignore: This is the setup file that contains list of files or folders that will be ignored when committing or pushing to git repositories. 
 \item .slugignore: This is the setup file that contains list of files or folders that will be ignored when calculating the slug limit in Heroku
-\item package.json: This is the setup file that contains of list of dependencies and engine version use in the application. This file also contains application name, version and description.
-\item Procfile: This is the setup file that tells Heroku how to launch the application
+\item package.json: This is the setup file that contains of list of dependencies and engine version use in the application. This file also contains application name, version and description, as shown in the following. 
+\begin{lstlisting}
+{
+    "name": "gradebadge",
+    "version": "0.0.1",
+    "description": "Grade Badge System",
+    "dependencies": {
+        "mongodb": "1.2.13"
+    },
+    "engines": {
+        "node": "0.8.21",
+        "npm": "1.2.12"
+    }
+}
+\end{lstlisting} 
+
+\item Procfile: This is the setup file that tells Heroku how to launch the application, as shown in the followgin.
+\begin{lstlisting}
+web: node main.js
+\end{lstlisting} 
+
 \end{itemize}
 
-
+\subsection{Nodejs Module}
 The following list below are the list of files that are used in server executions, and the source-code of these files can be found in the Appendix A.
 
 \begin{itemize}
-\item main.js: This is the main module in node js, which contains the code that verify all neccessary environment variables are set correctly. It also invoke initialization in neccesarry modules to start the application, after the initialization is completed, it starts the HTTP request handling loop. 
-\item router.js: This module routes incoming requests to the right module.
-\item app{\_}ajax.js: This module contains the application wide AJAX handling routines
-\item app{\_}http.js: This module contains all of HTTP protocol routines for the application, caching headers, compression header and other HTTP based optimization are implemented in this module.
-\item fb.js: This module contains all code that interact with Facebook.
-\item logger.js: This module contains application wide logging functionalities.
+\item main.js: This is the main module in node js, which contains the code that verify all neccessary environment variables are set correctly. It also invoke initialization in neccesarry modules to start the application, after the initialization is completed, it starts the HTTP request handling loop, as shown in the following.
+\begin{lstlisting}
+var n = 3;
+function done() {
+  if (--n === 0) {
+    router.start();
+  }  
+}
+model  .init(done);
+router .init(done);
+fb     .init(done);
+\end{lstlisting} 
+
+\item router.js: This module routes incoming requests to the right module, as shown in the following.
+\begin{lstlisting}
+function route(req, res) {
+  var pathname = url.parse(req.url).pathname;
+  if      (pathname === '/') req_root.handle(req, res)
+  else if (pathname === verpath) req_app.handle(req, res)
+  else if (pathname === issuerpath) req_issuer.handle(req, res)
+  else if (pathname === '/mem')  req_mem.handle(req, res)
+  else if (pathname === '/counters') req_counters.handle(req, res)
+  else req_rootdir .handle(req, res);
+}
+\end{lstlisting} 
+
+
+\item app{\_}ajax.js: This module contains the application wide AJAX handling routines. Following is the sample function of Ajax respond that would send data back to client
+\begin{lstlisting}
+exports.data = function(res, data) {
+  if (data === undefined) {
+    data = {};
+  }
+  var buf = new Buffer(JSON.stringify({'data' : data}), 'utf8');
+  res.writeHead(200, {
+    'Content-Type': 'application/json; charset=UTF-8',
+    'Content-Length': buf.length,
+    'Pragma': 'no-cache',
+    'Cache-Control': 'no-cache, no-store'
+  });
+  res.end(buf);
+};
+\end{lstlisting} 
+
+
+\item app{\_}http.js: This module contains all of HTTP protocol routines for the application, caching headers, compression header and other HTTP based optimization are implemented in this module. This file was discussed in the caching strategy section.
+
+\item fb.js: This module contains all code that interact with Facebook. Following is the sample of initialization function, that will check Facebook App ID and secret below.
+\begin{lstlisting}
+exports.init = function(cb) {  
+  var options = {
+    hostname: 'graph.facebook.com',
+    path: '/oauth/access_token?' + 
+          'client_id=' + process.env.FB_APP_ID +
+          '&client_secret=' + process.env.FB_SECRET +
+          '&grant_type=client_credentials',
+    method: 'GET'
+  };
+  send(options, function(data) {
+    if (data instanceof Error) {
+      throw data;
+    }
+    if (data.access_token === undefined) {
+      throw new Error(
+        'fb.init: access_token not returned by facebook.' +
+        '\nfb.init: Facebook returned: ' + JSON.stringify(data)
+      );
+    }
+    appToken = data.access_token;
+    cb(appToken);
+  });
+};
+\end{lstlisting} 
+
+
+\item logger.js: This module contains application wide logging functionalities. Following is the sample of error loggin function in this module.
+\begin{lstlisting} 
+exports.errors = function(msg, opt_msg) {
+  if (errorsPrinted < process.env.LOGGER_MAX_ERRORS) {
+    ++errorsPrinted;
+    print('ERROR', msg, opt_msg);
+    if (errorPrinted == process.env.LOGGER_MAX_ERROR) {
+      console.log('MAX ERROR HIT');
+    }
+  }
+  ++exports.errorsReceived;
+};
+\end{lstlisting} 
+
 \item model.js: This module initializes the database connnection pool during server start 
+
 \item req{\_}app.js: This module handles request for application HTML template for badge earner
 \item req{\_}counter.js: This module handles request for logging counter 
 \item req{\_}file.js: This module handles request for static content.
