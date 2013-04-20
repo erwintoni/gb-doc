@@ -16,7 +16,7 @@ This application is based on Model View Controller (MVC) Architecture. Model Vie
 Following sections are the three strategies that are implemented to reduce and effectively use the bandwidth.  
 
 \subsection{File Compression}
-In this application, in order to reduce the bandwidth from the server, files that are transferred from the application  will be compressed in gzip format if the client browser supported it which will result to smaller file size. 
+In this application, in order to reduce the bandwidth from the server, files that are transferred from the application  will be compressed in gzip format if the client browser supported it which will result to smaller file size. The following shows how this is done in code, when client requests file/s from server in req{\_}file.js module, and the etag value is not matched. 
 
 \begin{lstlisting}
   if (file.gzip !== undefined && 
@@ -30,7 +30,8 @@ In this application, in order to reduce the bandwidth from the server, files tha
   }
 \end{lstlisting}
 
-Also the server will check if the files are not modified by comparing the etag value that will be part of caching strategy.
+Also the server will check if the files are not modified by comparing the etag value that will be part of caching strategy. The following shows how this is done in code, when the etag value is matched and server will not neccesary send back the requested file.
+ 
 \begin{lstlisting}
   if (req.headers['if-none-match'] === file.etag) {
     return app_http.replyNotModified(res);
@@ -52,13 +53,13 @@ In this application, we implemented the cache strategy where every request will 
 The following are the four possibilities of the respond from the server as HTTP header, the sample codes are taken from app{\_}http.js file. 
 
 \begin{itemize}
-\item Reply Not Found: This is the respond when the requested file is not found, and the server is going to return 404 Not Found to client.  
+\item Reply Not Found: This is the respond when the requested file is not found, and the server is going to return 404 Not Found to client, as shown in the following.
 
 \begin{lstlisting}
 res.writeHead(404, {});
 \end{lstlisting}
 
-\item Reply Not Modified: This is the respond when the requested file is not modified, where the etag value is still the same. 
+\item Reply Not Modified: This is the respond when the requested file is not modified, where the etag value is still the same. The following shows how this is done in the code, where it will just update the experation time of the requested file. 
 
 \begin{lstlisting}
 res.writeHead(304, {
@@ -69,7 +70,7 @@ res.writeHead(304, {
   });
 \end{lstlisting}
 
-\item Reply Not Cached: This is the respond when the requested file is not cached in the client browser. 
+\item Reply Not Cached: This is the respond when the requested file is not cached in the client browser. The following shows how this is done in the code, where server will respond by returning the requrested file/s.
 
 \begin{lstlisting}
 res.writeHead(200, {
@@ -82,7 +83,7 @@ res.writeHead(200, {
   });
 \end{lstlisting}
 
-\item Reply Cached: This is the respond when the requested file is cached in the client browser, then the server will update the expiration date of the file.
+\item Reply Cached: This is the respond when the requested file is cached in the client browser, then the server will update the expiration date of the file. The following shows how this is done in the code, where it checks if content-encoding is supported.
 
 \begin{lstlisting}
 if(contentEncoding) {
@@ -125,13 +126,14 @@ Following are the list of configuration files required in the server side, and t
 \begin{itemize}
 \item .env : This is the setup file that contains environment variables. This file only exist in developer local environment, and these values in this file would be set in each Heroku environment config for staging and production.
 
-Following is the environment variable values in development environment.
+Following are the environment variable values in development environment. FB{\_}APP{\_}ID is the Facebook application ID and FB{\_}SECRET is the Facebook application secret, for each environment, we are using different Facebook application instance. PORT is the http port number set to use, and APP{\_}VER is the current application version. MONGO{\_}URI is the mongo database connection string, we are using different database insance for each environment.
 \begin{lstlisting}
 FB_APP_ID=466760923387961
 FB_SECRET=75e7a042473a989a3b876d3ec8749920
 PORT=5000
 APP_VER=2
-MONGO_URI=mongodb://app:gradebadge123@ds045757.mongolab.com:45757/gb-d
+MONGO_URI=mongodb://app:gradebadge123@
+         ds045757.mongolab.com:45757/gb-d
 \end{lstlisting} 
 
 \item .gitignore: This is the setup file that contains list of files or folders that will be ignored when committing or pushing to git repositories. 
@@ -152,7 +154,7 @@ MONGO_URI=mongodb://app:gradebadge123@ds045757.mongolab.com:45757/gb-d
 }
 \end{lstlisting} 
 
-\item Procfile: This is the setup file that tells Heroku how to launch the application, as shown in the followgin.
+\item Procfile: This is the setup file that tells Heroku how to launch the application, as shown in the following.
 \begin{lstlisting}
 web: node main.js
 \end{lstlisting} 
@@ -163,7 +165,9 @@ web: node main.js
 The following list below are the list of files that are used in server executions, and the source-code of these files can be found in the Appendix A.
 
 \begin{itemize}
-\item main.js: This is the main module in node js, which contains the code that verify all neccessary environment variables are set correctly. It also invoke initialization in neccesarry modules to start the application, after the initialization is completed, it starts the HTTP request handling loop, as shown in the following.
+\item main.js: This is the main module in node js, which contains the code that verify all neccessary environment variables are set correctly. It also invoke initialization in neccesarry modules to start the application, after the initialization is completed, it starts the HTTP request handling loop. 
+
+Following is the part of code in the main.js module, where it initializes the model, router and fb module and run them asynchronously. 
 \begin{lstlisting}
 var n = 3;
 function done() {
@@ -176,7 +180,7 @@ router .init(done);
 fb     .init(done);
 \end{lstlisting} 
 
-\item router.js: This module routes incoming requests to the right module, as shown in the following.
+\item router.js: This module routes incoming requests to the right module. Following is the part of the code in router.js module where it checks for pathname of incoming request and routes them to corresponding module handler.
 \begin{lstlisting}
 function route(req, res) {
   var pathname = url.parse(req.url).pathname;
@@ -190,7 +194,7 @@ function route(req, res) {
 \end{lstlisting} 
 
 
-\item app{\_}ajax.js: This module contains the application wide AJAX handling routines. Following is the sample function of Ajax respond that would send data back to client
+\item app{\_}ajax.js: This module contains the application wide AJAX handling routines. Following is the sample function of Ajax respond that would send data back to client in JSON and utf8 format.
 \begin{lstlisting}
 exports.data = function(res, data) {
   if (data === undefined) {
@@ -238,7 +242,7 @@ exports.init = function(cb) {
 \end{lstlisting} 
 
 
-\item logger.js: This module contains application wide logging functionalities. Following is the sample of error loggin function in this module.
+\item logger.js: This module contains application wide logging functionalities. Following is the sample of error logging function in this module.
 \begin{lstlisting} 
 exports.errors = function(msg, opt_msg) {
   if (errorsPrinted < process.env.LOGGER_MAX_ERRORS) {
@@ -252,55 +256,325 @@ exports.errors = function(msg, opt_msg) {
 };
 \end{lstlisting} 
 
-\item model.js: This module initializes the database connnection pool during server start 
+\item model.js: This module initializes the database connnection pool during server start. Following is the sample code to connect to Mongo client using the MONGO{\_}URI value in the environment variable, and connection options that were set in the model module.
+\begin{lstlisting} 
+MongoClient.connect(process.env.MONGO_URI, connectOptions, function(err, db) {
+    if (err) throw err;
+    exports.db = db;
+    cb();
+  }); 
+\end{lstlisting} 
 
-\item req{\_}app.js: This module handles request for application HTML template for badge earner
-\item req{\_}counter.js: This module handles request for logging counter 
-\item req{\_}file.js: This module handles request for static content.
-\item req{\_}issuer.js: This module handles request for application HTML template for badge issuers
-\item req{\_}mem.js: This module handles request for memory usage
-\item req{\_}root.js: This module handles request for static content under the root URL
-\item req{\_}op.js : This module handles all AJAX request from client and routes to appropriate modules.  
+\item req{\_}app.js: This module handles request for application HTML template for badge earner. Following is the initialization function of req{\_}app.js module, where it return app.html template, replace the FB{\_}APP{\_}ID with the one is environment variable, set the etag value and compress the file to gzip format.
+
+\begin{lstlisting} 
+exports.init = function(cb) {
+  fs.readFile('app.html', 'utf8', function(err, file) {
+    if (err) throw err;
+    html = new Buffer(file.replace(/FB_APP_ID/g,
+        process.env.FB_APP_ID), 'utf8');
+    etag = app_http.etag(html);
+    zlib.gzip(html, function(err, result) {
+      if (err) throw err;
+      ghtml = result;
+      cb();
+    });
+  });
+};
+\end{lstlisting} 
+
+\item req{\_}counter.js: This module handles request for logging counter. The following is the request handler function of req{\_}counter module where it contruct the page with logging information and send it back to client in utf8 format and not cached. 
+
+\begin{lstlisting} 
+exports.handle = function(req, res) {
+  var page =   
+             '<p>logger errors: ' + logger.errorsReceived   + '</p>' +
+             '<p>logger warnings: ' + logger.warningsReceived + '</p>' +
+             '<p>logger info: '  + logger.infoReceived     + '</p>' +
+             '<p></p>';
+      page = new Buffer(page, 'utf8');
+  app_http.replyNotCached(res, page);
+}
+\end{lstlisting} 
+
+\item req{\_}file.js: This module handles request for static content. The request handler function of this module is discussed in Bandwidth Reduction Strategy chapter where it handles the etag and gzip file compression.
+
+The following is the sample function where it calculates and displays memory consmption of the server to the console.
+\begin{lstlisting} 
+function displayStats(files) {
+  var uncompressed = 0, compressed = 0;
+  for (var i = 0; i < files.length; ++i) {
+    uncompressed += files[i].data.length;
+    if (files[i].gzip !== undefined) compressed += files[i].gzip.length;
+  }
+  console.log('memfile bytes, uncompressed: ' + 
+         Math.ceil(uncompressed / 1024 / 1024) + ' MB');
+  console.log('memfile bytes, compressed:   ' + 
+         Math.ceil(compressed / 1024 / 1024) + ' MB');
+}
+\end{lstlisting} 
+  
+\item req{\_}issuer.js: This module handles request for application HTML template for badge issuers. Following is the initialization function of req{\_}issuer.js module, where it return issuer.html template, replace the FB{\_}APP{\_}ID with the one is environment variable, set the etag value and compress the file to gzip format.
+
+\begin{lstlisting} 
+exports.init = function(cb) {
+  fs.readFile('issuer.html', 'utf8', function(err, file) {
+    if (err) throw err;
+    html = new Buffer(file.replace(/FB_APP_ID/g, 
+          process.env.FB_APP_ID), 'utf8');
+    etag = app_http.etag(html);
+    zlib.gzip(html, function(err, result) {
+      if (err) throw err;
+      ghtml = result;
+      cb();
+    });
+  });
+};
+\end{lstlisting} 
+
+\item req{\_}mem.js: This module handles request for memory usage. The following is the request handler function of req{\_}mem module where it contruct the page with memory usage information and send it back to client in utf8 format and not cached. 
+
+\begin{lstlisting}
+exports.handle = function(req, res) {
+  var usage = process.memoryUsage(),
+      page = '<p>Heroku limit = 512 MB</p>' + 
+             '<p>rss = '       + Math.ceil(usage.rss       / 1024 / 1024) + ' MB</p>' +  
+             '<p>heapTotal = ' + Math.ceil(usage.heapTotal / 1024 / 1024) + ' MB</p>' +
+             '<p>heapUsed = '  + Math.ceil(usage.heapUsed  / 1024 / 1024) + ' MB</p>';
+      page = new Buffer(page, 'utf8');
+  app_http.replyNotCached(res, page);
+}
+\end{lstlisting}
+
+\item req{\_}root.js: This module handles request for static content under the root URL. The following is the request handler function of req{\_}root module where it contruct the html page that will redirect the page to the correct path with current version number.
+
+\begin{lstlisting}
+var html = new Buffer('<script>location.replace("/' + process.env.APP_VER + '/");</script>', 'utf8');
+exports.handle = function(req, res) {
+  app_http.replyNotCached(res, html);
+};
+\end{lstlisting}
+
+
+\item req{\_}op.js : This module handles all AJAX request from client and routes to appropriate modules. The following is the part of request handler function where it checks the pathname of incoming request and call the apporiate module handler.
+
+\begin{lstlisting}
+exports.handle = function(req, res) {
+  app_ajax.parse(req, function(data) {
+      var pathname = url.parse(req.url).pathname;
+      if (pathname === '/op/save-group') {
+        op_save_group.handle(data, res);
+      }else if (pathname === '/op/read-groups-by-admin') {
+        op_read_groups_by_admin.handle(data, res);
+    });
+  });
+}
+\end{lstlisting}
+ 
 \end{itemize}
-
 
 \section{Mapping of Model Classes to MongoDB}
 There will be one node js module to represent the mongoDB collection, named model{\_}(collection{\_}name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
 
-
-The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B
+The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B.
 
 \begin{itemize}
-\item model{\_}group.js: this node.js module represents Groups collection
-\item model{\_}badge.js: this node.js module represents Badges colletion
-\item model{\_}user.js: this node.js module represents Users collection
-\item model{\_}group{\_}admin.js: this node.js module represents group{\_}admin{\_}links collection
-\item model{\_}group{\_}member.js: this node.js module represents group{\_}member{\_}links collection
-\item model{\_}user{\_}badge.js: this node.js module represents user{\_}badge{\_}links collection
-\item model{\_}group{\_}badge.js: this node.js module represents group{\_}badge{\_}links collection
+\item model{\_}group.js: this node.js module represents Groups collection. Following is one of functions in the model{\_}group to get group document by given id. 
+
+\begin{lstlisting}
+exports.getByIds = function(group_ids, cb){
+  model.db.collection('groups').find({'_id' : {$in: group_ids} }).toArray(function(err, groups){
+    model.db.close();
+    if (err) return cb(err);
+    cb(groups);
+  });
+};
+\end{lstlisting}
+
+\item model{\_}badge.js: this node.js module represents Badges colletion. Following is one of functions in the model{\_}badge module to create badge document in the badge collection from given document.  
+
+\begin{lstlisting}
+exports.create = function(badge, cb) {
+  model.db.collection('badges').insert(
+    badge,
+    function(err) {
+      model.db.close();
+      if (err) return cb(err); 
+      cb();
+    }
+  );  
+};
+\end{lstlisting}
+
+\item model{\_}user.js: this node.js module represents Users collection. Following is one the functions in the model{\_}user module to record the login activity of the user by updating the last login time stamp in the user document.
+
+\begin{lstlisting}
+exports.login = function(user, cb) {
+  model.db.collection('users').save(
+    user,
+    function(err) {
+      model.db.close();
+      if (err) return cb(err); 
+      cb();
+    }
+  ); 
+};
+\end{lstlisting}
+
+\item model{\_}group{\_}admin.js: this node.js module represents group{\_}admin{\_}links collection. Following is one of the function in the model{\_}group{\_}admin module to get the array of groups ids from given admin (user) id.
+
+\begin{lstlisting}
+exports.getGroupIdsByAdminId = function(admin, cb) {
+  model.db.collection('group_admin_links',{'gid' : true}).find(admin).toArray(function(err, group_admin_links){
+    model.db.close();
+    if (err) return cb(err);
+    var group_ids = group_admin_links.map(function(group_admin_link) {return group_admin_link.gid;});
+    cb(group_ids);
+  });    
+};
+\end{lstlisting}
+
+
+\item model{\_}group{\_}member.js: this node.js module represents group{\_}member{\_}links collection. Following is one of the function in the model{\_}group{\_}member module to get the array member (user) ids from given group id.
+
+\begin{lstlisting}
+exports.getMemberIdsByGroupId = function(group, cb) {
+  model.db.collection('group_admin_links',{'uid' : true}).find(group).toArray(function(err, group_admin_links){
+    model.db.close();
+    if (err) return cb(err);
+    console.log('model_group_admin getMemberIdsByGroupId  group_admin_links = '+ JSON.stringify(group_admin_links));
+    var member_ids = group_admin_links.map(function(group_admin_link) {return group_admin_link.uid;});
+    cb(member_ids);
+  });    
+};
+\end{lstlisting}
+ 
+\item model{\_}user{\_}badge.js: this node.js module represents user{\_}badge{\_}links collection. Following is one of the functions in model{\_}user{\_}badge module to create the link document.
+
+\begin{lstlisting}
+exports.create = function(user_badge, cb) {
+  model.db.collection('user_badge_links').insert(
+    user_badge,
+    function(err) {
+      model.db.close();
+      if (err) return cb(err); 
+      cb();
+    }
+  );
+};
+\end{lstlisting}
+
+\item model{\_}group{\_}badge.js: this node.js module represents group{\_}badge{\_}links collection. Following is one of the functions in model{\_}group{\_}badge module to create the link document.
+
+\begin{lstlisting}
+exports.create = function(group_badge, cb) {
+  model.db.collection('group_badge_links').insert(
+    group_badge,
+    function(err) {
+      model.db.close();
+      if (err) return cb(err); 
+      cb();
+    }
+  );
+};
+\end{lstlisting}
+
 \end{itemize}
 
 \section{Request Handler Operation}
 There will be one node js module to handle ajax request from client, named op{\_}(request).js. Every request may read, write or update to and from more than one collection
 
-
 The following list below are the list of files that are used in request handler operation, and the source-code of these files can be found in the Appendix C
 
 \begin{itemize}
-\item op{\_}read{\_}badges{\_}by{\_}group.js: this operation is for request for all badges in the given group
-\item op{\_}read{\_}groups{\_}by{\_}admin.js: this operation is for request for all groups in the given admin
-\item op{\_}save{\_}badge.js: this operation is for request for saving given badge details
-\item op{\_}save{\_}group.js: this operation is for request for saving given group details
+\item op{\_}read{\_}badges{\_}by{\_}group.js: this operation is for request for all badges in the given group. The following shows how this is done in the code, where it gets the array of badge ids with given group id from group{\_}badge links document, and after that get the badges document based on the badge ids array result from badge collection. 
+
+\begin{lstlisting}
+exports.handle = function (data, res) {
+  var group = { gid: data.gid };
+  model_group_badge.getBadgeIdsByGroupId(group, function(bids) {
+    if (bids instanceof Error) {
+      return app_ajax.error(res);
+    }
+    model_badge.getByIds(bids, function(badges){
+      if (badges instanceof Error) {
+        return app_ajax.error(res);
+      }
+      return app_ajax.data(res, badges);
+    });
+  });
+};
+\end{lstlisting}
+
+\item op{\_}read{\_}groups{\_}by{\_}admin.js: this operation is for request for all groups in the given admin. The following shows how this is done in the code, where it gets the array of group ids with given admin id from group{\_}admin links document, and after that get the groups document based on the group ids array result from group collection.
+
+\begin{lstlisting}
+exports.handle = function (data, res) {
+  var admin = { uid: data.uid };
+  model_group_admin.getGroupIdsByAdminId(admin, function(gids) {
+    if (gids instanceof Error) {
+      return app_ajax.error(res);
+    }
+    model_group.getByIds(gids, function(groups){
+      if (groups instanceof Error) {
+        return app_ajax.error(res);
+      }
+      return app_ajax.data(res, groups);
+    });
+  });
+};
+\end{lstlisting}
+
+\item op{\_}save{\_}badge.js: this operation is for request for saving given badge details. The following shows how this is done in the code, where it adds badge document to badge collection, and get the newly created badge id together with group id then add to group{\_}badge linking document. 
+
+\begin{lstlisting}
+exports.handle = function (data, res) {
+  var badge = { name: data.name, desc: data.desc, pict:data.pict, gid: data.gid };
+  model_badge.create(badge, function(err) {
+    if (err) {
+      return app_ajax.error(res);
+    }
+    var group_badge = { bid : badge._id, gid : badge.gid };
+    model_group_badge.create(group_badge, function(err) {
+    if (err) {
+      return app_ajax.error(res);
+    }
+    });
+  });
+  return app_ajax.data(res, {gid : badge._id} );  
+};
+\end{lstlisting}
+
+\item op{\_}save{\_}group.js: this operation is for request for saving given group details. The following shows how this is done in the code, where it adds group document to group collection, and get the newly created group id together with user id then add to group{\_}admin linking document. 
+
+\begin{lstlisting}
+exports.handle = function (data, res) {
+  var group = { name: data.name, desc: data.desc, uid: data.uid };
+  model_group.create(group, function(err) {
+    if (err) {
+      return app_ajax.error(res);
+    }
+    var group_admin = { gid : group._id, uid : group.uid };
+    model_group_admin.create(group_admin, function(err) {
+      if (err) {
+        return app_ajax.error(res);
+      }      
+    });
+    return app_ajax.data(res, {gid : group._id} );
+  });
+};
+\end{lstlisting}
+
 \end{itemize}
 
 \section{Client-side Architecutre Design}
-The following list below are the list of files that are used in client-side execution, and the source-code of these files can be found in the Appendix D
+The following list below are the list of files that are used in client-side execution, and the source-code of these files can be found in the Appendix D.
 
 \begin{itemize}
-\item app.html : This is the html template for badge earner page
-\item issuer.html : This is the html template for badge issuer page
-\item public{\_}root/channel.html : This is the static content required by Facebook 
-\item public{\_}root/favicon.ico : This is the statuc content for icon use in the browser
-\item public{\_}ver/app.js : This is the client java-script  
-\item public{\_}ver/style.css: This is the css file use
+\item app.html : This is the html template for badge earner page.
+\item issuer.html : This is the html template for badge issuer page.
+\item public{\_}root/channel.html : This is the static content required by Facebook. 
+\item public{\_}root/favicon.ico : This is the statuc content for icon use in the browser.
+\item public{\_}ver/app.js : This is the client side java-script. 
+\item public{\_}ver/style.css: This is the css file used in this application.
 \end{itemize}
