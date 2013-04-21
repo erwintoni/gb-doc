@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  21 APR 2013 15:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  21 APR 2013 16:50
 entering extended mode
 **main
 (C:\Users\erwin\Desktop\Project\gb-doc\main.tex
@@ -884,27 +884,65 @@ Overfull \hbox (36.12744pt too wide) in paragraph at lines 60--61
  []
 
 [53 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
-<images/group-page2.png, id=234, 694.84593pt x 197.23688pt>
+<images/group-page2.png, id=234, 963.6pt x 479.54156pt>
 File: images/group-page2.png Graphic file (type png)
 
 <use images/group-page2.png>
 Package pdftex.def Info: images/group-page2.png used on input line 73.
-(pdftex.def)             Requested size: 469.75354pt x 224.03674pt.
+(pdftex.def)             Requested size: 469.75679pt x 440.85431pt.
 
-Overfull \hbox (36.13353pt too wide) in paragraph at lines 73--74
+Overfull \hbox (36.13678pt too wide) in paragraph at lines 73--74
  [] 
  []
 
-) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex [54 <C:/Users/erwin/Des
-ktop/Project/gb-doc/images/group-page2.png>]
+[54 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page2.png>]
+<images/badge-page.png, id=239, 957.5775pt x 450.18187pt>
+File: images/badge-page.png Graphic file (type png)
+
+<use images/badge-page.png>
+Package pdftex.def Info: images/badge-page.png used on input line 86.
+(pdftex.def)             Requested size: 469.7577pt x 368.59511pt.
+
+Overfull \hbox (36.1377pt too wide) in paragraph at lines 86--87
+ [] 
+ []
+
+[55 <C:/Users/erwin/Desktop/Project/gb-doc/images/badge-page.png>]
+<images/add-new-badge.png, id=245, 965.85844pt x 464.4853pt>
+File: images/add-new-badge.png Graphic file (type png)
+
+<use images/add-new-badge.png>
+Package pdftex.def Info: images/add-new-badge.png used on input line 99.
+(pdftex.def)             Requested size: 469.75244pt x 368.58366pt.
+
+Overfull \hbox (36.13243pt too wide) in paragraph at lines 99--100
+ [] 
+ []
+
+[56 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-badge.png>]
+<images/counters.png, id=250, 348.55219pt x 258.9675pt>
+File: images/counters.png Graphic file (type png)
+
+<use images/counters.png>
+Package pdftex.def Info: images/counters.png used on input line 112.
+(pdftex.def)             Requested size: 252.94647pt x 224.04726pt.
+ [57 <C:/Users/erwin/Desktop/Project/gb-doc/images/counters.png>] <images/mem.p
+ng, id=255, 231.86626pt x 140.02313pt>
+File: images/mem.png Graphic file (type png)
+
+<use images/mem.png>
+Package pdftex.def Info: images/mem.png used on input line 125.
+(pdftex.def)             Requested size: 252.94855pt x 224.04797pt.
+) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex
+[58 <C:/Users/erwin/Desktop/Project/gb-doc/images/mem.png>]
 Chapter 7.
-[55
+[59
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [56] [57
+]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [60] [61
 
-] [58]
-[59] [60] [61]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [62]
-[63
+] [62]
+[63] [64] [65]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [66]
+[67
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
@@ -912,26 +950,26 @@ LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\courier-scaled\ts1pcrs.fd"
 File: ts1pcrs.fd 2004/07/09 font definitions for TS1/pcrs.
 )
-[64]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [65] [66
+[68]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [69] [70
 
-] [67])
-(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [68] [69
+] [71])
+(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [72] [73
 
-] [70] [71]
-[72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [87] [88
+] [74] [75]
+[76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [91] [92
 
-]) [89]
+]) [93]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10599 strings out of 493921
- 187345 string characters out of 3144877
- 320451 words of memory out of 3000000
- 13681 multiletter control sequences out of 15000+200000
+ 10623 strings out of 493921
+ 187842 string characters out of 3144877
+ 320496 words of memory out of 3000000
+ 13701 multiletter control sequences out of 15000+200000
  10630 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,11n,45p,709b,1540s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -948,9 +986,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (101 pages, 427061 bytes).
+Output written on main.pdf (105 pages, 518817 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
+ 416 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -74,11 +74,15 @@
 \contentsline {section}{\numberline {6.3}Group Page}{52}
 \contentsline {section}{\numberline {6.4}Add New Group Page}{53}
 \contentsline {section}{\numberline {6.5}Group Page}{54}
-\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{55}
-\contentsline {section}{\numberline {7.1}Conclusion}{55}
-\contentsline {section}{\numberline {7.2}Future Direction}{55}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code}}{57}
-\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code}}{63}
-\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code}}{66}
-\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code}}{69}
-\contentsline {chapter}{References}{88}
+\contentsline {section}{\numberline {6.6}Group Badge Page}{55}
+\contentsline {section}{\numberline {6.7}Add New Badge Page}{56}
+\contentsline {section}{\numberline {6.8}Logging Counters Page}{57}
+\contentsline {section}{\numberline {6.9}Memory Statistic Page}{58}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{59}
+\contentsline {section}{\numberline {7.1}Conclusion}{59}
+\contentsline {section}{\numberline {7.2}Future Direction}{59}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code}}{61}
+\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code}}{67}
+\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code}}{70}
+\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code}}{73}
+\contentsline {chapter}{References}{92}
