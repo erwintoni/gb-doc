@@ -16,7 +16,7 @@ In this project, Heroku is used as a cloud application platform for running Java
 
 Among all the programming language execution environments supported by Heroku, this project uses Nodejs, which supports server-side programming in Javascript. On the client side, the application uses HTML5, Javascript, Jquery library and the Bootstap framework. The applciation also relies on the MongoDB database as provided by the MongoLab service provider.
 
-Node.js and MongoDB are often used together to build scalable web applications. The following describe the cloud computing service providers used in this project.
+Nodejs and MongoDB are often used together to build scalable web applications. The following describe the cloud computing service providers used in this project.
 
 \section{Technology Overview}
 
@@ -27,7 +27,7 @@ Facebook is a popular social networking website more than one billion users. It 
 Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git \cite{Heroku}.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku work is a partner of Facebook and so is designed to work easily with it. 
 
 \subsection{MongoDB}
-There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Node.js and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying \cite{mongodb}. 
+There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Nodejs and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying \cite{mongodb}. 
 
 \subsection{MongoLab}
 MongoLab is the cloud computing provider for MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. 
@@ -41,8 +41,8 @@ Bootstrap is a freely avaialble CSS and Javascript library created by Twitter.  
 \subsection{Jquery}
 The GradeBadge application uses Jquery for AJAX transactions and DOM manipulation \cite{JQuery}.  Bootstrap also depends on Jquery.
 
-\subsection{Node.js}
-Cloud-based services support apps written in several different programming languages, such as Java, Python, PHP, Javascript, Ruby and more. For this project we used Javascript running in a Node.js context. Node.js is a platform built on Chrome's JavaScript runtime.  It's purpose is to allow construction of fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient when used for I/O intensive applications such as Web applications \cite{nodejs}.
+\subsection{Nodejs}
+Cloud-based services support apps written in several different programming languages, such as Java, Python, PHP, Javascript, Ruby and more. For this project we used Javascript running in a Node.js context. Nodejs is a platform built on Chrome's JavaScript runtime.  It's purpose is to allow construction of fast, scalable network applications. Nodejs uses an event-driven, non-blocking I/O model that makes it lightweight and efficient when used for I/O intensive applications such as Web applications \cite{nodejs}.
 
 \section{Project Purpose}
 The purpose of this project is to explore the current technologies that enable rapid development and deployment of desktop and mobile Web applications that can scale to accomodate any number of users.
@@ -71,7 +71,7 @@ The definitions, acronyms, and abbreviations used in the document are described 
 \item GradeBadge: The name of this project.
 \item API: Application Programming Interface, which is a set of routines that an application uses to request and carry out low-level services performed by a computer's operating system; also, a set of calling conventions in programming that defines how a service is invoked through the application \cite{API}.
 \item Cloud computing: the use of computing resources (hardware and software) that are delivered as a service over a network (typically the Internet) \cite{cloudcomputing}.
-\item JQuery: A javascript library for building web based applications \cite{JQuery}.
+\item Jquery: A Javascript library for building web based applications \cite{JQuery}.
 \item DOM: Document Object Model, which is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents \cite{DOM}.
 item I/O: Input/Output.
 \item UI: User Interface.
@@ -89,7 +89,6 @@ item I/O: Input/Output.
 \item NoSQL: Types of databases that use key-value pairs for storing data unlike traditional relational databases. \cite{NoSql}.
 \item JSON: Javascript Object Notation, which is a data representation format using key-value pairs \cite{json}.
 \item Ajax:  Asynchronous JavaScript and XML, which is a method for Web applications to communicate between client browsers and servers \cite{Ajax}.
-\item OOP: Object Oriented Programming, which is a computer programming paradigm where application logic is organized into objects that provide an interface to encapsulated state. \cite{OOP}.
 \item CDN: Content Distribution Network.
 \item Slug: The binary deployed to Heroku.
 \end{itemize}

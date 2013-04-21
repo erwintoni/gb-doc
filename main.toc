@@ -13,72 +13,72 @@
 \contentsline {subsection}{\numberline {1.2.5}Git}{4}
 \contentsline {subsection}{\numberline {1.2.6}Bootstrap}{4}
 \contentsline {subsection}{\numberline {1.2.7}Jquery}{4}
-\contentsline {subsection}{\numberline {1.2.8}Node.js}{4}
+\contentsline {subsection}{\numberline {1.2.8}Nodejs}{4}
 \contentsline {section}{\numberline {1.3}Project Purpose}{5}
 \contentsline {section}{\numberline {1.4}Project Scope}{5}
 \contentsline {section}{\numberline {1.5}Related Work}{5}
 \contentsline {section}{\numberline {1.6}Definitions, Acronyms, and Abbreviations}{6}
-\contentsline {chapter}{\numberline {2.}Software Requirements Specification}{9}
-\contentsline {section}{\numberline {2.1}External Interfaces Requirement}{9}
-\contentsline {subsection}{\numberline {2.1.1}Hardware Interfaces}{9}
-\contentsline {subsection}{\numberline {2.1.2}Software Interfaces}{9}
-\contentsline {subsection}{\numberline {2.1.3}Communication Interfaces}{9}
-\contentsline {section}{\numberline {2.2}Functional Requirement}{10}
-\contentsline {subsection}{\numberline {2.2.1}Create group}{10}
-\contentsline {subsection}{\numberline {2.2.2}Create Badge}{11}
-\contentsline {subsection}{\numberline {2.2.3}Add Member}{11}
-\contentsline {subsection}{\numberline {2.2.4}Issue Badges to Members}{11}
-\contentsline {subsection}{\numberline {2.2.5}View Badge Earned}{11}
-\contentsline {subsection}{\numberline {2.2.6}Share Badge to Social Networking}{11}
-\contentsline {section}{\numberline {2.3}Performance Requirement}{11}
-\contentsline {section}{\numberline {2.4}Design Constraint}{11}
-\contentsline {section}{\numberline {2.5}Software System Attributes}{12}
-\contentsline {chapter}{\numberline {3.}System Architecture}{13}
-\contentsline {section}{\numberline {3.1}Overview}{13}
-\contentsline {section}{\numberline {3.2}Deployment Workflow}{14}
-\contentsline {subsection}{\numberline {3.2.1}Developers/Release Manager}{16}
-\contentsline {subsection}{\numberline {3.2.2}Heroku}{16}
-\contentsline {subsection}{\numberline {3.2.3}MongoLab}{17}
-\contentsline {subsection}{\numberline {3.2.4}Facebook}{17}
-\contentsline {subsection}{\numberline {3.2.5}Client Browser}{17}
-\contentsline {chapter}{\numberline {4.}System Design}{18}
-\contentsline {section}{\numberline {4.1}Design Overview}{18}
-\contentsline {section}{\numberline {4.2}Model View Controller Architecture}{18}
-\contentsline {section}{\numberline {4.3}Bandwidth Reduction Strategy}{19}
-\contentsline {subsection}{\numberline {4.3.1}File Compression}{19}
-\contentsline {subsection}{\numberline {4.3.2}Content Distribution Network Resources}{20}
-\contentsline {subsection}{\numberline {4.3.3}Caching}{20}
-\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{22}
-\contentsline {subsection}{\numberline {4.4.1}Configuration}{23}
-\contentsline {subsection}{\numberline {4.4.2}Nodejs Modules}{25}
-\contentsline {section}{\numberline {4.5}Mapping of Model Classes to MongoDB}{33}
-\contentsline {section}{\numberline {4.6}Request Handler Operation}{37}
-\contentsline {section}{\numberline {4.7}Client-side Architecutre Design}{41}
-\contentsline {chapter}{\numberline {5.}Database Design}{43}
-\contentsline {section}{\numberline {5.1}Overview}{43}
-\contentsline {subsection}{\numberline {5.1.1}MongoDB}{43}
-\contentsline {subsection}{\numberline {5.1.2}MongoLab}{43}
-\contentsline {subsection}{\numberline {5.1.3}Documents}{43}
-\contentsline {subsection}{\numberline {5.1.4}Collections}{44}
-\contentsline {section}{\numberline {5.2}Data Model}{44}
-\contentsline {subsection}{\numberline {5.2.1}User Collection}{45}
-\contentsline {subsection}{\numberline {5.2.2}Group Collection}{45}
+\contentsline {chapter}{\numberline {2.}Software Requirements Specification}{8}
+\contentsline {section}{\numberline {2.1}External Interfaces Requirement}{8}
+\contentsline {subsection}{\numberline {2.1.1}Hardware Interfaces}{8}
+\contentsline {subsection}{\numberline {2.1.2}Software Interfaces}{8}
+\contentsline {subsection}{\numberline {2.1.3}Communication Interfaces}{8}
+\contentsline {section}{\numberline {2.2}Functional Requirement}{9}
+\contentsline {subsection}{\numberline {2.2.1}Create group}{9}
+\contentsline {subsection}{\numberline {2.2.2}Create Badge}{10}
+\contentsline {subsection}{\numberline {2.2.3}Add Member}{10}
+\contentsline {subsection}{\numberline {2.2.4}Issue Badges to Members}{10}
+\contentsline {subsection}{\numberline {2.2.5}View Badge Earned}{10}
+\contentsline {subsection}{\numberline {2.2.6}Share Badge to Social Networking}{10}
+\contentsline {section}{\numberline {2.3}Performance Requirement}{10}
+\contentsline {section}{\numberline {2.4}Design Constraint}{10}
+\contentsline {section}{\numberline {2.5}Software System Attributes}{11}
+\contentsline {chapter}{\numberline {3.}System Architecture}{12}
+\contentsline {section}{\numberline {3.1}Overview}{12}
+\contentsline {section}{\numberline {3.2}Deployment Workflow}{13}
+\contentsline {subsection}{\numberline {3.2.1}Developers/Release Manager}{15}
+\contentsline {subsection}{\numberline {3.2.2}Heroku}{15}
+\contentsline {subsection}{\numberline {3.2.3}MongoLab}{16}
+\contentsline {subsection}{\numberline {3.2.4}Facebook}{16}
+\contentsline {subsection}{\numberline {3.2.5}Client Browser}{16}
+\contentsline {chapter}{\numberline {4.}System Design}{17}
+\contentsline {section}{\numberline {4.1}Design Overview}{17}
+\contentsline {section}{\numberline {4.2}Model View Controller Architecture}{17}
+\contentsline {section}{\numberline {4.3}Bandwidth Reduction Strategy}{18}
+\contentsline {subsection}{\numberline {4.3.1}File Compression}{18}
+\contentsline {subsection}{\numberline {4.3.2}Content Distribution Network Resources}{19}
+\contentsline {subsection}{\numberline {4.3.3}Caching}{19}
+\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{21}
+\contentsline {subsection}{\numberline {4.4.1}Configuration}{22}
+\contentsline {subsection}{\numberline {4.4.2}Nodejs Modules}{24}
+\contentsline {section}{\numberline {4.5}Mapping of Model Classes to MongoDB}{32}
+\contentsline {section}{\numberline {4.6}Request Handler Operation}{36}
+\contentsline {section}{\numberline {4.7}Client-side Architectural Design}{40}
+\contentsline {chapter}{\numberline {5.}Database Design}{42}
+\contentsline {section}{\numberline {5.1}Overview}{42}
+\contentsline {subsection}{\numberline {5.1.1}MongoDB}{42}
+\contentsline {subsection}{\numberline {5.1.2}MongoLab}{42}
+\contentsline {subsection}{\numberline {5.1.3}Documents}{42}
+\contentsline {subsection}{\numberline {5.1.4}Collections}{43}
+\contentsline {section}{\numberline {5.2}Data Model}{43}
+\contentsline {subsection}{\numberline {5.2.1}User Collection}{44}
+\contentsline {subsection}{\numberline {5.2.2}Group Collection}{44}
 \contentsline {subsection}{\numberline {5.2.3}Badge Collection}{45}
-\contentsline {subsection}{\numberline {5.2.4}Group Admin Links Collection}{46}
+\contentsline {subsection}{\numberline {5.2.4}Group Admin Links Collection}{45}
 \contentsline {subsection}{\numberline {5.2.5}Group Member Links Collection}{46}
-\contentsline {subsection}{\numberline {5.2.6}Badge User Links Collection}{47}
-\contentsline {subsection}{\numberline {5.2.7}Group Badge Links Collection}{47}
-\contentsline {chapter}{\numberline {6.}Project Implementation}{49}
-\contentsline {section}{\numberline {6.1}Loading Screen}{50}
-\contentsline {section}{\numberline {6.2}Login Screen}{51}
-\contentsline {section}{\numberline {6.3}Group Page}{53}
-\contentsline {section}{\numberline {6.4}Add New Group Page}{54}
-\contentsline {section}{\numberline {6.5}Group Page}{55}
-\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{56}
-\contentsline {section}{\numberline {7.1}Conclusion}{56}
-\contentsline {section}{\numberline {7.2}Future Direction}{56}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code}}{58}
-\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code}}{64}
-\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code}}{67}
-\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code}}{70}
-\contentsline {chapter}{References}{89}
+\contentsline {subsection}{\numberline {5.2.6}Badge User Links Collection}{46}
+\contentsline {subsection}{\numberline {5.2.7}Group Badge Links Collection}{46}
+\contentsline {chapter}{\numberline {6.}Project Implementation}{48}
+\contentsline {section}{\numberline {6.1}Loading Screen}{49}
+\contentsline {section}{\numberline {6.2}Login Screen}{50}
+\contentsline {section}{\numberline {6.3}Group Page}{52}
+\contentsline {section}{\numberline {6.4}Add New Group Page}{53}
+\contentsline {section}{\numberline {6.5}Group Page}{54}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{55}
+\contentsline {section}{\numberline {7.1}Conclusion}{55}
+\contentsline {section}{\numberline {7.2}Future Direction}{55}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code}}{57}
+\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code}}{63}
+\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code}}{66}
+\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code}}{69}
+\contentsline {chapter}{References}{88}

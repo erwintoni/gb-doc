@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Ajax}
-Ajax (programming).
-\newblock \url{http://en.wikipedia.org/wiki/Ajax_(programming)}.
-
 \bibitem{AWS}
 Amazon {Web Services}.
 \newblock \url{http://aws.amazon.com/}.
@@ -16,18 +12,13 @@ Android {Mobile Computing Platform}.
 Bootstrap.
 \newblock \url{http://twitter.github.com/bootstrap/}.
 
+\bibitem{IOS}
+{Developer for IOS - Apple Developer}.
+\newblock \url{https://developer.apple.com/technologies/ios/}.
+
 \bibitem{DOM}
 Dom {Document Object Model}.
 \newblock \url{http://www.w3.org/DOM}.
-
-\bibitem{Eclipse}
-Eclipse {Founcation}.
-\newblock \url{http://www.eclipse.org/}.
-
-\bibitem{Entities}
-Entities, {Properties, and Keys}.
-\newblock
-  \url{https://developers.google.com/appengine/docs/java/datastore/entities}.
 
 \bibitem{Facebook}
 Facebook {Developers}.
@@ -50,27 +41,17 @@ Google {Developers Academy}.
 Heroku {How It Works}.
 \newblock \url{http://www.heroku.com/how}.
 
-\bibitem{BigTable}
-How {Entities and Indexes are Stored}.
-\newblock
-  \url{https://developers.google.com/appengine/articles/storage_breakdown}.
-
 \bibitem{https}
-Http secure.
-\newblock \url{http://en.wikipedia.org/wiki/HTTPS}.
+Http secure node.js.
+\newblock \url{http://nodejs.org/api/https.html}.
 
 \bibitem{Indexes}
-Index {Definition and Structure}.
-\newblock
-  \url{https://developers.google.com/appengine/docs/python/datastore/indexes}.
+Index overview - mongodb.
+\newblock \url{http://docs.mongodb.org/manual/core/indexes/}.
 
-\bibitem{IOS}
-{IOS Mobile Computing Platform}.
-\newblock \url{http://en.wikipedia.org/wiki/IOS}.
-
-\bibitem{JettyWebServer}
-Jetty (web server).
-\newblock \url{http://en.wikipedia.org/wiki/Jetty_(web_server)}.
+\bibitem{Ajax}
+Jquery ajax.
+\newblock \url{http://api.jquery.com/jQuery.ajax/}.
 
 \bibitem{JqueryMobile}
 Jquery {Mobile 1.2 Reference Document}.
@@ -83,7 +64,7 @@ Jquery {Official Document}.
 
 \bibitem{json}
 Json.
-\newblock \url{http://en.wikipedia.org/wiki/Json}.
+\newblock \url{http://www.json.org/}.
 
 \bibitem{mongodb}
 Mongodb {Agile and Scalable}.
@@ -98,8 +79,8 @@ Node.js {Manual and Documentation}.
 \newblock \url{http://nodejs.org/api/}.
 
 \bibitem{NoSql}
-Nosql.
-\newblock \url{http://en.wikipedia.org/wiki/NoSQL/}.
+Nosql database.
+\newblock \url{http://nosql-database.org/}.
 
 \bibitem{GoogleAppEngineDataStore}
 Official {Documentation of Google App Engine Java Datastore}.
@@ -109,11 +90,6 @@ Official {Documentation of Google App Engine Java Datastore}.
 Official {Java Technology Document}.
 \newblock \url{http://www.java.com/en/download/faq/whatis_java.xml}.
 
-\bibitem{PolyModel}
-Poly{Model}.
-\newblock
-  \url{https://developers.google.com/appengine/docs/python/ndb/polymodelclass}.
-
 \bibitem{uml}
 Unified {Modeling Language}.
 \newblock \url{http://www-01.ibm.com/software/rational/uml/}.
@@ -121,11 +97,6 @@ Unified {Modeling Language}.
 \bibitem{w3}
 {W3C} community.
 \newblock \url{http://www.w3.org/TR/REC-html40/}.
-
-\bibitem{OOP}
-What is an {Object}?
-\newblock
-  \url{http://docs.oracle.com/javase/tutorial/java/concepts/object.html}.
 
 \bibitem{MicrosoftAzure}
 Windows {Azure}.

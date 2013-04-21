@@ -3,15 +3,15 @@
 
 \section{Overview}
 \subsection{MongoDB}
-MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB provides a document-oriented storage paradigm, including indexes for fast queries, replication for increased reliability, and auto-sharding for scalability.  \cite{mongodb}
+MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB provides a document-oriented storage paradigm, including indexes for fast queries, replication for increased reliability, and auto-sharding for scalability \cite{mongodb}.
 
 \subsection{MongoLab}
 MongoLab is a cloud computing provider for the MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service, which was used for the purposes of this project.
 
 \subsection{Documents}
-Data in MongoDB is stored in documents.  Every document must have a primary key named {\_id} and reside in a document collection. Compared to SQL databases, documents in a collection are like rows in a table.  Unlike SQL databases, MongoDB documents don't adhere to a schema, other than the requirement they have a {\_id} field that serves as a primary key.  When creating a new document, if you don't specify an {\_id} field, mongoDB will add it automatically.  \cite{mongodb}
+Data in MongoDB is stored in documents.  Every document must have a primary key named {\_id} and reside in a document collection. Compared to SQL databases, documents in a collection are like rows in a table.  Unlike SQL databases, MongoDB documents don't adhere to a schema, other than the requirement they have a {\_id} field that serves as a primary key.  When creating a new document, if you don't specify an {\_id} field, mongoDB will add it automatically \cite{mongodb}.
 
-Although document structure is not enforced in MongoDB, different data models and structure may have significant impacts on MongoDB and application performance. So it is good to keep some kind of structure or pattern in the data model.
+Although document structure is not enforced in MongoDB, different data models and structure may have significant impacts on MongoDB and application performance. So it is good to keep some kind of structure or pattern in the data model \cite{mongodb}.
 
 \subsection{Collections}
 Documents in MongoDB are organized into collections, and basic database operations are performed relative to collections. Indexes can be assigned to any field or subfield contained in documents within a MongoDB collection; they are defined on a per-collection level. Indices are need to perform queries that run faster than linear time.  \cite{mongodb}   
@@ -100,10 +100,8 @@ uid & 514e34507075ae0c0f000456 & User ID as Admin   \\ \hline
 \end{center}
 \end{table}
 
-TODO: FOLLOW THE ABOVE PATTERN
-
 \subsection{Group Member Links Collection}
-This collection represent many-to-many relationship between group and user. User in this collection means the member of the group. Table~\ref{table:GroupMemberLinksCollection}
+The group-member link collection contains documents that define the member users of groups. Table~\ref{table:GroupMemberLinksCollection} shows the information contained in the group-member linking document.
 
 \begin{table}[H]
 \caption{Group Member Links Collection}\label{table:GroupMemberLinksCollection}
@@ -121,7 +119,7 @@ uid & 514e34507075ae0c0f000675 & User ID as Member   \\ \hline
 
 
 \subsection{Badge User Links Collection}
-This collection represent many-to-many relationship between badge and user. User in this collection means the user who earned the badge. Table~\ref{table:BadgeUserLinksCollection}
+The badge-user link collection contains documents that define the earner users of bagdes. Table~\ref{table:BadgeUserLinksCollection} shows the information contained in the badge-user linking document.
 
 \begin{table}[H]
 \caption{Badge User Links Collection}\label{table:BadgeUserLinksCollection}
@@ -139,7 +137,7 @@ uid & 514e34507075ae0c0f000456 & User ID as Earner   \\ \hline
 
 
 \subsection{Group Badge Links Collection}
-This collection represent many-to-many relationship between group and badge. Badge in this collection means the badge in the group. Table~\ref{table:GroupBadgeLinksCollection}
+The group-badge link collection contains documents that define the badges of groups. Table~\ref{table:GroupBadgeLinksCollection} shows the information contained in the group-badge linking document.
 
 \begin{table}[H]
 \caption{Group Badge Links Collection}\label{table:GroupBadgeLinksCollection}
