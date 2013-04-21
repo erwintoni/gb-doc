@@ -1,4 +1,5 @@
 \Chapter{System Design}
+\lstset{breaklines=true}
 
 \section{Design Overview}
 The GradeBadge application uses a client-server architecture model, and it uses the Model View Controller (MVC) architecture model for both client and server. All communication between client and server is done through AJAX requests submitted through HTTP POST and containing data encoded using JSON.    
@@ -31,7 +32,7 @@ In this application, in order to reduce the bandwidth consumption, files that ar
   }
 \end{lstlisting}
 
-In addition to checking whether the browser supports gzip compression, the above code also checks for any etag value sent by the browser.  The stag functions as a version identifier, which the browser sends to the server with the request message to see whether the file is different from what is in the browser cache and what the server would return.  If the etag indicates that the file is current, the the server doesn't need to return the file; it simply returns a code of indicating that the browser's cached version of the file is current. The following shows how this is done in code.
+In addition to checking whether the browser supports gzip compression, the above code also checks for any etag value sent by the browser.  The etag functions as a version identifier, which the browser sends to the server with the request message to see whether the file is different from what is in the browser cache and what the server would return.  If the etag indicates that the file is current, the the server doesn't need to return the file; it simply returns a code of indicating that the browser's cached version of the file is current. The following shows how this is done in code.
  
 \begin{lstlisting}
   if (req.headers['if-none-match'] === file.etag) {
@@ -251,7 +252,7 @@ MongoClient.connect(process.env.MONGO_URI, connectOptions, function(err, db) {
   }); 
 \end{lstlisting} 
 
-\item req{\_}app.js: This module handles requests for the application's HTML template for badge earners. The following is the initialization function of the req{\_}app module, where it returns the app.html template, replacing FB{\_}APP{\_}ID with the Facebook application ID pro dived through an environmental variable.  To conserve bandwidth, the code uses a gzip compressed version of the file and sets the etag value.
+\item req{\_}app.js: This module handles requests for the application's HTML template for badge earners. The following is the initialization function of the req{\_}app module, where it returns the app.html template, replacing FB{\_}APP{\_}ID with the Facebook application ID prodived through an environmental variable.  To conserve bandwidth, the code uses a gzip compressed version of the file and sets the etag value.
 
 \begin{lstlisting} 
 exports.init = function(cb) {
@@ -300,7 +301,7 @@ function displayStats(files) {
 }
 \end{lstlisting} 
   
-\item req{\_}issuer.js: This module handles request for application HTML template for badge issuers. Following is the initialization function of req{\_}issuer.js module, where it return issuer.html template, replace the FB{\_}APP{\_}ID with the one is environment variable, set the etag value and compress the file to gzip format.
+\item req{\_}issuer.js: This module handles request for application HTML template for badge issuers. The following is the initialization function of the req{\_}issuer module, where it returns the issuer.html template, replacing FB{\_}APP{\_}ID with the Facebook application ID prodived through an environmental variable.  To conserve bandwidth, the code uses a gzip compressed version of the file and sets the etag value.
 
 \begin{lstlisting} 
 exports.init = function(cb) {
@@ -365,7 +366,7 @@ There will be one node js module to represent the mongoDB collection, named mode
 The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B.
 
 \begin{itemize}
-\item model{\_}group.js: this node.js module represents Groups collection. Following is one of functions in the model{\_}group to get group document by given id. 
+\item model{\_}group.js: this node.js module represents Groups collection. The following is one of functions in the model{\_}group to get group document by given id. 
 
 \begin{lstlisting}
 exports.getByIds = function(group_ids, cb){
@@ -379,7 +380,7 @@ exports.getByIds = function(group_ids, cb){
 
 HERE
 
-\item model{\_}badge.js: this node.js module represents Badges colletion. Following is one of functions in the model{\_}badge module to create badge document in the badge collection from given document.  
+\item model{\_}badge.js: this node.js module represents Badges colletion. The following is one of functions in the model{\_}badge module to create badge document in the badge collection from given document.  
 
 \begin{lstlisting}
 exports.create = function(badge, cb) {
@@ -394,7 +395,7 @@ exports.create = function(badge, cb) {
 };
 \end{lstlisting}
 
-\item model{\_}user.js: this node.js module represents Users collection. Following is one the functions in the model{\_}user module to record the login activity of the user by updating the last login time stamp in the user document.
+\item model{\_}user.js: this node.js module represents Users collection. The following is one the functions in the model{\_}user module to record the login activity of the user by updating the last login time stamp in the user document.
 
 \begin{lstlisting}
 exports.login = function(user, cb) {
@@ -409,7 +410,7 @@ exports.login = function(user, cb) {
 };
 \end{lstlisting}
 
-\item model{\_}group{\_}admin.js: this node.js module represents group{\_}admin{\_}links collection. Following is one of the function in the model{\_}group{\_}admin module to get the array of groups ids from given admin (user) id.
+\item model{\_}group{\_}admin.js: this node.js module represents group{\_}admin{\_}links collection. The following is one of the function in the model{\_}group{\_}admin module to get the array of groups ids from given admin (user) id.
 
 \begin{lstlisting}
 exports.getGroupIdsByAdminId = function(admin, cb) {
@@ -423,7 +424,7 @@ exports.getGroupIdsByAdminId = function(admin, cb) {
 \end{lstlisting}
 
 
-\item model{\_}group{\_}member.js: this node.js module represents group{\_}member{\_}links collection. Following is one of the function in the model{\_}group{\_}member module to get the array member (user) ids from given group id.
+\item model{\_}group{\_}member.js: this node.js module represents group{\_}member{\_}links collection. The following is one of the function in the model{\_}group{\_}member module to get the array member (user) ids from given group id.
 
 \begin{lstlisting}
 exports.getMemberIdsByGroupId = function(group, cb) {
@@ -437,7 +438,7 @@ exports.getMemberIdsByGroupId = function(group, cb) {
 };
 \end{lstlisting}
  
-\item model{\_}user{\_}badge.js: this node.js module represents user{\_}badge{\_}links collection. Following is one of the functions in model{\_}user{\_}badge module to create the link document.
+\item model{\_}user{\_}badge.js: this node.js module represents user{\_}badge{\_}links collection. The following is one of the functions in model{\_}user{\_}badge module to create the link document.
 
 \begin{lstlisting}
 exports.create = function(user_badge, cb) {
@@ -452,7 +453,7 @@ exports.create = function(user_badge, cb) {
 };
 \end{lstlisting}
 
-\item model{\_}group{\_}badge.js: this node.js module represents group{\_}badge{\_}links collection. Following is one of the functions in model{\_}group{\_}badge module to create the link document.
+\item model{\_}group{\_}badge.js: this node.js module represents group{\_}badge{\_}links collection. The following is one of the functions in model{\_}group{\_}badge module to create the link document.
 
 \begin{lstlisting}
 exports.create = function(group_badge, cb) {
@@ -472,7 +473,7 @@ exports.create = function(group_badge, cb) {
 \section{Request Handler Operation}
 There will be one node js module to handle ajax request from client, named op{\_}(request).js. Every request may read, write or update to and from more than one collection
 
-The following list below are the list of files that are used in request handler operation, and the source-code of these files can be found in the Appendix C
+The following are the list of files that are used in request handler operation, and the source-code of these files can be found in the Appendix C
 
 \begin{itemize}
 \item op{\_}read{\_}badges{\_}by{\_}group.js: this operation is for request for all badges in the given group. The following shows how this is done in the code, where it gets the array of badge ids with given group id from group{\_}badge links document, and after that get the badges document based on the badge ids array result from badge collection. 
@@ -559,10 +560,42 @@ exports.handle = function (data, res) {
 The following list below are the list of files that are used in client-side execution, and the source-code of these files can be found in the Appendix D.
 
 \begin{itemize}
-\item app.html : This is the html template for badge earner page.
-\item issuer.html : This is the html template for badge issuer page.
-\item public{\_}root/channel.html : This is the static content required by Facebook. 
-\item public{\_}root/favicon.ico : This is the statuc content for icon use in the browser.
-\item public{\_}ver/app.js : This is the client side java-script. 
-\item public{\_}ver/style.css: This is the css file used in this application.
+\item app.html : This is the html template for badge earners page. This file contains the HTML skeleton of the html page for badge earners. The following is the sample HTML code where in the template provides the List element then later Jquery will insert list item element into that.
+
+\begin{lstlisting}
+<ul id="groups_list" class="thumbnails">
+  <!-- auto generated -->
+</ul>  
+\end{lstlisting}
+
+\item issuer.html : This is the html template for badge issuer page. This file contains the HTML skeleton of the html page for badge earners. The following is the sample HTML code where in the template provides the list element without any content, then later Jquery will insert the name of the user logged in.
+
+\begin{lstlisting}
+<div class="nav-collapse collapse">
+  <ul class="nav">
+     <li id="name"></li>
+     <li id="login" style="display:none;"></li>
+   </ul>
+</div>
+\end{lstlisting}
+
+\item public{\_}root/channel.html : This is the static content required by Facebook. The following is the content of channel.html, which refer to java-script file required by Facebook.
+
+\begin{lstlisting}
+<script src="//connect.facebook.net/en_US/all.js"></script>
+\end{lstlisting}
+
+\item public{\_}root/favicon.ico : This is the static content for icon use in the browser.
+\item public{\_}ver/app.js : This is the client side java-script. The following is a sample function, which performs screen transition and initialize the new screen in this application.
+
+\begin{lstlisting}
+a.screen = function(screenName, speed){
+    if (speed === undefined) speed = 300;
+    var newScreen = screens[screenName];
+    if (newScreen.init) newScreen.init();
+    currentScreen.transitionTo(speed, newScreen);
+    currentScreen = newScreen;
+  };
+\end{lstlisting}
+
 \end{itemize}

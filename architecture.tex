@@ -1,5 +1,5 @@
 \Chapter{System Architecture}
-
+\lstset{breaklines=true}
 \section{Overview}
 There are three main server entities in this application, which are Heroku, Facebook, and MongoLab. When the client browser, either from desktop computer or tablet or smart phone, runs the application, it will hit the Heroku server, then the Heroku server will connect to Facebook server to check user authentication. And if the user is not logged-in, the user will be prompted with the Facebook login screen and submit the login data to Facebook server. 
 
@@ -81,8 +81,7 @@ In this project there are three sets of mongo databases used: development, stagi
 Below is the command on how to connect to remote Mongo Database that is hosted in MongoLab
 
 \begin{lstlisting}
-$ mongo <servername>.mongolab.com:<portno>/<dbname> 
-   -u <dbuser> -p <dbpassword>
+$ mongo <servername>.mongolab.com:<portno>/<dbname> -u <dbuser> -p <dbpassword>
 \end{lstlisting}
 
 \subsection{Facebook}
