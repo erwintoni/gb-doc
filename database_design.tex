@@ -3,34 +3,34 @@
 
 \section{Overview}
 \subsection{MongoDB}
- MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying.  \cite{mongodb}
+MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB provides a document-oriented storage paradigm, including indexes for fast queries, replication for increased reliability, and auto-sharding for scalability.  \cite{mongodb}
 
 \subsection{MongoLab}
-MongoLab is the cloud computing provider for MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. 
+MongoLab is a cloud computing provider for the MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service, which was used for the purposes of this project.
 
 \subsection{Documents}
-Data in MongoDB is stored in documents, and every document must have a primary key named {\_id}. Like reqular SQL-based database, documents are like row in a table, where in MongoDB, documents have flexible schema, but every document must have {\_id} field, even if you don't speficy the {\_id} field, mongoDB will add that automatically.  \cite{mongodb}
+Data in MongoDB is stored in documents.  Every document must have a primary key named {\_id} and reside in a document collection. Compared to SQL databases, documents in a collection are like rows in a table.  Unlike SQL databases, MongoDB documents don't adhere to a schema, other than the requirement they have a {\_id} field that serves as a primary key.  When creating a new document, if you don't specify an {\_id} field, mongoDB will add it automatically.  \cite{mongodb}
 
-Although document structure is not enforced in MongoDB, different data model and structure may have significant impacts on MongoDB and application performace. So it is good to keep some kind of structure or pattern in data model.  
+Although document structure is not enforced in MongoDB, different data models and structure may have significant impacts on MongoDB and application performance. So it is good to keep some kind of structure or pattern in the data model.
 
 \subsection{Collections}
-Documents in MongoDB are organized in collection, and basic database operations are performed based on collection. Indexes can be assigned in any field or subfield contained in documents within a MongoDB collection, and they are defined on per-collection level.  \cite{mongodb}   
+Documents in MongoDB are organized into collections, and basic database operations are performed relative to collections. Indexes can be assigned to any field or subfield contained in documents within a MongoDB collection; they are defined on a per-collection level. Indices are need to perform queries that run faster than linear time.  \cite{mongodb}   
 
 \section{Data Model}
-In this project, there are three main collections, User, Group and Badge Colletion. And there are four linkings colletions to represent the many-to-many relationship between the main collections.
+In this project, there are three main collections: User, Group and Badge.  There are four linking collections to represent the many-to-many relationships between the main collections that are needed by the application.  These collections are described in the following.
 
 \begin{itemize}
-\item user : this collection contains the user information
-\item group : this collection contains the group information  
-\item badge : this collection contains the badge information
-\item group{\_}admin{\_}links : this linking collection contains group{\_}id and user{\_}id, which represent the admin of a group
-\item group{\_}member{\_}links : this linking collection contains group{\_}id and user{\_}id, which represent the member of a group
-\item badge{\_}user{\_}links : this linking colletion contains badge{\_}id and user{\_}id, which reperesnt badges that user earned
-\item group{\_}badge{\_}links : think linking collection contains group{\_}id and badge{\_}id, which represent badges that belong to a group
+\item user: This collection contains the user information.
+\item group: This collection contains the group information.  
+\item badge: This collection contains the badge information.
+\item group{\_}admin{\_}links: This linking collection contains pairs of group ids and user ids, which represent the many-to-many relationships between groups and their admins.
+\item group{\_}member{\_}links: This linking collection contains pairs of group ids and user ids, which represent the many-to-many relationships between groups and their members.
+\item badge{\_}user{\_}links: This linking collection contains pairs of badge ids and user ids, which represent the many-to-many relationship between badges and their earners.
+\item group{\_}badge{\_}links: This linking collection contains pairs of group ids and badge ids, which represent the many-to-many relationships between groups and their badges.
 \end{itemize}
 
 \subsection{User Collection}
-This collection contains of user documents, contain the following information, Table~\ref{table:UserCollection}
+The user collection contains user documents, which contain the information shown in Table~\ref{table:UserCollection}.
 
 \begin{table}[H]
 \caption{User Collection}
@@ -65,7 +65,7 @@ desc & This is Yoga group in CSUSB & Group description   \\ \hline
 
 
 \subsection{Badge Collection}
-This collection contains of badge documents,  Table~\ref{table:BadgeCollection}
+The badge collection contains badge documents. Table ~\ref{table:BadgeCollection} shows the information contained in badge documents.
 
 \begin{table}[H]
 \caption{Badge Collection}\label{table:BadgeCollection}
@@ -84,7 +84,7 @@ pict & pict1.png & Badge Picture Reference   \\ \hline
 
 
 \subsection{Group Admin Links Collection}
-This collection represent many-to-many relationship between group and user. User in this collection means the admin of the group. Table~\ref{table:GroupAdminLinksCollection}
+The group-admin link collection contains documents that define the admin users of groups.  Table~\ref{table:GroupAdminLinksCollection} shows the information contained in the group-admin linking document.
 
 \begin{table}[H]
 \caption{Group Admin Links Collection}\label{table:GroupAdminLinksCollection}
@@ -99,6 +99,8 @@ uid & 514e34507075ae0c0f000456 & User ID as Admin   \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
+
+TODO: FOLLOW THE ABOVE PATTERN
 
 \subsection{Group Member Links Collection}
 This collection represent many-to-many relationship between group and user. User in this collection means the member of the group. Table~\ref{table:GroupMemberLinksCollection}
@@ -152,5 +154,4 @@ bid & 514e34507075ae0c0f000953 & Badge ID    \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
-
 

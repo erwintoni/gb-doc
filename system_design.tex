@@ -361,12 +361,12 @@ exports.handle = function(req, res) {
 \end{itemize}
 
 \section{Mapping of Model Classes to MongoDB}
-There will be one node js module to represent the mongoDB collection, named model{\_}(collection{\_}name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
+There will be one Nodejs module to represent the mongoDB collection, named model{\_}(collection{\_}name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
 
 The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B.
 
 \begin{itemize}
-\item model{\_}group.js: this node.js module represents Groups collection. The following is one of functions in the model{\_}group to get group document by given id. 
+\item model{\_}group.js: this Nodejs module represents Groups collection. The following is one of functions in the model{\_}group to get group document by given id. 
 
 \begin{lstlisting}
 exports.getByIds = function(group_ids, cb){
@@ -378,9 +378,7 @@ exports.getByIds = function(group_ids, cb){
 };
 \end{lstlisting}
 
-HERE
-
-\item model{\_}badge.js: this node.js module represents Badges colletion. The following is one of functions in the model{\_}badge module to create badge document in the badge collection from given document.  
+\item model{\_}badge.js: this Nodejs module is used to manage the database collection of badges. The following is one of the functions in the model{\_}badge module to create badge documents in the badge collection from a given document.  
 
 \begin{lstlisting}
 exports.create = function(badge, cb) {
@@ -395,7 +393,7 @@ exports.create = function(badge, cb) {
 };
 \end{lstlisting}
 
-\item model{\_}user.js: this node.js module represents Users collection. The following is one the functions in the model{\_}user module to record the login activity of the user by updating the last login time stamp in the user document.
+\item model{\_}user.js: this Nodejs module represents the Users collection. The following is one the functions in the model{\_}user module; it records the login activity of the user by updating the last login timestamp in the user document.
 
 \begin{lstlisting}
 exports.login = function(user, cb) {
@@ -410,7 +408,7 @@ exports.login = function(user, cb) {
 };
 \end{lstlisting}
 
-\item model{\_}group{\_}admin.js: this node.js module represents group{\_}admin{\_}links collection. The following is one of the function in the model{\_}group{\_}admin module to get the array of groups ids from given admin (user) id.
+\item model{\_}group{\_}admin.js: this Nodejs module represents the group{\_}admin{\_}links collection, which is used to associate groups and admins through a many-to-many relationship.  (A group has one or admins and an admin has one or groups.) The following is one of the functions in the model{\_}group{\_}admin module; it gets the array of group ids from a given admin user through their id.
 
 \begin{lstlisting}
 exports.getGroupIdsByAdminId = function(admin, cb) {
@@ -424,7 +422,7 @@ exports.getGroupIdsByAdminId = function(admin, cb) {
 \end{lstlisting}
 
 
-\item model{\_}group{\_}member.js: this node.js module represents group{\_}member{\_}links collection. The following is one of the function in the model{\_}group{\_}member module to get the array member (user) ids from given group id.
+\item model{\_}group{\_}member.js: this Nodejs module represents the group{\_}member{\_}links collection. The following is one of the functions in this module; it gets the users that are members of a group. 
 
 \begin{lstlisting}
 exports.getMemberIdsByGroupId = function(group, cb) {
@@ -438,7 +436,7 @@ exports.getMemberIdsByGroupId = function(group, cb) {
 };
 \end{lstlisting}
  
-\item model{\_}user{\_}badge.js: this node.js module represents user{\_}badge{\_}links collection. The following is one of the functions in model{\_}user{\_}badge module to create the link document.
+\item model{\_}user{\_}badge.js: This Nodejs module represents the user{\_}badge{\_}links collection. The following function of the model{\_}user{\_}badge module is used to create the document that links user with badges (through their ids) to show which badges are own by a given user.
 
 \begin{lstlisting}
 exports.create = function(user_badge, cb) {
@@ -453,7 +451,7 @@ exports.create = function(user_badge, cb) {
 };
 \end{lstlisting}
 
-\item model{\_}group{\_}badge.js: this node.js module represents group{\_}badge{\_}links collection. The following is one of the functions in model{\_}group{\_}badge module to create the link document.
+\item model{\_}group{\_}badge.js: This Nodejs module represents the group{\_}badge{\_}links collection. The following function from this module creates the documents that link groups with badges.
 
 \begin{lstlisting}
 exports.create = function(group_badge, cb) {
@@ -471,12 +469,12 @@ exports.create = function(group_badge, cb) {
 \end{itemize}
 
 \section{Request Handler Operation}
-There will be one node js module to handle ajax request from client, named op{\_}(request).js. Every request may read, write or update to and from more than one collection
+There will be one Nodejs module to handle Ajax requests from browsers, named op{\_}(request-type).js. Every request may read, write or update to and from more than one collection.
 
-The following are the list of files that are used in request handler operation, and the source-code of these files can be found in the Appendix C
+The following are the list of files that define the request handler modules; these source code files can be found in the Appendix C.
 
 \begin{itemize}
-\item op{\_}read{\_}badges{\_}by{\_}group.js: this operation is for request for all badges in the given group. The following shows how this is done in the code, where it gets the array of badge ids with given group id from group{\_}badge links document, and after that get the badges document based on the badge ids array result from badge collection. 
+\item op{\_}read{\_}badges{\_}by{\_}group.js: This operation is for requesting all badges in a given group. The following shows how this is done in the code, where the operation gets the array of badge ids for a given group id through a group{\_}badge linking document. After getting the badge ids, it gets the badge documents the array of badge ids. 
 
 \begin{lstlisting}
 exports.handle = function (data, res) {
@@ -495,7 +493,7 @@ exports.handle = function (data, res) {
 };
 \end{lstlisting}
 
-\item op{\_}read{\_}groups{\_}by{\_}admin.js: this operation is for request for all groups in the given admin. The following shows how this is done in the code, where it gets the array of group ids with given admin id from group{\_}admin links document, and after that get the groups document based on the group ids array result from group collection.
+\item op{\_}read{\_}groups{\_}by{\_}admin.js: This operation is for getting the group documents for a given group admin user.  The following shows how this is done in the code, where the operation gets the array of group ids for a given admin id through the group{\_}admin linking document.  After obtaining the group ids, the operation gets the group documents from the array of group ids.
 
 \begin{lstlisting}
 exports.handle = function (data, res) {
@@ -514,7 +512,7 @@ exports.handle = function (data, res) {
 };
 \end{lstlisting}
 
-\item op{\_}save{\_}badge.js: this operation is for request for saving given badge details. The following shows how this is done in the code, where it adds badge document to badge collection, and get the newly created badge id together with group id then add to group{\_}badge linking document. 
+\item op{\_}save{\_}badge.js: This operation is for creating a new badge. The following shows how this is done in the code, where the operation adds the badge document in memory to badge collection in the database.  After creating a new badge, the operation creates the linking document that associates the badge with a group. 
 
 \begin{lstlisting}
 exports.handle = function (data, res) {
@@ -534,7 +532,7 @@ exports.handle = function (data, res) {
 };
 \end{lstlisting}
 
-\item op{\_}save{\_}group.js: this operation is for request for saving given group details. The following shows how this is done in the code, where it adds group document to group collection, and get the newly created group id together with user id then add to group{\_}admin linking document. 
+\item op{\_}save{\_}group.js: This operation is for creating new groups. The following shows how this is done in the code, where operation adds a group document to group collection and creates the linking document that associates the group with an initial admin user. 
 
 \begin{lstlisting}
 exports.handle = function (data, res) {
@@ -556,11 +554,11 @@ exports.handle = function (data, res) {
 
 \end{itemize}
 
-\section{Client-side Architecutre Design}
-The following list below are the list of files that are used in client-side execution, and the source-code of these files can be found in the Appendix D.
+\section{Client-side Architectural Design}
+The following is the list of files that are used on the client-side; the corresponding source code can be found in the Appendix D.
 
 \begin{itemize}
-\item app.html : This is the html template for badge earners page. This file contains the HTML skeleton of the html page for badge earners. The following is the sample HTML code where in the template provides the List element then later Jquery will insert list item element into that.
+\item app.html: This is the html template for generating the badge earners Web page. This file contains the HTML skeleton of the HTML page. The following is a list element appearing in the template; this list element will be populated by data after page load by Javascript, which gets the data through an Ajax call to the application server.
 
 \begin{lstlisting}
 <ul id="groups_list" class="thumbnails">
@@ -568,25 +566,26 @@ The following list below are the list of files that are used in client-side exec
 </ul>  
 \end{lstlisting}
 
-\item issuer.html : This is the html template for badge issuer page. This file contains the HTML skeleton of the html page for badge earners. The following is the sample HTML code where in the template provides the list element without any content, then later Jquery will insert the name of the user logged in.
+\item issuer.html: This is the HTML template for the badge issuer Web page, which is a skeleton from which the page is constructed. The following is a sample of HTML code from this template; it is the list element that contains the logged in user's name.  This name is determine after login, and inserted as content by Javascript.
 
 \begin{lstlisting}
 <div class="nav-collapse collapse">
   <ul class="nav">
      <li id="name"></li>
      <li id="login" style="display:none;"></li>
+     . . . other menu items . . .
    </ul>
 </div>
 \end{lstlisting}
 
-\item public{\_}root/channel.html : This is the static content required by Facebook. The following is the content of channel.html, which refer to java-script file required by Facebook.
+\item public{\_}root/channel.html: This file is static content required by Facebook. The following is the content of this file.
 
 \begin{lstlisting}
 <script src="//connect.facebook.net/en_US/all.js"></script>
 \end{lstlisting}
 
-\item public{\_}root/favicon.ico : This is the static content for icon use in the browser.
-\item public{\_}ver/app.js : This is the client side java-script. The following is a sample function, which performs screen transition and initialize the new screen in this application.
+\item public{\_}root/favicon.ico: This is the favicon image requested by browsers; it is static content.
+\item public{\_}ver/app.js: This is the client-side Javascript. The following is a sample function, which performs screen transition.  When transitioning to a screen, this function calls the screen's init function.  The init function may use Ajax to retrieve data from the server needed to present current information to the user.
 
 \begin{lstlisting}
 a.screen = function(screenName, speed){
