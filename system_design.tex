@@ -21,15 +21,14 @@ The following sections describe the three strategies used in this project to red
 In this application, in order to reduce the bandwidth consumption, files that are transferred from the application server will be compressed in the gzip format if the client browser supports it, which will result in smaller files. The following code shows how browser requests for static resources are tested to see if the browser supports gzip compression.  This code appears in the req{\_}file module.
 
 \begin{lstlisting}
-  if (file.gzip !== undefined && 
-      req.headers['accept-encoding'] !== undefined && 
-      req.headers['accept-encoding'].indexOf('gzip') !== -1) {
-    return app_http.replyCached(res, file.gzip, file.type, 
-                                file.etag, 'gzip');
-  } else {
-    return app_http.replyCached(res, file.data, 
-                     file.type, file.etag);
-  }
+if (file.gzip !== undefined && 
+  req.headers['accept-encoding'] !== undefined && 
+  req.headers['accept-encoding'].indexOf('gzip') !== -1) 
+{
+  return app_http.replyCached(res, file.gzip, file.type, file.etag, 'gzip');
+} else {
+  return app_http.replyCached(res, file.data, file.type, file.etag);
+}
 \end{lstlisting}
 
 In addition to checking whether the browser supports gzip compression, the above code also checks for any etag value sent by the browser.  The etag functions as a version identifier, which the browser sends to the server with the request message to see whether the file is different from what is in the browser cache and what the server would return.  If the etag indicates that the file is current, the the server doesn't need to return the file; it simply returns a code of indicating that the browser's cached version of the file is current. The following shows how this is done in code.
