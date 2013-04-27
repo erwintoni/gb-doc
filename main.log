@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  24 APR 2013 11:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  27 APR 2013 14:37
 entering extended mode
 **main
 (C:\Users\erwin\Desktop\Project\gb-doc\main.tex
@@ -959,7 +959,7 @@ File: ts1pcrs.fd 2004/07/09 font definitions for TS1/pcrs.
 [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
 (C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [91] [92
 
-]) [93]
+] [93]) [94]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 
 LaTeX Warning: There were undefined references.
@@ -986,9 +986,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (105 pages, 518975 bytes).
+Output written on main.pdf (106 pages, 519993 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
+ 419 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

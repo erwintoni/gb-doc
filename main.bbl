@@ -1,106 +1,124 @@
 \begin{thebibliography}{10}
 
-\bibitem{AWS}
-Amazon {Web Services}.
-\newblock \url{http://aws.amazon.com/}.
-
 \bibitem{Android}
 Android {Mobile Computing Platform}.
-\newblock \url{http://developer.android.com/about/index.html}.
+\newblock (undated). [Online]. Viewed 2013 February 14. Available:
+  \url{http://developer.android.com/about/index.html}.
 
 \bibitem{bootstrap}
 Bootstrap.
-\newblock \url{http://twitter.github.com/bootstrap/}.
+\newblock (undated). [Online]. Viewed 2013 March 12. Available:
+  \url{http://twitter.github.com/bootstrap/}.
 
 \bibitem{IOS}
 {Developer for IOS - Apple Developer}.
-\newblock \url{https://developer.apple.com/technologies/ios/}.
+\newblock (undated). [Online]. Viewed 2013 March 22. Available:
+  \url{https://developer.apple.com/technologies/ios/}.
 
 \bibitem{DOM}
 Dom {Document Object Model}.
-\newblock \url{http://www.w3.org/DOM}.
+\newblock (undated). [Online]. Viewed 2013 February 6. Available:
+  \url{http://www.w3.org/DOM}.
 
 \bibitem{Facebook}
 Facebook {Developers}.
-\newblock \url{https://developers.facebook.com}.
+\newblock (undated). [Online]. Viewed 2013 March 8. Available:
+  \url{https://developers.facebook.com}.
 
 \bibitem{github}
 Github.
-\newblock \url{https://github.com/}.
+\newblock (undated). [Online]. Viewed 2013 March 23. Available:
+  \url{https://github.com/}.
 
 \bibitem{API}
 Glossary.
-\newblock \url{http://technet.microsoft.com/en-us/library/bb742416.aspx}.
+\newblock (undated). [Online]. Viewed 2013 March 1. Available:
+  \url{http://technet.microsoft.com/en-us/library/bb742416.aspx}.
 
 \bibitem{GoogleAppEngine}
 Google {Developers Academy}.
-\newblock
+\newblock (undated). [Online]. Viewed 2013 January 31. Available
   \url{https://developers.google.com/appengine/training/intro/whatisgae/}.
 
 \bibitem{Heroku}
 Heroku {How It Works}.
-\newblock \url{http://www.heroku.com/how}.
+\newblock (undated). [Online]. Viewed 2013 March 6. Available:
+  \url{http://www.heroku.com/how}.
 
 \bibitem{https}
 Http secure node.js.
-\newblock \url{http://nodejs.org/api/https.html}.
+\newblock (undated). [Online]. Viewed 2013 March 7. Available:
+  \url{http://nodejs.org/api/https.html}.
 
 \bibitem{Indexes}
 Index overview - mongodb.
-\newblock \url{http://docs.mongodb.org/manual/core/indexes/}.
+\newblock (undated). [Online]. Viewed 2013 March 2. Available:
+  \url{http://docs.mongodb.org/manual/core/indexes/}.
 
 \bibitem{Ajax}
 Jquery ajax.
-\newblock \url{http://api.jquery.com/jQuery.ajax/}.
+\newblock (undated). [Online]. Viewed 2013 March 2. Available:
+  \url{http://api.jquery.com/jQuery.ajax/}.
 
 \bibitem{JqueryMobile}
 Jquery {Mobile 1.2 Reference Document}.
-\newblock
+\newblock (undated). [Online]. Viewed 2013 February 23. Available:
   \url{http://www.jquerymobile.com/demos/1.2.0/docs/about/features.html}.
 
 \bibitem{JQuery}
 Jquery {Official Document}.
-\newblock \url{http://www.jquery.com/}.
+\newblock (undated). [Online]. Viewed 2013 March 2. Available:
+  \url{http://www.jquery.com/}.
 
 \bibitem{json}
 Json.
-\newblock \url{http://www.json.org/}.
+\newblock (undated). [Online]. Viewed 2013 March 3. Available:
+  \url{http://www.json.org/}.
 
 \bibitem{mongodb}
 Mongodb {Agile and Scalable}.
-\newblock \url{http://www.mongodb.org/}.
+\newblock (undated). [Online]. Viewed 2013 March 13. Available:
+  \url{http://www.mongodb.org/}.
 
 \bibitem{mongolab}
 Mongolab.
-\newblock \url{http://www.mongodb.org/}.
+\newblock (undated). [Online]. Viewed 2013 March 14. Available:
+  \url{http://www.mongodb.org/}.
 
 \bibitem{nodejs}
 Node.js {Manual and Documentation}.
-\newblock \url{http://nodejs.org/api/}.
+\newblock (undated). [Online]. Viewed 2013 March 8. Available:
+  \url{http://nodejs.org/api/}.
 
 \bibitem{NoSql}
 Nosql database.
-\newblock \url{http://nosql-database.org/}.
+\newblock (undated). [Online]. Viewed 2013 March 2. Available:
+  \url{http://nosql-database.org/}.
 
 \bibitem{GoogleAppEngineDataStore}
 Official {Documentation of Google App Engine Java Datastore}.
-\newblock \url{https://developers.google.com/appengine/docs/java/datastore/}.
+\newblock (undated). [Online]. Viewed 2013 March 15. Available:
+  \url{https://developers.google.com/appengine/docs/java/datastore/}.
 
 \bibitem{Java}
 Official {Java Technology Document}.
-\newblock \url{http://www.java.com/en/download/faq/whatis_java.xml}.
+\newblock (undated). [Online]. Viewed 2013 March 1. Available:
+  \url{http://www.java.com/en/download/faq/whatis_java.xml}.
 
 \bibitem{uml}
 Unified {Modeling Language}.
-\newblock \url{http://www-01.ibm.com/software/rational/uml/}.
+\newblock (undated). [Online]. Viewed 2013 March 10. Available:
+  \url{http://www-01.ibm.com/software/rational/uml/}.
 
 \bibitem{w3}
 {W3C} community.
-\newblock \url{http://www.w3.org/TR/REC-html40/}.
+\newblock (undated). [Online]. Viewed 2013 February 21. Available:
+  \url{http://www.w3.org/TR/REC-html40/}.
 
 \bibitem{MicrosoftAzure}
 Windows {Azure}.
-\newblock \url{http://www.windowsazure.com/en-us/develop/overview/}.
+\newblock (undated). [Online]. Viewed 2013 March 11. Available:
+  \url{http://www.windowsazure.com/en-us/develop/overview/}.
 
 \bibitem{Manoj}
 Manoj Kulkarni.
@@ -111,6 +129,12 @@ Manoj Kulkarni.
 \bibitem{MVC}
 Ph.D Steve~Burbeck.
 \newblock Mvc {How to use Model-View-Controller}.
-\newblock \url{http://st-www.cs.illinois.edu/users/smarch/st-docs/mvc.html}.
+\newblock (undated). [Online]. Viewed 2013 March 4. Available:
+  \url{http://st-www.cs.illinois.edu/users/smarch/st-docs/mvc.html}.
+
+\bibitem{AWS}
+Amazon {Web Services}.
+\newblock (undated). [Online]. Viewed 2013 March 3. Available:
+  \url{http://aws.amazon.com/}.
 
 \end{thebibliography}
