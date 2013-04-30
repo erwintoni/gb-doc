@@ -61,28 +61,28 @@
 \contentsline {subsection}{\numberline {5.1.3}Documents}{44}
 \contentsline {subsection}{\numberline {5.1.4}Collections}{45}
 \contentsline {section}{\numberline {5.2}Data Model}{45}
-\contentsline {subsection}{\numberline {5.2.1}User Collection}{46}
-\contentsline {subsection}{\numberline {5.2.2}Group Collection}{46}
+\contentsline {subsection}{\numberline {5.2.1}User Collection}{47}
+\contentsline {subsection}{\numberline {5.2.2}Group Collection}{47}
 \contentsline {subsection}{\numberline {5.2.3}Badge Collection}{47}
-\contentsline {subsection}{\numberline {5.2.4}Group Admin Links Collection}{47}
+\contentsline {subsection}{\numberline {5.2.4}Group Admin Links Collection}{48}
 \contentsline {subsection}{\numberline {5.2.5}Group Member Links Collection}{48}
-\contentsline {subsection}{\numberline {5.2.6}Badge User Links Collection}{48}
-\contentsline {subsection}{\numberline {5.2.7}Group Badge Links Collection}{48}
-\contentsline {chapter}{\numberline {6.}Project Implementation}{50}
-\contentsline {section}{\numberline {6.1}Loading Screen}{51}
-\contentsline {section}{\numberline {6.2}Login Screen}{52}
-\contentsline {section}{\numberline {6.3}Group Page}{54}
-\contentsline {section}{\numberline {6.4}Add New Group Page}{55}
-\contentsline {section}{\numberline {6.5}Group Page}{56}
-\contentsline {section}{\numberline {6.6}Group Badge Page}{57}
-\contentsline {section}{\numberline {6.7}Add New Badge Page}{58}
-\contentsline {section}{\numberline {6.8}Logging Counters Page}{59}
-\contentsline {section}{\numberline {6.9}Memory Statistic Page}{60}
-\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{61}
-\contentsline {section}{\numberline {7.1}Conclusion}{61}
-\contentsline {section}{\numberline {7.2}Future Direction}{61}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code Examples}}{63}
-\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code Examples}}{69}
-\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code Examples}}{72}
-\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code Examples}}{75}
-\contentsline {chapter}{References}{94}
+\contentsline {subsection}{\numberline {5.2.6}Badge User Links Collection}{49}
+\contentsline {subsection}{\numberline {5.2.7}Group Badge Links Collection}{49}
+\contentsline {chapter}{\numberline {6.}Project Implementation}{51}
+\contentsline {section}{\numberline {6.1}Loading Screen}{52}
+\contentsline {section}{\numberline {6.2}Login Screen}{53}
+\contentsline {section}{\numberline {6.3}Group Page}{55}
+\contentsline {section}{\numberline {6.4}Add New Group Page}{56}
+\contentsline {section}{\numberline {6.5}Group Page}{57}
+\contentsline {section}{\numberline {6.6}Group Badge Page}{58}
+\contentsline {section}{\numberline {6.7}Add New Badge Page}{59}
+\contentsline {section}{\numberline {6.8}Logging Counters Page}{60}
+\contentsline {section}{\numberline {6.9}Memory Statistic Page}{61}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{62}
+\contentsline {section}{\numberline {7.1}Conclusion}{62}
+\contentsline {section}{\numberline {7.2}Future Direction}{62}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code Examples}}{64}
+\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code Examples}}{70}
+\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code Examples}}{73}
+\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code Examples}}{76}
+\contentsline {chapter}{References}{95}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  30 APR 2013 15:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  30 APR 2013 15:52
 entering extended mode
 **main
 (C:\Users\erwin\Desktop\Project\gb-doc\main.tex
@@ -825,12 +825,23 @@ l-lec-tion, named model[](collection
 Chapter 5.
 [44
 
-] [45] [46] [47] [48])
-(C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [49]
-Chapter 6.
-[50
+] [45] <images/ER.png, id=202, 894.34125pt x 441.14813pt>
+File: images/ER.png Graphic file (type png)
 
-] <images/loading-screen.jpg, id=218, 570.63188pt x 149.8097pt>
+<use images/ER.png>
+Package pdftex.def Info: images/ER.png used on input line 35.
+(pdftex.def)             Requested size: 469.76817pt x 296.32162pt.
+
+Overfull \hbox (36.14816pt too wide) in paragraph at lines 35--36
+ [] 
+ []
+
+[46 <C:/Users/erwin/Desktop/Project/gb-doc/images/ER.png>] [47] [48] [49])
+(C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [50]
+Chapter 6.
+[51
+
+] <images/loading-screen.jpg, id=223, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -841,8 +852,8 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[51 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=223, 755.07094pt x 181.42781pt>
+[52 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=228, 755.07094pt x 181.42781pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
@@ -853,15 +864,15 @@ Overfull \hbox (36.13214pt too wide) in paragraph at lines 25--26
  [] 
  []
 
-<images/facebook-login1.jpg, id=224, 347.79938pt x 252.945pt>
+<images/facebook-login1.jpg, id=229, 347.79938pt x 252.945pt>
 File: images/facebook-login1.jpg Graphic file (type jpg)
 
 <use images/facebook-login1.jpg>
 Package pdftex.def Info: images/facebook-login1.jpg used on input line 34.
 (pdftex.def)             Requested size: 252.94148pt x 274.6316pt.
- [52 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>] [53 <C:
+ [53 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>] [54 <C:
 /Users/erwin/Desktop/Project/gb-doc/images/facebook-login1.jpg>] <images/group-
-page1.png, id=232, 602.25pt x 204.01219pt>
+page1.png, id=237, 602.25pt x 204.01219pt>
 File: images/group-page1.png Graphic file (type png)
 
 <use images/group-page1.png>
@@ -872,8 +883,8 @@ Overfull \hbox (36.15147pt too wide) in paragraph at lines 47--48
  [] 
  []
 
-[54 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
-<images/add-new-group.png, id=237, 761.84625pt x 269.50688pt>
+[55 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
+<images/add-new-group.png, id=243, 761.84625pt x 269.50688pt>
 File: images/add-new-group.png Graphic file (type png)
 
 <use images/add-new-group.png>
@@ -884,8 +895,8 @@ Overfull \hbox (36.12744pt too wide) in paragraph at lines 60--61
  [] 
  []
 
-[55 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
-<images/group-page2.png, id=243, 963.6pt x 479.54156pt>
+[56 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
+<images/group-page2.png, id=248, 963.6pt x 479.54156pt>
 File: images/group-page2.png Graphic file (type png)
 
 <use images/group-page2.png>
@@ -896,8 +907,8 @@ Overfull \hbox (36.13678pt too wide) in paragraph at lines 73--74
  [] 
  []
 
-[56 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page2.png>]
-<images/badge-page.png, id=248, 957.5775pt x 450.18187pt>
+[57 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page2.png>]
+<images/badge-page.png, id=253, 957.5775pt x 450.18187pt>
 File: images/badge-page.png Graphic file (type png)
 
 <use images/badge-page.png>
@@ -908,8 +919,8 @@ Overfull \hbox (36.1377pt too wide) in paragraph at lines 86--87
  [] 
  []
 
-[57 <C:/Users/erwin/Desktop/Project/gb-doc/images/badge-page.png>]
-<images/add-new-badge.png, id=253, 965.85844pt x 464.4853pt>
+[58 <C:/Users/erwin/Desktop/Project/gb-doc/images/badge-page.png>]
+<images/add-new-badge.png, id=258, 965.85844pt x 464.4853pt>
 File: images/add-new-badge.png Graphic file (type png)
 
 <use images/add-new-badge.png>
@@ -920,30 +931,30 @@ Overfull \hbox (36.13243pt too wide) in paragraph at lines 99--100
  [] 
  []
 
-[58 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-badge.png>]
-<images/counters.png, id=258, 348.55219pt x 258.9675pt>
+[59 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-badge.png>]
+<images/counters.png, id=263, 348.55219pt x 258.9675pt>
 File: images/counters.png Graphic file (type png)
 
 <use images/counters.png>
 Package pdftex.def Info: images/counters.png used on input line 112.
 (pdftex.def)             Requested size: 252.94647pt x 224.04726pt.
- [59 <C:/Users/erwin/Desktop/Project/gb-doc/images/counters.png>] <images/mem.p
-ng, id=263, 231.86626pt x 140.02313pt>
+ [60 <C:/Users/erwin/Desktop/Project/gb-doc/images/counters.png>] <images/mem.p
+ng, id=268, 231.86626pt x 140.02313pt>
 File: images/mem.png Graphic file (type png)
 
 <use images/mem.png>
 Package pdftex.def Info: images/mem.png used on input line 125.
 (pdftex.def)             Requested size: 252.94855pt x 224.04797pt.
 ) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex
-[60 <C:/Users/erwin/Desktop/Project/gb-doc/images/mem.png>]
+[61 <C:/Users/erwin/Desktop/Project/gb-doc/images/mem.png>]
 Chapter 7.
-[61
+[62
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [62] [63
+]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [63] [64
 
-] [64]
-[65] [66] [67]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [68]
-[69
+] [65]
+[66] [67] [68]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [69]
+[70
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
@@ -951,26 +962,26 @@ LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\courier-scaled\ts1pcrs.fd"
 File: ts1pcrs.fd 2004/07/09 font definitions for TS1/pcrs.
 )
-[70]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [71] [72
+[71]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [72] [73
 
-] [73])
-(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [74] [75
+] [74])
+(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [75] [76
 
-] [76] [77]
-[78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [93] [94
+] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93])
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [94] [95
 
-] [95]) [96]
+] [96]) [97]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10630 strings out of 493921
- 187986 string characters out of 3144877
- 320530 words of memory out of 3000000
- 13707 multiletter control sequences out of 15000+200000
+ 10636 strings out of 493921
+ 188071 string characters out of 3144877
+ 320541 words of memory out of 3000000
+ 13712 multiletter control sequences out of 15000+200000
  10630 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,11n,45p,709b,1534s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -987,9 +998,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (108 pages, 538988 bytes).
+Output written on main.pdf (109 pages, 588391 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
+ 434 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

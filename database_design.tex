@@ -17,7 +17,7 @@ Although document structure is not enforced in MongoDB, different data models an
 Documents in MongoDB are organized into collections, and basic database operations are performed relative to collections. Indexes can be assigned to any field or subfield contained in documents within a MongoDB collection; they are defined on a per-collection level. Indices are need to perform queries that run faster than linear time.  \cite{mongodb}   
 
 \section{Data Model}
-In this project, there are three main collections: User, Group and Badge.  There are four linking collections to represent the many-to-many relationships between the main collections that are needed by the application.  These collections are described in the following.
+In this project, there are three main collections: User, Group and Badge.  There are four linking collections to represent the many-to-many relationships between the main collections that are needed by the application.  These collections are described in the following, and shown in the Figure~\ref{fig:db}. 
 
 \begin{itemize}
 \item user: This collection contains the user information.
@@ -28,6 +28,15 @@ In this project, there are three main collections: User, Group and Badge.  There
 \item badge{\_}user{\_}links: This linking collection contains pairs of badge ids and user ids, which represent the many-to-many relationship between badges and their earners.
 \item group{\_}badge{\_}links: This linking collection contains pairs of group ids and badge ids, which represent the many-to-many relationships between groups and their badges.
 \end{itemize}
+
+\vspace{3em}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=4.1in,width=6.5in]{images/ER.png}
+\caption{GradeBadge MongoDB Collections }
+\label{fig:db}
+\end{center}
+\end{figure}
 
 \subsection{User Collection}
 The user collection contains user documents, which contain the information shown in Table~\ref{table:UserCollection}.
