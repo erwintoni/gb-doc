@@ -2,7 +2,16 @@
 \lstset{breaklines=true}
 
 \section{Design Overview}
-The GradeBadge application uses a client-server architecture model, and it uses the Model View Controller (MVC) architecture model for both client and server. All communication between client and server is done through AJAX requests submitted through HTTP POST and containing data encoded using JSON.    
+The GradeBadge application uses a client-server architecture model, and it uses the Model View Controller (MVC) architecture model for both client and server, as shown in Figure~\ref{fig:mvc}.  All communication between client and server is done through AJAX requests submitted through HTTP POST and containing data encoded using JSON. 
+
+\vspace{3em}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=3.1in,width=3.5in]{images/mvc_diagram.png}
+\caption{GradeBadge MVC Architecture}
+\label{fig:mvc}
+\end{center}
+\end{figure}   
 
 \section{Model View Controller Architecture}
 This application is based on the Model View Controller (MVC) architecture,
@@ -31,7 +40,7 @@ if (file.gzip !== undefined &&
 }
 \end{lstlisting}
 
-In addition to checking whether the browser supports gzip compression, the above code also checks for any etag value sent by the browser.  The etag functions as a version identifier, which the browser sends to the server with the request message to see whether the file is different from what is in the browser cache and what the server would return.  If the etag indicates that the file is current, the the server doesn't need to return the file; it simply returns a code of indicating that the browser's cached version of the file is current. The following shows how this is done in code.
+In addition to checking whether the browser supports gzip compression, the above code also checks for any etag value sent by the browser.  The etag functions as a version identifier, which the browser sends to the server with the request message to see whether the file is different from what is in the browser cache and what the server would return.  If the etag indicates that the file is current, the server doesn't need to return the file; it simply returns a code indicating that the browser's cached version of the file is current. The following shows how this is done in code.
  
 \begin{lstlisting}
   if (req.headers['if-none-match'] === file.etag) {
@@ -104,7 +113,7 @@ res.writeHead(200, {
 
 \section{Server-side Architecture Design}
 
-In Nodejs, components are organized into modules, which can function as namespaces. In this project, all Nodejs modules that start with req{\_} are request handlers that get requested from the router module. All ajax requests will go through the req{\_}op module, which verifies that the user is logged into Facebook and the application version is current. Every request passing through req{\_}op must contain a Facebook access token and application version identifier. If the user is not logged into Facebook, then req{\_}op returns the JSON document {login:true}. If the application version is not current, then req{\_}op returns the JSON document {ver:true}. 
+In Nodejs, components are organized into modules, which can function as namespaces. In this project, all Nodejs modules that start with req{\_} are request handlers that get requested from the router module. All Ajax requests will go through the req{\_}op module, which verifies that the user is logged into Facebook and the application version is current. Every request passing through req{\_}op must contain a Facebook access token and application version identifier. If the user is not logged into Facebook, then req{\_}op returns the JSON document {login:true}. If the application version is not current, then req{\_}op returns the JSON document {ver:true}. 
 
 \subsection{Configuration}
 The following are the list of configuration files required on the server side; the source-code of these files can be found in Appendix A.
@@ -360,7 +369,7 @@ exports.handle = function(req, res) {
 \end{itemize}
 
 \section{Mapping of Model Classes to MongoDB}
-There will be one Nodejs module to represent the mongoDB collection, named model{\_}(collection{\_}name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
+There will be one Nodejs module to represent the mongoDB collection, named model{\_}(collection name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
 
 The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B.
 

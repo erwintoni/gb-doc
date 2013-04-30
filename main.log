@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  27 APR 2013 14:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  30 APR 2013 00:34
 entering extended mode
 **main
 (C:\Users\erwin\Desktop\Project\gb-doc\main.tex
@@ -797,39 +797,40 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 )
 (C:\Users\erwin\Desktop\Project\gb-doc\system_design.tex [16]
 Chapter 4.
-[17
+<images/mvc_diagram.png, id=108, 376.40625pt x 338.01282pt>
+File: images/mvc_diagram.png Graphic file (type png)
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+<use images/mvc_diagram.png>
+Package pdftex.def Info: images/mvc_diagram.png used on input line 10.
+(pdftex.def)             Requested size: 252.95476pt x 224.0433pt.
+ [17
+
+ <C:/Users/erwin/Desktop/Project/gb-doc/images/mvc_diagram.png>] [18]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
- [18]
-[19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
-Overfull \hbox (97.8304pt too wide) in paragraph at lines 363--364
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+ [19] [20]
+[21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32]
+Overfull \hbox (46.86205pt too wide) in paragraph at lines 372--373
 \OT1/cmr/m/n/12 There will be one Nodejs mod-ule to rep-re-sent the mon-goDB co
-l-lec-tion, named model[](collection[]name).js.
+l-lec-tion, named model[](collection
  []
 
-
-Overfull \hbox (27.79352pt too wide) in paragraph at lines 363--364
-\OT1/cmr/m/n/12 And many-to-many re-la-tion-ships are rep-re-sented by link-ing
- doc-u-ments, named (a)[](b)[]links 
- []
-
-[32] [33] [34] [35] [36] [37] [38] [39] [40])
-(C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [41]
+[33] [34] [35] [36] [37] [38] [39] [40] [41])
+(C:\Users\erwin\Desktop\Project\gb-doc\database_design.tex [42]
 Chapter 5.
-[42
+[43
 
-] [43] [44] [45] [46])
-(C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [47]
+] [44] [45] [46] [47])
+(C:\Users\erwin\Desktop\Project\gb-doc\userinterface_design.tex [48]
 Chapter 6.
-[48
+[49
 
-] <images/loading-screen.jpg, id=209, 570.63188pt x 149.8097pt>
+] <images/loading-screen.jpg, id=215, 570.63188pt x 149.8097pt>
 File: images/loading-screen.jpg Graphic file (type jpg)
 
 <use images/loading-screen.jpg>
@@ -840,8 +841,8 @@ Overfull \hbox (36.13837pt too wide) in paragraph at lines 12--13
  [] 
  []
 
-[49 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
-<images/facebook-login.jpg, id=215, 755.07094pt x 181.42781pt>
+[50 <C:/Users/erwin/Desktop/Project/gb-doc/images/loading-screen.jpg>]
+<images/facebook-login.jpg, id=220, 755.07094pt x 181.42781pt>
 File: images/facebook-login.jpg Graphic file (type jpg)
 
 <use images/facebook-login.jpg>
@@ -852,15 +853,15 @@ Overfull \hbox (36.13214pt too wide) in paragraph at lines 25--26
  [] 
  []
 
-<images/facebook-login1.jpg, id=216, 347.79938pt x 252.945pt>
+<images/facebook-login1.jpg, id=221, 347.79938pt x 252.945pt>
 File: images/facebook-login1.jpg Graphic file (type jpg)
 
 <use images/facebook-login1.jpg>
 Package pdftex.def Info: images/facebook-login1.jpg used on input line 34.
 (pdftex.def)             Requested size: 252.94148pt x 274.6316pt.
- [50 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>] [51 <C:
+ [51 <C:/Users/erwin/Desktop/Project/gb-doc/images/facebook-login.jpg>] [52 <C:
 /Users/erwin/Desktop/Project/gb-doc/images/facebook-login1.jpg>] <images/group-
-page1.png, id=224, 602.25pt x 204.01219pt>
+page1.png, id=229, 602.25pt x 204.01219pt>
 File: images/group-page1.png Graphic file (type png)
 
 <use images/group-page1.png>
@@ -871,8 +872,8 @@ Overfull \hbox (36.15147pt too wide) in paragraph at lines 47--48
  [] 
  []
 
-[52 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
-<images/add-new-group.png, id=229, 761.84625pt x 269.50688pt>
+[53 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page1.png>]
+<images/add-new-group.png, id=234, 761.84625pt x 269.50688pt>
 File: images/add-new-group.png Graphic file (type png)
 
 <use images/add-new-group.png>
@@ -883,8 +884,8 @@ Overfull \hbox (36.12744pt too wide) in paragraph at lines 60--61
  [] 
  []
 
-[53 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
-<images/group-page2.png, id=234, 963.6pt x 479.54156pt>
+[54 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-group.png>]
+<images/group-page2.png, id=239, 963.6pt x 479.54156pt>
 File: images/group-page2.png Graphic file (type png)
 
 <use images/group-page2.png>
@@ -895,8 +896,8 @@ Overfull \hbox (36.13678pt too wide) in paragraph at lines 73--74
  [] 
  []
 
-[54 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page2.png>]
-<images/badge-page.png, id=239, 957.5775pt x 450.18187pt>
+[55 <C:/Users/erwin/Desktop/Project/gb-doc/images/group-page2.png>]
+<images/badge-page.png, id=245, 957.5775pt x 450.18187pt>
 File: images/badge-page.png Graphic file (type png)
 
 <use images/badge-page.png>
@@ -907,8 +908,8 @@ Overfull \hbox (36.1377pt too wide) in paragraph at lines 86--87
  [] 
  []
 
-[55 <C:/Users/erwin/Desktop/Project/gb-doc/images/badge-page.png>]
-<images/add-new-badge.png, id=245, 965.85844pt x 464.4853pt>
+[56 <C:/Users/erwin/Desktop/Project/gb-doc/images/badge-page.png>]
+<images/add-new-badge.png, id=250, 965.85844pt x 464.4853pt>
 File: images/add-new-badge.png Graphic file (type png)
 
 <use images/add-new-badge.png>
@@ -919,30 +920,30 @@ Overfull \hbox (36.13243pt too wide) in paragraph at lines 99--100
  [] 
  []
 
-[56 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-badge.png>]
-<images/counters.png, id=250, 348.55219pt x 258.9675pt>
+[57 <C:/Users/erwin/Desktop/Project/gb-doc/images/add-new-badge.png>]
+<images/counters.png, id=255, 348.55219pt x 258.9675pt>
 File: images/counters.png Graphic file (type png)
 
 <use images/counters.png>
 Package pdftex.def Info: images/counters.png used on input line 112.
 (pdftex.def)             Requested size: 252.94647pt x 224.04726pt.
- [57 <C:/Users/erwin/Desktop/Project/gb-doc/images/counters.png>] <images/mem.p
-ng, id=255, 231.86626pt x 140.02313pt>
+ [58 <C:/Users/erwin/Desktop/Project/gb-doc/images/counters.png>] <images/mem.p
+ng, id=260, 231.86626pt x 140.02313pt>
 File: images/mem.png Graphic file (type png)
 
 <use images/mem.png>
 Package pdftex.def Info: images/mem.png used on input line 125.
 (pdftex.def)             Requested size: 252.94855pt x 224.04797pt.
 ) (C:\Users\erwin\Desktop\Project\gb-doc\conclusion.tex
-[58 <C:/Users/erwin/Desktop/Project/gb-doc/images/mem.png>]
+[59 <C:/Users/erwin/Desktop/Project/gb-doc/images/mem.png>]
 Chapter 7.
-[59
+[60
 
-]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [60] [61
+]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixA.tex [61] [62
 
-] [62]
-[63] [64] [65]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [66]
-[67
+] [63]
+[64] [65] [66]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixB.tex [67]
+[68
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
@@ -950,29 +951,29 @@ LaTeX Font Info:    Try loading font information for TS1+pcrs on input line 21.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\courier-scaled\ts1pcrs.fd"
 File: ts1pcrs.fd 2004/07/09 font definitions for TS1/pcrs.
 )
-[68]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [69] [70
+[69]) (C:\Users\erwin\Desktop\Project\gb-doc\appendixC.tex [70] [71
 
-] [71])
-(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [72] [73
+] [72])
+(C:\Users\erwin\Desktop\Project\gb-doc\appendixD.tex [73] [74
 
-] [74] [75]
-[76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
-(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [91] [92
+] [75] [76]
+[77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91])
+(C:\Users\erwin\Desktop\Project\gb-doc\main.bbl [92] [93
 
-] [93]) [94]
+] [94]) [95]
 (C:\Users\erwin\Desktop\Project\gb-doc\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10623 strings out of 493921
- 187842 string characters out of 3144877
- 320494 words of memory out of 3000000
- 13701 multiletter control sequences out of 15000+200000
+ 10629 strings out of 493921
+ 187973 string characters out of 3144877
+ 320525 words of memory out of 3000000
+ 13706 multiletter control sequences out of 15000+200000
  10630 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,11n,45p,709b,1540s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,45p,709b,1534s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 tcrm1200.pk> <C:\Users\erwin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\tcrm1728.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontna
@@ -986,9 +987,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (106 pages, 519962 bytes).
+Output written on main.pdf (107 pages, 537129 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
+ 424 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

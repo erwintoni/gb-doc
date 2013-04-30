@@ -12,7 +12,7 @@ Google App Engine provides infrastructure to build web applications on the same 
 
 Amazon also provides scalable cloud computing services, which includes the popular EC2 virtual machine instances, where users choose the type of operating system and configuration they need. The virtual machine service provided by Amazon is more flexible than language-specific executation environments such as Google App Engine and Heroku, but require more time and expertise to set up and manage. 
 
-In this project, Heroku is used as a cloud application platform for running Javascript in the Nodejs executation environment. Heroku also provide alternative execution environments that support Scala, Ruby, PHP and others.  One of the benefits of using Heroku (and other similar application hosting services) is that the bandwidth and CPU capacity can be scaled up or down almost instantly to accomodate rapidly changing demand.  Also, by relying on Heroku fto manage the hardware and system and network administration, developers gain the reliability, performance and security that is provided by a larger company with staff dedicated to these purposes.
+In this project, Heroku is used as a cloud application platform for running Javascript in the Nodejs executation environment. Heroku also provide alternative execution environments that support Scala, Ruby, PHP and others.  One of the benefits of using Heroku (and other similar application hosting services) is that the bandwidth and CPU capacity can be scaled up or down almost instantly to accomodate rapidly changing demand.  Also, by relying on Heroku to manage the hardware and system and network administration, developers gain the reliability, performance and security that is provided by a larger company with staff dedicated to these purposes.
 
 Among all the programming language execution environments supported by Heroku, this project uses Nodejs, which supports server-side programming in Javascript. On the client side, the application uses HTML5, Javascript, Jquery library and the Bootstap framework. The applciation also relies on the MongoDB database as provided by the MongoLab service provider.
 
@@ -21,10 +21,10 @@ Nodejs and MongoDB are often used together to build scalable web applications. T
 \section{Technology Overview}
 
 \subsection{Facebook}
-Facebook is a popular social networking website more than one billion users. It has proven to be a good platform to use for web applications that take advantage of its social networking features, such as friend lists, wall posting, etc \cite{Facebook}. Facebook also allows other applications to access user data with their authorization using its API. 
+Facebook is a popular social networking website more than one billion users. It has proven to be a good platform to use for Web applications that take advantage of its social networking features, such as friend lists, wall posting, etc \cite{Facebook}. Facebook also allows other applications to access user data with their authorization using its API. 
 
 \subsection{Heroku}
-Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git \cite{Heroku}.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku work is a partner of Facebook and so is designed to work easily with it. 
+Application hosting is a form of cloud computing that enables developers to publish applications that require Internet connectivity. Heroku is one of the first companies to offer a remote Nodejs executation environment.  Nodejs applications are deployed to Heroku using git \cite{Heroku}.  To depoy, or redeploy, an applicaiton, the developer pushes a branch of a git repository to a remote git repository provided by Heroku.  At deployment, Heroku extracts the application files from the git repository and runs the main executable, which is a server process.  Heroku is a partner of Facebook and so it is designed to work easily with it. 
 
 \subsection{MongoDB}
 There are many different types of cloud-based datastore services to choose from. For this project we used MongoDB because it works well with Nodejs and Heroku.  MongoDB is a scalable, high-performance, open source, NoSQL document-based database. MongoDB features include document-oriented storage, indexes, replication, high availability, auto-sharding, and querying \cite{mongodb}. 
@@ -33,10 +33,10 @@ There are many different types of cloud-based datastore services to choose from.
 MongoLab is the cloud computing provider for MongoDB database that was used in this project \cite{mongolab}.  MongoLab has a free tier service that facilitates experimentation by developers, and thus was convenient for this project. 
 
 \subsection{Git}
-Git is a distributed version control system \cite{github}.  This project uses GitHub to store and manage a remote git repository of application source code.  Git was convenient for the project because Heroku uses git as a means to deploy web applications to its servers. Heroku's git-based deployment system allows easy creation of testing, staging, and production versions of the application.
+Git is a distributed version control system \cite{github}.  This project uses GitHub to store and manage a remote git repository of application source code.  Git was convenient for the project because Heroku uses git as a means to deploy Web applications to its servers. Heroku's git-based deployment system allows easy creation of testing, staging, and production versions of the application.
 
 \subsection{Bootstrap}
-Bootstrap is a freely avaialble CSS and Javascript library created by Twitter.  It provides a responsive design framework that works well for applications that run inside browsers in desktop computers, tablets and smart phones \cite{bootstrap}. The application's user interface was contructed using Bootstrap. 
+Bootstrap is a freely available CSS and Javascript library created by Twitter.  It provides a responsive design framework that works well for applications that run inside browsers in desktop computers, tablets and smart phones \cite{bootstrap}. The application's user interface was contructed using Bootstrap. 
 
 \subsection{Jquery}
 The GradeBadge application uses Jquery for AJAX transactions and DOM manipulation \cite{JQuery}.  Bootstrap also depends on Jquery.

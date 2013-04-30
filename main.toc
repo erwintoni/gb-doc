@@ -43,46 +43,46 @@
 \contentsline {subsection}{\numberline {3.2.5}Client Browser}{16}
 \contentsline {chapter}{\numberline {4.}System Design}{17}
 \contentsline {section}{\numberline {4.1}Design Overview}{17}
-\contentsline {section}{\numberline {4.2}Model View Controller Architecture}{17}
+\contentsline {section}{\numberline {4.2}Model View Controller Architecture}{18}
 \contentsline {section}{\numberline {4.3}Bandwidth Reduction Strategy}{18}
 \contentsline {subsection}{\numberline {4.3.1}File Compression}{18}
 \contentsline {subsection}{\numberline {4.3.2}Content Distribution Network Resources}{19}
-\contentsline {subsection}{\numberline {4.3.3}Caching}{19}
-\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{21}
+\contentsline {subsection}{\numberline {4.3.3}Caching}{20}
+\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{22}
 \contentsline {subsection}{\numberline {4.4.1}Configuration}{22}
 \contentsline {subsection}{\numberline {4.4.2}Nodejs Modules}{24}
-\contentsline {section}{\numberline {4.5}Mapping of Model Classes to MongoDB}{32}
-\contentsline {section}{\numberline {4.6}Request Handler Operation}{36}
+\contentsline {section}{\numberline {4.5}Mapping of Model Classes to MongoDB}{33}
+\contentsline {section}{\numberline {4.6}Request Handler Operation}{37}
 \contentsline {section}{\numberline {4.7}Client-side Architectural Design}{40}
-\contentsline {chapter}{\numberline {5.}Database Design}{42}
-\contentsline {section}{\numberline {5.1}Overview}{42}
-\contentsline {subsection}{\numberline {5.1.1}MongoDB}{42}
-\contentsline {subsection}{\numberline {5.1.2}MongoLab}{42}
-\contentsline {subsection}{\numberline {5.1.3}Documents}{42}
-\contentsline {subsection}{\numberline {5.1.4}Collections}{43}
-\contentsline {section}{\numberline {5.2}Data Model}{43}
-\contentsline {subsection}{\numberline {5.2.1}User Collection}{44}
-\contentsline {subsection}{\numberline {5.2.2}Group Collection}{44}
-\contentsline {subsection}{\numberline {5.2.3}Badge Collection}{45}
-\contentsline {subsection}{\numberline {5.2.4}Group Admin Links Collection}{45}
-\contentsline {subsection}{\numberline {5.2.5}Group Member Links Collection}{46}
-\contentsline {subsection}{\numberline {5.2.6}Badge User Links Collection}{46}
-\contentsline {subsection}{\numberline {5.2.7}Group Badge Links Collection}{46}
-\contentsline {chapter}{\numberline {6.}Project Implementation}{48}
-\contentsline {section}{\numberline {6.1}Loading Screen}{49}
-\contentsline {section}{\numberline {6.2}Login Screen}{50}
-\contentsline {section}{\numberline {6.3}Group Page}{52}
-\contentsline {section}{\numberline {6.4}Add New Group Page}{53}
-\contentsline {section}{\numberline {6.5}Group Page}{54}
-\contentsline {section}{\numberline {6.6}Group Badge Page}{55}
-\contentsline {section}{\numberline {6.7}Add New Badge Page}{56}
-\contentsline {section}{\numberline {6.8}Logging Counters Page}{57}
-\contentsline {section}{\numberline {6.9}Memory Statistic Page}{58}
-\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{59}
-\contentsline {section}{\numberline {7.1}Conclusion}{59}
-\contentsline {section}{\numberline {7.2}Future Direction}{59}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code Examples}}{61}
-\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code Examples}}{67}
-\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code Examples}}{70}
-\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code Examples}}{73}
-\contentsline {chapter}{References}{92}
+\contentsline {chapter}{\numberline {5.}Database Design}{43}
+\contentsline {section}{\numberline {5.1}Overview}{43}
+\contentsline {subsection}{\numberline {5.1.1}MongoDB}{43}
+\contentsline {subsection}{\numberline {5.1.2}MongoLab}{43}
+\contentsline {subsection}{\numberline {5.1.3}Documents}{43}
+\contentsline {subsection}{\numberline {5.1.4}Collections}{44}
+\contentsline {section}{\numberline {5.2}Data Model}{44}
+\contentsline {subsection}{\numberline {5.2.1}User Collection}{45}
+\contentsline {subsection}{\numberline {5.2.2}Group Collection}{45}
+\contentsline {subsection}{\numberline {5.2.3}Badge Collection}{46}
+\contentsline {subsection}{\numberline {5.2.4}Group Admin Links Collection}{46}
+\contentsline {subsection}{\numberline {5.2.5}Group Member Links Collection}{47}
+\contentsline {subsection}{\numberline {5.2.6}Badge User Links Collection}{47}
+\contentsline {subsection}{\numberline {5.2.7}Group Badge Links Collection}{47}
+\contentsline {chapter}{\numberline {6.}Project Implementation}{49}
+\contentsline {section}{\numberline {6.1}Loading Screen}{50}
+\contentsline {section}{\numberline {6.2}Login Screen}{51}
+\contentsline {section}{\numberline {6.3}Group Page}{53}
+\contentsline {section}{\numberline {6.4}Add New Group Page}{54}
+\contentsline {section}{\numberline {6.5}Group Page}{55}
+\contentsline {section}{\numberline {6.6}Group Badge Page}{56}
+\contentsline {section}{\numberline {6.7}Add New Badge Page}{57}
+\contentsline {section}{\numberline {6.8}Logging Counters Page}{58}
+\contentsline {section}{\numberline {6.9}Memory Statistic Page}{59}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{60}
+\contentsline {section}{\numberline {7.1}Conclusion}{60}
+\contentsline {section}{\numberline {7.2}Future Direction}{60}
+\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code Examples}}{62}
+\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code Examples}}{68}
+\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code Examples}}{71}
+\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code Examples}}{74}
+\contentsline {chapter}{References}{93}
