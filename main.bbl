@@ -40,6 +40,11 @@ Google {Developers Academy}.
 \newblock (undated). [Online]. Viewed 2013 January 31. Available
   \url{https://developers.google.com/appengine/training/intro/whatisgae/}.
 
+\bibitem{googleguide}
+Google {Javascript Style Guide}.
+\newblock (undated). [Online]. Viewed 2013 March 14. Available:
+  \url{http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml }.
+
 \bibitem{Heroku}
 Heroku {How It Works}.
 \newblock (undated). [Online]. Viewed 2013 March 6. Available:
