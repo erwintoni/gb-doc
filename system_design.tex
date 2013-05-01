@@ -114,14 +114,14 @@ res.writeHead(200, {
 \section{Server-side Design}
 
 \subsection{Request Processing}
-In Nodejs, components are organized into modules, which can function as namespaces. In this project, all Nodejs modules that start with req{\_} are request handlers that get requested from the router module. All Ajax requests will go through the req{\_}op module, which verifies that the user is logged into Facebook and the application version is current. Every request passing through req{\_}op must contain a Facebook access token and application version identifier. If the user is not logged into Facebook, then req{\_}op returns the JSON document {login:true}. If the application version is not current, then req{\_}op returns the JSON document {ver:true}, as shown Figure~\ref{fig:mvc}
+In Nodejs, components are organized into modules, which can function as namespaces. In this project, all Nodejs modules that start with req{\_} are request handlers that get requested from the router module. All Ajax requests will go through the req{\_}op module, which verifies that the user is logged into Facebook and the application version is current. Every request passing through req{\_}op must contain a Facebook access token and application version identifier. If the user is not logged into Facebook, then req{\_}op returns the JSON document {login:true}. If the application version is not current, then req{\_}op returns the JSON document {ver:true}, as shown Figure~\ref{fig:sequence}
 
 \vspace{3em}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[height=3.1in,width=3.5in]{images/mvc_diagram.png}
-\caption{GradeBadge MVC Architecture}
-\label{fig:mvc}
+\includegraphics[height=3.1in,width=5.5in]{images/sequence.png}
+\caption{Request Processing Sequence Diagram}
+\label{fig:sequence}
 \end{center}
 \end{figure}   
 
