@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {2.2.5}View Badge Earned}{11}
 \contentsline {subsection}{\numberline {2.2.6}Share Badge to Social Networking}{11}
 \contentsline {section}{\numberline {2.3}Performance Requirement}{11}
-\contentsline {section}{\numberline {2.4}Design Constraint}{11}
+\contentsline {section}{\numberline {2.4}Design Constraint}{12}
 \contentsline {section}{\numberline {2.5}Software System Attributes}{12}
 \contentsline {chapter}{\numberline {3.}System Architecture}{13}
 \contentsline {section}{\numberline {3.1}Overview}{13}
@@ -48,12 +48,13 @@
 \contentsline {subsection}{\numberline {4.3.1}File Compression}{19}
 \contentsline {subsection}{\numberline {4.3.2}Content Distribution Network Resources}{20}
 \contentsline {subsection}{\numberline {4.3.3}Caching}{21}
-\contentsline {section}{\numberline {4.4}Server-side Architecture Design}{23}
-\contentsline {subsection}{\numberline {4.4.1}Configuration}{23}
-\contentsline {subsection}{\numberline {4.4.2}Nodejs Modules}{25}
+\contentsline {section}{\numberline {4.4}Server-side Design}{23}
+\contentsline {subsection}{\numberline {4.4.1}Request Processing}{23}
+\contentsline {subsection}{\numberline {4.4.2}Configuration}{24}
+\contentsline {subsection}{\numberline {4.4.3}Nodejs Modules}{26}
 \contentsline {section}{\numberline {4.5}Mapping of Model Classes to MongoDB}{34}
 \contentsline {section}{\numberline {4.6}Request Handler Operation}{38}
-\contentsline {section}{\numberline {4.7}Client-side Architectural Design}{41}
+\contentsline {section}{\numberline {4.7}Client-side Architectural Design}{42}
 \contentsline {chapter}{\numberline {5.}Database Design}{44}
 \contentsline {section}{\numberline {5.1}Overview}{44}
 \contentsline {subsection}{\numberline {5.1.1}MongoDB}{44}
@@ -81,8 +82,4 @@
 \contentsline {chapter}{\numberline {7.}Conclusion and Future Direction}{62}
 \contentsline {section}{\numberline {7.1}Conclusion}{62}
 \contentsline {section}{\numberline {7.2}Future Direction}{62}
-\contentsline {chapter}{APPENDIX\nobreakspace {}A: {Server Side Source Code Examples}}{64}
-\contentsline {chapter}{APPENDIX\nobreakspace {}B: {Model Classes Source Code Examples}}{70}
-\contentsline {chapter}{APPENDIX\nobreakspace {}C: {Request Handler Operation Source Code Examples}}{73}
-\contentsline {chapter}{APPENDIX\nobreakspace {}D: {Client Side Source Code Examples}}{76}
-\contentsline {chapter}{References}{95}
+\contentsline {chapter}{References}{64}

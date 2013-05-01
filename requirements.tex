@@ -8,13 +8,13 @@ The application is hosted in the Heroku application cloud service. The Web serve
 
 \subsection{Software Interfaces}
 
-Javascript will be implemented throughout the Website in order to display the correct feature the user requested. And HTML5 may be implemented throughout the website in order to display the correct feature the user requested.
+Javascript will be implemented throughout the website in order to display the correct feature the user requested. And HTML5 may be implemented throughout the website in order to display the correct feature the user requested.
 
 \subsection{Communication Interfaces}
 
 This application is designed to be viewed on any Internet Web browser provided that Javascript and image features are enabled and the browser is HTML5 compatible. Performance may vary slightly between browsers; however, the functionality of the site should not be impaired.
 
-In order to access this application, internet connection is required. On tablets or smart phones, when internet connection is not available, this application can be accessed through 3G, 4G or LTE networks.
+In order to access this application, an internet connection is required. On tablets or smart phones, the internet can be accessed through Wi-Fi, 3G, 4G or LTE networks.
 
 \section{Functional Requirement}
 
@@ -55,7 +55,9 @@ This functionality would allow badge recipients to share the badge to their soci
 
 \section{Performance Requirement}
 
-This application is going to be hosted in the Heroku cloud server, so the performance of this application would be high. Most of visible pages respond in 2 seconds or less.
+This application is internet based, so the down time of the application server is a factor. Because we are using Heroku cloud service, the down time of the server application is a function of Heroku down time. Heroku has reputation of reability, and during the testing of this project, no down time of Heroku was observed. 
+
+The speed of page loads is another performance issue. We are expecting page loads to be under 2 seconds consistently. 
  
 \section{Design Constraint}
 
@@ -63,4 +65,4 @@ This application requires internet-enabled devices and internet connection to pe
 
 \section{Software System Attributes}
 
-The author will maintain the proper commenting and documentation throughout the duration of the project, following Google Javascript style guide \cite{googleguide}. 
+The code will be written to adhere the Google Javascript style guide \cite{googleguide}. 

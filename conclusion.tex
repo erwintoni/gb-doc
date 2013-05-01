@@ -4,6 +4,8 @@
 
 GradeBadge is a cloud-based Web application that is hosted in Heroku, uses Nodejs and MongoDB, and that uses a responsive Web page design that works well inside browsers in desktop, tablet and smart phone computers. GradeBadge enables users to login with their Facebook account to simplify authentication and provide social networking features such as wall posting of badges earned and friend badge information. 
 
+This implementation in GradeBadge uses cloud computing, so developers don't need to spend time on system administration to manage the servers. They also don't need to purchase and maintain hardware. Deployment and re-deployment are done easily from the local command line. For this reason our implementation approach is suitable with student projects or small startup companies.
+
 Cloud computing provides significant cost savings to developers when building applications that can be scaled up or down almost instantly to accomodate rapidly changing demand.
 
 \section{Future Direction}
@@ -11,8 +13,8 @@ Cloud computing provides significant cost savings to developers when building ap
 The GradeBadge application can be used as a sample to showcase the development of cloud-based cross-platform applications. This application can also be extended and enhanced in the future as follows. 
 
 \begin{itemize}
-\item Auto-sharding: Add auto-sharding to the Mongo database in order to support greater scalability. When data in colletion gets very large, sharding will partition a collection, store the different sections on different servers. And then sharding will automatically distribute and balance data across servers.  
-\item Other social networking: Implement authentication and integration with other social networking applications such as Twitter, Tumblr, Google+,  etc. This gives more options for the users to use other social networking applications' account to be integrated with GradeBadge application.  
-\item Native App: Develop native versions of the application for iOS, Android and Windows Mobile. Even tough GradeBadge application can be accessed via Web browser from tablets or smart phones, it is also important to have native version of the application, because native application provides richer and smoother experience while using the application.   
-\item API: Develop an API to enable other applications to integrate a reward system module into their applications. So that other established applications such as forum, blog, and other content management system, can use reward system module in their system.      
+\item Auto-sharding: Add auto-sharding to the Mongo database in order to support greater scalability. When the data in a collection gets very large, sharding will partition the collection into seperate sections that are stored on different servers. The MongoDB sharding feature automatically distributes and balances data across shard servers.  
+\item Other social networking: Implement authentication and integration with other social networking applications such as Twitter, Tumblr, Google+,  etc. This will better serve users who prefer to use other social networking systems. 
+\item Native App: Develop native versions of the application for iOS, Android and Windows Mobile. Even tough GradeBadge application can be accessed via Web browser from tablets or smart phones, it is also important to have a native version of the application, because a native application would provide more responsive user interface.   
+\item API: Develop an API to enable other applications to integrate a reward system module. This will allow GradeBadge to used by larger number of users that are using other established applications such as forums, blogs, and other content management systems.
 \end{itemize}

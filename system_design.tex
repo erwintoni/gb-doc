@@ -111,12 +111,22 @@ res.writeHead(200, {
 \end{itemize}
 
 
-\section{Server-side Architecture Design}
+\section{Server-side Design}
 
-In Nodejs, components are organized into modules, which can function as namespaces. In this project, all Nodejs modules that start with req{\_} are request handlers that get requested from the router module. All Ajax requests will go through the req{\_}op module, which verifies that the user is logged into Facebook and the application version is current. Every request passing through req{\_}op must contain a Facebook access token and application version identifier. If the user is not logged into Facebook, then req{\_}op returns the JSON document {login:true}. If the application version is not current, then req{\_}op returns the JSON document {ver:true}. 
+\subsection{Request Processing}
+In Nodejs, components are organized into modules, which can function as namespaces. In this project, all Nodejs modules that start with req{\_} are request handlers that get requested from the router module. All Ajax requests will go through the req{\_}op module, which verifies that the user is logged into Facebook and the application version is current. Every request passing through req{\_}op must contain a Facebook access token and application version identifier. If the user is not logged into Facebook, then req{\_}op returns the JSON document {login:true}. If the application version is not current, then req{\_}op returns the JSON document {ver:true}, as shown Figure~\ref{fig:mvc}
+
+\vspace{3em}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=3.1in,width=3.5in]{images/mvc_diagram.png}
+\caption{GradeBadge MVC Architecture}
+\label{fig:mvc}
+\end{center}
+\end{figure}   
 
 \subsection{Configuration}
-The following are the list of configuration files required on the server side; the source-code of these files can be found in Appendix A.
+The following are the list of configuration files required on the server side.
 
 \begin{itemize}
 \item .env: This is the setup file that contains environmental variables. This file only exists in the developer local environment.  The same environmental variables need to be present in the Heroku execution environment, however, they are specified through another mechanism, namely through executing the Heroku config command for both staging and production environments.
@@ -157,7 +167,7 @@ web: node main.js
 \end{itemize}
 
 \subsection{Nodejs Modules}
-Below are the list of files that are used when the server executes; the source-code of these files can be found in the Appendix A.
+Below are the list of files that are used when the server executes.
 
 \begin{itemize}
 \item main.js: This is the main module in Nodejs, which contains code that verifies all necessary environmental variables are set correctly. It also invokes initialization functions of other modules to start the application.  After initialization is complete, the main module starts the HTTP request handling loop. 
@@ -371,7 +381,7 @@ exports.handle = function(req, res) {
 \section{Mapping of Model Classes to MongoDB}
 There will be one Nodejs module to represent the mongoDB collection, named model{\_}(collection name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
 
-The following list below are the list of files that are used to Model to represent MongoDB, and the source-code of these files can be found in the Appendix B.
+The following list below are the list of files that are used to Model to represent MongoDB.
 
 \begin{itemize}
 \item model{\_}group.js: this Nodejs module represents Groups collection. The following is one of functions in the model{\_}group to get group document by given id. 
@@ -479,7 +489,7 @@ exports.create = function(group_badge, cb) {
 \section{Request Handler Operation}
 There will be one Nodejs module to handle Ajax requests from browsers, named op{\_}(request-type).js. Every request may read, write or update to and from more than one collection.
 
-The following are the list of files that define the request handler modules; these source code files can be found in the Appendix C.
+The following are the list of files that define the request handler modules.
 
 \begin{itemize}
 \item op{\_}read{\_}badges{\_}by{\_}group.js: This operation is for requesting all badges in a given group. The following shows how this is done in the code, where the operation gets the array of badge ids for a given group id through a group{\_}badge linking document. After getting the badge ids, it gets the badge documents the array of badge ids. 
@@ -563,7 +573,7 @@ exports.handle = function (data, res) {
 \end{itemize}
 
 \section{Client-side Architectural Design}
-The following is the list of files that are used on the client-side; the corresponding source code can be found in the Appendix D.
+The following is the list of files that are used on the client-side.
 
 \begin{itemize}
 \item app.html: This is the html template for generating the badge earners Web page. This file contains the HTML skeleton of the HTML page. The following is a list element appearing in the template; this list element will be populated by data after page load by Javascript, which gets the data through an Ajax call to the application server.
