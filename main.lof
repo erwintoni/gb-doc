@@ -1,24 +1,24 @@
 \thispagestyle {fancy}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Use Case Diagram}}{10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Use Case Diagram\relax }}{10}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Deployment Diagram}}{14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces System Integration}}{15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Deployment Diagram\relax }}{14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces System Integration\relax }}{15}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces GradeBadge MVC Architecture}}{18}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Request Processing Sequence Diagram}}{24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces GradeBadge Model View Controller Architecture\relax }}{18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Request Processing Sequence Diagram\relax }}{24}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces GradeBadge MongoDB Collections }}{46}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces GradeBadge MongoDB Collections \relax }}{46}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces GradeBadge Loading Screen}}{52}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces GradeBadge Login Screen}}{53}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Facebook Login Screen}}{54}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces GradeBadge Group Page}}{55}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces GradeBadge Add New Group Page}}{56}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces GradeBadge Group Page Added}}{57}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces GradeBadge Group Badge Page}}{58}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces GradeBadge Add New Badge Page}}{59}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces GradeBadge Logging Counters Page}}{60}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces GradeBadge Memory Statistic Page}}{61}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces GradeBadge Loading Screen\relax }}{51}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces GradeBadge Login Screen\relax }}{52}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Facebook Login Screen\relax }}{53}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces GradeBadge Group Page\relax }}{54}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces GradeBadge Add New Group Page\relax }}{55}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces GradeBadge Group Page Added\relax }}{56}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces GradeBadge Group Badge Page\relax }}{57}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces GradeBadge Add New Badge Page\relax }}{58}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces GradeBadge Logging Counters Page\relax }}{59}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces GradeBadge Memory Statistic Page\relax }}{60}
 \addvspace {10pt}

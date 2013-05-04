@@ -8,7 +8,7 @@ The GradeBadge application uses a client-server architecture model, and it uses 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[height=3.1in,width=3.5in]{images/mvc_diagram.png}
-\caption{GradeBadge MVC Architecture}
+\caption{GradeBadge Model View Controller Architecture}
 \label{fig:mvc}
 \end{center}
 \end{figure}   
@@ -379,7 +379,7 @@ exports.handle = function(req, res) {
 \end{itemize}
 
 \section{Mapping of Model Classes to MongoDB}
-There will be one Nodejs module to represent the mongoDB collection, named model{\_}(collection name).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links
+There will be one Nodejs module to represent the mongoDB collection, named model{\_}( collection name ).js. And many-to-many relationships are represented by linking documents, named (a){\_}(b){\_}links.
 
 The following list below are the list of files that are used to Model to represent MongoDB.
 
