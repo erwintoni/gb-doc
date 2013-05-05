@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  4 MAY 2013 14:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.2)  4 MAY 2013 19:11
 entering extended mode
 **main
 (C:\Users\erwin\Desktop\Project\gb-doc\main.tex
@@ -930,7 +930,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  11620 strings out of 493921
  205875 string characters out of 3144877
- 318385 words of memory out of 3000000
+ 318387 words of memory out of 3000000
  14705 multiletter control sequences out of 15000+200000
  10175 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -948,7 +948,7 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (78 pages, 612835 bytes).
+Output written on main.pdf (78 pages, 612839 bytes).
 PDF statistics:
  334 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
